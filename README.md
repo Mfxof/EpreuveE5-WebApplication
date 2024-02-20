@@ -10,14 +10,12 @@
     - [Plugins visual Studio :](#plugins-visual-studio-)
 
 ---
-
 ---
-
 ---
 
 # Niveau de progression du site
 
-## Site Personel
+## Site projet E5
 
 - [ ] Version 1.0.0 : Base du site et des pages
 
