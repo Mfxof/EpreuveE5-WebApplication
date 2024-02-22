@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .forum {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum h1 {
+    text-align: center;
+  }
+  
+  .thread {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .thread h2 {
+    margin-top: 0;
+  }
+  
+  .thread p:last-child {
+    margin-bottom: 0;
+  }
+  
+
+  .navbar {
+    background-color: #333;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+  }
+  
+  .nav-item:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu li {
+    border-bottom: 1px solid #666;
+  }
+  
+  .sub-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sub-menu li a:hover {
+    background-color: #555;
+  }
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options div {
+    margin-right: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+}
+
+.forum {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.forum h1 {
+    margin-top: 0;
+}
+
+.thread {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.thread h2 {
+    margin-top: 0;
+}
+
+.thread p:last-child {
+    margin-bottom: 0;
+}
+
+
