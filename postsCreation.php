@@ -51,13 +51,15 @@ mysqli_close($conn);
     <?php if (!empty($message)): ?>
         <p><?php echo $message; ?></p>
     <?php endif; ?>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="titre">Titre :</label><br>
-        <input type="text" id="titre" name="titre"><br>
-        <label for="contenu">Contenu :</label><br>
-        <textarea id="contenu" name="contenu"></textarea><br>
-        <label for="utilisateur">Utilisateur :</label><br>
-        <input type="text" id="utilisateur" name="utilisateur"><br><br>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
+        <label for="titre">*Titre :</label><br>
+        <input type="text" id="titre" name="titre" required><br>
+        <label for="contenu">*Contenu :</label><br>
+        <textarea id="contenu" name="contenu" required></textarea><br>
+        <label for="utilisateur">*Utilisateur :</label><br>
+        <input type="text" id="utilisateur" name="utilisateur" required><br><br>
+        <label for="fichier">Ajouter un fichier :</label><br>
+        <input type="file" id="fichier" name="fichier"><br><br>
         <input type="submit" value="Envoyer">
     </form>
 </body>

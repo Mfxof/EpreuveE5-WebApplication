@@ -43,8 +43,8 @@ mysqli_close($conn);
             <label>Email:</label>
             <input type="email" name="email"><br>
             <label>Mot de passe:</label>
-            <input type="password" name="mot_de_passe"><br>
-            <input type="submit" value="Se connecter">
+            <input type="password" name="mot_de_passe" required><br>
+            <input type="submit" value="Se connecter" required>
         </form>
     </div>
 </div>
