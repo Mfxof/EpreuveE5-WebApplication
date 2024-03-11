@@ -3,6 +3,7 @@
 - [Sommaire](#sommaire)
 - [Niveau de progression du site](#niveau-de-progression-du-site)
   - [Site projet E5](#site-projet-e5)
+    - [Progression global](#progression-global)
 - [Divers](#divers)
   - [Liens](#liens)
   - [Infos Utiles](#infos-utiles)
@@ -44,7 +45,7 @@
 
 ---
 
-Proggresion global
+### Progression global
 - [ ] 25%
 - [ ] 50%
 - [ ] 75%
