@@ -16,8 +16,15 @@
         die("La connexion à la base de données a échoué: " . mysqli_connect_error());
     }
 
+    // Nombre de posts par page
+    $posts_par_page = 5;
+
+    // Récupérer le numéro de la page actuelle
+    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+    $offset = ($page - 1) * $posts_par_page;
+
     // Récupérer les messages
-    $sql = "SELECT * FROM posts";
+    $sql = "SELECT * FROM posts LIMIT $offset, $posts_par_page";
     $result = mysqli_query($conn, $sql);
 
     // Vérifier les erreurs
@@ -37,6 +44,19 @@
     } else {
         echo "Aucun message trouvé.";
     }
+
+    // Boutons pour changer de page
+    $sql_total_posts = "SELECT COUNT(*) AS total FROM posts";
+    $result_total_posts = mysqli_query($conn, $sql_total_posts);
+    $row_total_posts = mysqli_fetch_assoc($result_total_posts);
+    $total_posts = $row_total_posts['total'];
+    $total_pages = ceil($total_posts / $posts_par_page);
+
+    echo "<div class='pagination'>";
+    for ($i = 1; $i <= $total_pages; $i++) {
+        echo "<a href='forum.php?page=$i'>$i</a> ";
+    }
+    echo "</div>";
 
     // Vérifier si le formulaire a été soumis
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
