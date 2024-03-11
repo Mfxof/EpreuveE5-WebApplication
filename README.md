@@ -22,9 +22,33 @@
 ---
 
 - [x] Création de la base de donnés
-- [x] Création  de formulaire d'inscription
-- [x] Création  de formulaire de connexion
 - [ ] Pages dynamique si on est connecter ou non
+- [ ] Création de pages et les finir a 100%
+  - [ ] Page Accueil
+  - [ ] Page Forum
+    - [ ] Sortie des Post dynamiquement
+  - Pages
+    - [ ] Page A propos
+    - [ ] Page Servies
+    - [ ] Page FAQ
+  - [ ] Pages Magasin //?//
+    - [ ] Page Produits
+    - [ ] Page Panier
+    - [ ] Page Caisse
+  - [x]  Création de formulaire d'inscription
+    - [ ]  Empécher les inscriptions double email / pseudo
+  - [x] Création de formulaire de connexion
+  - [x] Page Contact
+  - [ ] Page mon Compte
+
+
+---
+
+Proggresion global
+- [ ] 25%
+- [ ] 50%
+- [ ] 75%
+- [ ] 99%
 
 
 # Divers

@@ -3,7 +3,7 @@
 session_start();
 
 // Connexion à la base de données
-$conn = mysqli_connect("localhost", "admin", "XXXX", "projetwebappe5");
+$conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 
 // Vérifier la connexion
 if (!$conn) {

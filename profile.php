@@ -9,7 +9,7 @@ if (!isset($_SESSION['email'])) {
 }
 
 // Récupérer les informations de compte depuis la base de données
-$conn = mysqli_connect("localhost", "admin", "XXX", "projetwebappe5");
+$conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 if (!$conn) {
     die("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
@@ -28,24 +28,36 @@ if (!$row) {
 mysqli_close($conn);
 ?>
 
-<?php include 'php/header.php' ?>
+<?php include 'php/header.php'; ?>
 <title>Mon compte</title>
-<?php include 'php/navBar.php' ?>
+<?php include 'php/navBar.php'; ?>
 
-<div class="profile-container">
+<div class="forum">
     <h2>Profil de
         <?php echo $row['nom']; ?>
     </h2>
-    <img src="chemin_vers_image_de_profil.jpg" alt="Image de profil" class="profile-picture">
-    <p><strong>Nom:</strong>
-        <?php echo $row['nom']; ?>
-    </p>
-    <p><strong>Email:</strong>
-        <?php echo $row['email']; ?>
-    </p>
-    <!-- Ajoutez d'autres informations de profil ici, telles que prénom, etc. -->
-</div>
+    <div class="thread">
 
+
+        <div class="profile-container">
+
+            <img src="chemin_vers_image_de_profil.jpg" alt="Image de profil" class="profile-picture">
+            <p><strong>Nom:</strong>
+                <?php echo $row['nom']; ?>
+            </p>
+            <p><strong>Email:</strong>
+                <?php echo $row['email']; ?>
+            </p>
+            <!-- Ajoutez d'autres informations de profil ici, telles que prénom, etc. -->
+        </div>
+    </div>
+
+<form action="logout.php" method="post">
+    <input type="submit" value="Déconnexion">
+</form>
+
+<?php include 'php/footer.php' ?>
+    </div>
 </body>
 
 </html>
