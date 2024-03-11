@@ -178,7 +178,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
+input[type="num"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
@@ -236,7 +236,7 @@ input[type="submit"]:hover {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form input[type="tel"],
+.contact-form input[type="num"],
 .contact-form textarea {
   width: 100%;
   padding: 10px;

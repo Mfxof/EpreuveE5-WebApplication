@@ -52,11 +52,11 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Magasin //</a>
+            <a href="#" class="nav-link">// Magasin //</a>
             <ul class="sub-menu">
-              <li><a href="#">Produits //</a></li>
-              <li><a href="#">Panier //</a></li>
-              <li><a href="#">Caisse //</a></li>
+              <li><a href="#">// Produits //</a></li>
+              <li><a href="#">// Panier //</a></li>
+              <li><a href="#">// Caisse //</a></li>
             </ul>
           </li>
           <li class="nav-item">
