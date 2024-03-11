@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/LogoSite_NoBG.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -46,35 +46,13 @@
     <meta name="Keywords"
         content="portfolio, FREYERMUTH">
     <meta name="Robots" content="all">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="XX" type="image/x-icon">
+    <link rel="shortcut icon" href="XX" type="image/x-icon">
     <meta property="og:title"
         content="ArialGames Portfolio">
     <meta property="og:type" content="Portfolio FREYERMUTH Matys ">
     <meta property="og:url" content="https://arial-games.000webhostapp.com/portfolio/portfolio_New">
 
-    <!-- CSS -->
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-    <!-- Font Awesome CSS -->
-    <link href="css/all.min.css" rel="stylesheet" media="screen">
-    <link href="css/fontawesome.min.css" rel="stylesheet" media="screen">
-
-    <!--[if lte IE 7]> 
-                <script src="/assets/js/icons-lte-ie7.js"></script>
-            <![endif]-->
-
-    <!-- Magnific-popup lightbox -->
-    <link href="css/magnific-popup.css" rel="stylesheet"> <!-- Owl Carousel -->
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-
-    <!-- Animate css -->
-    <link href="css/animate.min.css" rel="stylesheet">
-
-    <!-- Custom styles CSS -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
