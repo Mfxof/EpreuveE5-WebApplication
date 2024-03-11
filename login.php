@@ -3,7 +3,7 @@
 session_start();
 
 // Connexion à la base de données
-$conn = mysqli_connect("localhost", "admin", "Sunibo-7", "projetwebappe5");
+$conn = mysqli_connect("localhost", "admin", "XXXX", "projetwebappe5");
 
 // Vérifier la connexion
 if (!$conn) {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = mysqli_fetch_assoc($result);
     if ($row && password_verify($mot_de_passe, $row['mot_de_passe'])) {
         $_SESSION['email'] = $email;
-        header("Location: ../profile.php");
+        header("Location: profile.php");
     } else {
         echo "Email ou mot de passe incorrect.";
     }
@@ -30,23 +30,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Fermer la connexion à la base de données
 mysqli_close($conn);
 ?>
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <link rel="shortcut icon" href="../images/LogoSite_NoBG.png" type="image/x-icon">
-    <link rel="stylesheet" href="auth.css">
-    <title>Connexion</title>
-</head>
+<?php include 'php/header.php' ?>
+<title>Connexion</title>
+<?php include 'php/navBar.php' ?>
 
-<body>
+
+<div class="forum">
     <h2>Connexion</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label>Email:</label>
-        <input type="email" name="email"><br>
-        <label>Mot de passe:</label>
-        <input type="password" name="mot_de_passe"><br>
-        <input type="submit" value="Se connecter">
-    </form>
+    <div class="thread">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <label>Email:</label>
+            <input type="email" name="email"><br>
+            <label>Mot de passe:</label>
+            <input type="password" name="mot_de_passe"><br>
+            <input type="submit" value="Se connecter">
+        </form>
+    </div>
+</div>
 </body>
+
 </html>

@@ -1,41 +1,6 @@
     <?php include 'php/header.php' ?>
     <title>Accueil</title>
-    <link class="logo" rel="icon" type="image/png" href="images/LogoSite.jpg"/>
-</head>
 
-<body>
-    <div class="container">
-        <!-- Logo et options start -->
-        <div class="top-bar">
-            <div class="logo">
-                <img src="images/LogoSite_NoBG.png" alt="Logo">
-            </div>
-            <div class="options">
-                <div class="language">
-                    <a href="#" class="flag-icon">🇺🇸</a>
-                    <a href="#" class="flag-icon">🇫🇷</a>
-                    <!-- Ajoutez d'autres drapeaux pour d'autres langues -->
-                </div>
-                <div class="currency">
-                    <a href="#">$</a>
-                    <a href="#">€</a>
-                    <!-- Ajoutez d'autres symboles de devise pour d'autres devises -->
-                </div>
-                <div class="wishlist">
-                    <a href="#">Liste de souhaits</a>
-                </div>
-                <div class="account">
-                    <a href="#">Mon compte</a>
-                </div>
-            </div>
-        </div>
-        <!-- Logo et options end -->
-
-        <!-- Home start -->
-        <section>
-          
-        </section>
-        <!-- Home end -->
 
         <?php include 'php/navBar.php' ?>
 
@@ -58,8 +23,8 @@
         </div>
 
         <div>
-            <button><a href="auth/login.php">Connexion</a></button>
-            <button><a href="auth/register.php">Inscription</a></button>
+            <button><a href="login.php">Connexion</a></button>
+            <button><a href="register.php">Inscription</a></button>
         </div>
 
         <?php include 'php/footer.php' ?>

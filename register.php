@@ -1,6 +1,6 @@
 <?php
 // Connexion à la base de données
-$conn = mysqli_connect("localhost", "admin", "Sunibo-7", "projetwebappe5");
+$conn = mysqli_connect("localhost", "admin", "XXXXX", "projetwebappe5");
 
 // Vérifier la connexion
 if (!$conn) {
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insérer les données dans la base de données
     $sql = "INSERT INTO utilisateurs (nom, prenom, email, mot_de_passe) VALUES ('$nom','$prenom', '$email', '$mot_de_passe')";
     if (mysqli_query($conn, $sql)) {
-        header("Location: ../profile.php");
+        header("Location: profile.php");
     } else {
         echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -26,27 +26,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Fermer la connexion à la base de données
 mysqli_close($conn);
 ?>
-<!DOCTYPE html>
-<html lang="fr">
+<?php include 'php/header.php' ?>
+<title>Inscription</title>
+<?php include 'php/navBar.php' ?>
 
-<head>
-    <link rel="shortcut icon" href="../images/LogoSite_NoBG.png" type="image/x-icon">
-    <link rel="stylesheet" href="auth.css">
-    <title>Inscription</title>
-</head>
-
-<body>
+<div class="forum">
     <h2>Inscription</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label>Nom :</label>
-        <input type="text" name="nom"><br>
-        <label>Prenom :</label>
-        <input type="text" name="prenom"><br>
-        <label>Email :</label>
-        <input type="email" name="email"><br>
-        <label>Mot de passe :</label>
-        <input type="password" name="mot_de_passe"><br>
-        <input type="submit" value="S'inscrire">
-    </form>
+    <div class="thread">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <label>Nom :</label>
+            <input type="text" name="nom"><br>
+            <label>Prenom :</label>
+            <input type="text" name="prenom"><br>
+            <label>Email :</label>
+            <input type="email" name="email"><br>
+            <label>Mot de passe :</label>
+            <input type="password" name="mot_de_passe"><br>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+</div>
 </body>
+
 </html>

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="images/LogoSite_NoBG.png" type="image/x-icon">
+    <link class="logo" rel="icon" type="image/png" href="images/LogoSite.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
