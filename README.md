@@ -21,9 +21,9 @@
 
 ---
 
-- [ ] Création de la base de donnés
-- [ ] Création  de formulaire d'inscription
-- [ ] Création  de formulaire de connexion
+- [x] Création de la base de donnés
+- [x] Création  de formulaire d'inscription
+- [x] Création  de formulaire de connexion
 - [ ] Pages dynamique si on est connecter ou non
 
 
