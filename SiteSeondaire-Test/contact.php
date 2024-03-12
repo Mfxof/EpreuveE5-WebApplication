@@ -7,7 +7,7 @@
         <div class="container">
             <h3>Questions</h3>
             <ol class="breadcrumb breadcrumb839">
-                <li><a href="#">Accueil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li class="active">Nous contacter</li>
             </ol>
         </div>
@@ -61,3 +61,5 @@
 
                 </div>
                 <!--                end of col-md-9 -->
+
+            <?php include 'php/sideContent.php' ?>

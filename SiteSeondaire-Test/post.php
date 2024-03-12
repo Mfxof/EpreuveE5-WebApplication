@@ -8,7 +8,7 @@
         <div class="container">
             <h3>All Question</h3>
             <ol class="breadcrumb breadcrumb839">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li class="active">Category Type</li>
             </ol>
         </div>
@@ -318,3 +318,4 @@
                     </section>
                 </div>
                 <!-- end of col-md-9 -->
+                            <?php include 'php/sideContent.php' ?>

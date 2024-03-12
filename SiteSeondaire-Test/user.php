@@ -6,7 +6,7 @@
         <div class="container">
             <h3>All User Question</h3>
             <ol class="breadcrumb breadcrumb839">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li class="active">All User Question</li>
             </ol>
         </div>
@@ -66,3 +66,4 @@
                
                 </div>
                 <!--                end of col-md-9 -->
+<?php include 'php/sideContent.php' ?>
