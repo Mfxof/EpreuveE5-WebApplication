@@ -22,11 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titre = $_POST['titre'];
     $contenu = $_POST['contenu'];
     $utilisateur = $_POST['utilisateur'];
+    $likes = $_POST['likes'];
 
     // Préparer et exécuter la requête SQL d'insertion avec des prepared statements
-    $insert_query = "INSERT INTO posts (titre, contenu, utilisateur) VALUES (?, ?, ?)";
+    $insert_query = "INSERT INTO posts (titre, contenu, utilisateur, likes) VALUES (?, ?, ?, 0)";
     $stmt = mysqli_prepare($conn, $insert_query);
-    mysqli_stmt_bind_param($stmt, "sss", $titre, $contenu, $utilisateur);
+    mysqli_stmt_bind_param($stmt, "sss", $titre, $contenu, $utilisateur, $likes);
 
     if (mysqli_stmt_execute($stmt)) {
         $message = "Nouveau fil de discussion créé avec succès.";
@@ -39,18 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 mysqli_close($conn);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Création de posts</title>
-</head>
-<body>
-    <h1>Créer un nouveau fil de discussion</h1>
-    <?php if (!empty($message)): ?>
-        <p><?php echo $message; ?></p>
-    <?php endif; ?>
+
+<h1>Créer un nouveau fil de discussion</h1>
+<?php if (!empty($message)): ?>
+    <p>
+        <?php echo $message; ?>
+    </p>
+<?php endif; ?>
+<div class="forum">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
         <label for="titre">*Titre :</label><br>
         <input type="text" id="titre" name="titre" required><br>
@@ -62,5 +59,8 @@ mysqli_close($conn);
         <input type="file" id="fichier" name="fichier"><br><br>
         <input type="submit" value="Envoyer">
     </form>
+</div>
+
 </body>
+
 </html>

@@ -38,17 +38,17 @@
       <nav class="navbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="index.php" class="nav-link">Accueil</a>
+            <a href="index.php" class="nav-link">Accueil/</a>
           </li>
           <li class="nav-item">
             <a href="forum.php" class="nav-link">Forum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Pages</a>
+            <a class="nav-link">Pages/</a>
             <ul class="sub-menu">
-              <li><a href="aPropos.php">A propos</a></li>
-              <li><a href="service.php">Services</a></li>
-              <li><a href="faq.php">FAQ</a></li>
+              <li><a href="aPropos.php">A propos/</a></li>
+              <li><a href="service.php">Services/</a></li>
+              <li><a href="faq.php">FAQ/</a></li>
             </ul>
           </li>
           <li class="nav-item">

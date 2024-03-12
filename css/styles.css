@@ -268,3 +268,43 @@ input[type="submit"]:hover {
   color: red;
   margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button styles */
+.threadButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+}
+
+.threadButton:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.postsThread {
+  text-align: center; /* Center-align the button */
+  margin-bottom: 20px; /* Add some spacing at the bottom */
+}
