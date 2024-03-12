@@ -1,8 +1,7 @@
-<?php include 'php/header.php'; ?>
+    <?php include 'php/header.php'; ?>
+    <title>Création d'un thread</title>
+    <?php include 'php/navBar.php'; ?>
 
-<title>Création d'un thread</title>
-
-<?php include 'php/navBar.php'; ?>
 
 <?php
 // Connexion à la base de données
@@ -22,12 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titre = $_POST['titre'];
     $contenu = $_POST['contenu'];
     $utilisateur = $_POST['utilisateur'];
-    $likes = $_POST['likes'];
 
     // Préparer et exécuter la requête SQL d'insertion avec des prepared statements
     $insert_query = "INSERT INTO posts (titre, contenu, utilisateur, likes) VALUES (?, ?, ?, 0)";
     $stmt = mysqli_prepare($conn, $insert_query);
-    mysqli_stmt_bind_param($stmt, "sss", $titre, $contenu, $utilisateur, $likes);
+    mysqli_stmt_bind_param($stmt, "sss", $titre, $contenu, $utilisateur);
 
     if (mysqli_stmt_execute($stmt)) {
         $message = "Nouveau fil de discussion créé avec succès.";
@@ -40,11 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 mysqli_close($conn);
 ?>
 
-
 <h1>Créer un nouveau fil de discussion</h1>
 <?php if (!empty($message)): ?>
     <p>
-        <?php echo $message; ?>
+        <?php echo htmlspecialchars($message); ?>
     </p>
 <?php endif; ?>
 <div class="forum">

@@ -1,6 +1,13 @@
 <?php
 include 'php/header.php';
-include 'php/navBar.php';
+include 'php/navBar.php'; ?>
+
+<div class="postsThread">
+    <a href="postsCreation.php"><img src="images/Plus-Symbol-Vector-PNG-Cutout.png" alt="Créer un thread">Poster un thread</a>
+</div>
+<br>
+<br>
+<?php
 
 $conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 if (!$conn) {
@@ -69,9 +76,4 @@ echo "</div>";
 
 mysqli_close($conn);
 
-?>
-<div class="postsThread">
-    <a href="postsCreation.php">Poster un thread</a>
-</div>
-
-<?php include 'php/footer.php'; ?>
+include 'php/footer.php'; ?>

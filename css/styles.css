@@ -305,6 +305,28 @@ input[type="submit"]:hover {
 }
 
 .postsThread {
-  text-align: center; /* Center-align the button */
-  margin-bottom: 20px; /* Add some spacing at the bottom */
+  text-align: right; /* Alignement à droite */
+  margin-top: 20px; /* Espacement du haut */
+}
+
+.postsThread a {
+  display: flex; /* Utilisation de flexbox pour aligner le contenu */
+  align-items: center; /* Alignement vertical */
+  background-color: #555; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border-radius: 5px; /* Bord arrondi */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  font-weight: bold; /* Texte en gras */
+  transition: background-color 0.3s ease; /* Transition fluide de couleur de fond */
+}
+
+.postsThread a:hover {
+  background-color: #292929; /* Changement de couleur de fond au survol */
+}
+
+.postsThread img {
+  max-width: 30px; /* Largeur maximale de l'image */
+  height: auto; /* Hauteur automatique pour garder les proportions */
+  margin-right: 5px; /* Espacement entre l'image et le texte */
 }
