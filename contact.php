@@ -36,38 +36,66 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-
-
-
 <?php include 'php/header.php' ?>
-    <title>Nous contacter</title>
+<title>Nous contacter</title>
 <?php include 'php/navBar.php' ?>
 
 
-<div class="container">
-  <div class="forum">
-    <h1>Contactez-nous</h1>
-    <div class="contact-form">
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <div class="form-group">
-          <label for="pseudo">*Nom :</label>
-          <input type="text" id="pseudo" name="pseudo" required>
-        </div>
-        <div class="form-group">
-          <label for="email">*Email :</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">*Message :</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Envoyer">
-        </div>
-      </form>
+<section class="header-descriptin329">
+    <div class="container">
+        <h3>Questions</h3>
+        <ol class="breadcrumb breadcrumb839">
+            <li><a href="index.php">Accueil</a></li>
+            <li class="active">Nous contacter</li>
+        </ol>
     </div>
-  </div>
-</div>
+</section>
+<section class="google-map390">
+    <div class="container">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="400" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=48.5827178%2C7.7704832&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    frameborder="100px" scrolling="yes" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content920">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="ask-question-input-part032">
+                    <h4>Nous contacter</h4>
+                    <hr>
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                        <div class="username-part940">
+                            <span class="form-description43">Pseudo* </span><input type="text" name="pseudo"
+                                class="username029" placeholder="Entrer votre Pseudo" required>
+                        </div>
+                        <div class="email-part320">
+                            <span class="form-description442">E-Mail* </span><input type="email" name="email"
+                                class="email30" placeholder="Entrer votre Email" required>
+                        </div>
+                        <div class="question-title39">
+                            <span class="form-description433">Titre de la question* </span><input type="text"
+                                name="message_title" class="question-ttile32"
+                                placeholder="Entrer le titre de la question" required>
+                        </div>
+                        <div class="question-title39">
+                            <span class="form-description43313">Détails* </span>
+                            <textarea name="message" class="question-details3112" placeholder="Votre message ici"
+                                required></textarea>
+                        </div>
+                        <div class="publish-button2389">
+                            <input type="submit" name="submit" class="publis1291" value="Envoyer votre question">
+                        </div>
+                    </form>
+                </div>
+            </div>
 
+            <!-- end of col-md-9 -->
 
-<?php include 'php/footer.php' ?>
+            <?php include 'php/sideContent.php' ?>
+            <?php include 'php/footer.php' ?>
