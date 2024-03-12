@@ -1,5 +1,7 @@
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <div class="top-bar">
         <div class="container">
             <div class="row">
@@ -27,7 +29,6 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
