@@ -48,11 +48,10 @@
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="XXXX">Accueil</a></li>
-                        <li><a href="XXXX">Poster un thread</a></li>
-                        <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        <li class="dropdown"> <a href="post.php" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">Thread<span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="XXXX">Categories des questions</a></li>
+                                <li><a href="post.php">Categories des questions</a></li>
                                 <li><a href="XXXX">HTML</a></li>
                                 <li><a href="XXXX">CSS</a></li>
                                 <li><a href="XXXX">Javascript</a></li>
@@ -60,26 +59,26 @@
                             </ul>
                         </li>
 
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        <li class="dropdown"> <a href="blog.php" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="XXXX">Blog </a></li>
+                                <li><a href="blog.php">Blog </a></li>
                             </ul>
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="login.php">Connexion</a></li>
-                                <li><a href="XXXX"> Nous contacter</a></li>
-                                <li><a href="XXXX">  </a>Poster un thread</li>
+                                <li><a href="contact.php"> Nous contacter</a></li>
+                                <li><a href="question.php">Poser une question</a></li>
                                 <li><a href="XXXX"> Post-Details</a></li>
-                                <li><a href="XXXX">Tout les utlisateurs</a></li>
-                                <li><a href="XXXX">Question des utilisateurs</a></li>
+                                <li><a href="user.php">Tout les utlisateurs</a></li>
+                                <li><a href="question_utilisateur.php">Question des utilisateurs</a></li>
                                 <li><a href="XXXX"> Categories </a></li>
                                 <li><a href="XXXX"> 404 </a></li>
                             </ul>
                         </li>
-                        <li><a href="XXXX">Nous contacter</a></li>
+                        <li><a href="contact.php">Nous contacter</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
