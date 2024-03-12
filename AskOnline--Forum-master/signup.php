@@ -1,30 +1,28 @@
 <?php
-// Démarrer la session
-session_start();
-
 // Connexion à la base de données
 $conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 
 // Vérifier la connexion
 if (!$conn) {
-  die("La connexion à la base de données a échoué: " . mysqli_connect_error());
+    die("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
 
-// Vérifier si le formulaire de connexion est soumis
+// Vérifier si le formulaire d'inscription est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = $_POST['email'];
-  $mot_de_passe = $_POST['mot_de_passe'];
+    $pseudo = $_POST['pseudo'];
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $num = $_POST['num'];
+    $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
 
-  // Vérifier les informations d'identification dans la base de données
-  $sql = "SELECT * FROM utilisateurs WHERE email='$email'";
-  $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_assoc($result);
-  if ($row && password_verify($mot_de_passe, $row['mot_de_passe'])) {
-    $_SESSION['email'] = $email;
-    header("Location: profile.php");
-  } else {
-    echo "Email ou mot de passe incorrect.";
-  }
+    // Insérer les données dans la base de données
+    $sql = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, num, mot_de_passe) VALUES ('$pseudo', '$nom','$prenom', '$email', '$num', '$mot_de_passe')";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: profile.php");
+    } else {
+        echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
+    }
 }
 
 // Fermer la connexion à la base de données
@@ -48,7 +46,8 @@ mysqli_close($conn);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/loginstyle.css">
 
-
+  <link class="logo" rel="icon" type="image/png" href="image/Logo.png"/>
+  <title>Inscription</title>
 </head>
 
 <body>
@@ -59,10 +58,13 @@ mysqli_close($conn);
       <div class="modal-body modal-body-step-1 is-showing">
         <div class="title">S'inscrire</div>
         <div class="description">Bonjour, formulaire d'inscription</div>
-        <form>
-          <input type="text" placeholder="Username*" />
-          <input type="email" placeholder="E-Mail*" />
-          <input type="password" placeholder="Password*" />
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+          <input type="text" placeholder="Pseudo*" name="pseudo" required/>
+          <input type="email" placeholder="Nom" name="nom" />
+          <input type="email" placeholder="Prenom" name="prenom" />
+          <input type="email" placeholder="E-Mail*" name="email" required/>
+          <input type="email" placeholder="Téléphone" name="num" />
+          <input type="password" placeholder="Password*" name="mot_de_passe" required/>
           <input type="con-password" placeholder="Confirm Password*" />
           <div class="col-md-4">
             <div class="row text-center sign-with">
@@ -80,7 +82,7 @@ mysqli_close($conn);
             </div>
           </div>
           <div class="text-center">
-            <div class="button">S'inscrire</div>
+          <input class="button" type="submit" value="S'inscrire">
           </div>
         </form>
       </div>

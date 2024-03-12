@@ -44,6 +44,9 @@ mysqli_close($conn);
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
    <link rel="stylesheet" href="css/loginstyle.css">
+   
+   <link class="logo" rel="icon" type="image/png" href="image/Logo.png"/>
+   <title>Connexion</title>
 </head>
 
 <body>
