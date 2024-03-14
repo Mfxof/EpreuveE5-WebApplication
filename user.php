@@ -86,8 +86,7 @@
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
-                        <h3>À propos de <a
-                                href="https://loriscrugnola.000webhostapp.com/index.php"
+                        <h3>À propos de <a href="https://loriscrugnola.000webhostapp.com/index.php"
                                 target="_blank">CRUGNOLA Loris</a>
 
                             <span class="badge229">
@@ -122,16 +121,19 @@
                         </div>
                     </div>
                     <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...   LOUTRE !</p> <a href="#">Ajouter Crugnola Loris</a>
+                        <p>Pationnate description... bla bla... bla... LOUTRE !</p> <a href="#">Ajouter Crugnola
+                            Loris</a>
                     </div>
                     <div class="user-social3903">
                         <p>Follow : <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="https://www.linkedin.com/in/loris-crugnola/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/loris-crugnola/" target="_blank"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="https://www.instagram.com/ozu3rol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/ozu3rol/" target="_blank"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 
                             </span> </p>
@@ -154,9 +156,7 @@
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
-                        <h3>À propos de <a
-                                href="https://www.ashley.go.yj.fr/"
-                                target="_blank">Andrianarivony Ashley</a>
+                        <h3>À propos de <a href="https://www.ashley.go.yj.fr/" target="_blank">Andrianarivony Ashley</a>
 
                             <span class="badge229">
                                 <a>Admin</a></span>
@@ -171,18 +171,17 @@
                             <ul>
                                 <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 14 Mars
                                     2024</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> 
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong>
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 22</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
-                                        href="https://www.ashley.go.yj.fr/"
-                                        target="_blank">Ouvrir</a>
+                                        href="https://www.ashley.go.yj.fr/" target="_blank">Ouvrir</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="ul-list-user-right29">
                             <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> 
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
                                 </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Strasbourg
                                 </li>
@@ -226,9 +225,7 @@
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
-                        <h3>À propos de <a
-                                href="#"
-                                target="_blank">Kirby Loutre<3</a>
+                        <h3>À propos de <a href="#" target="_blank">Kirby Loutre</a>
 
 
                             <span class="badge201">
@@ -246,14 +243,13 @@
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 32</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
-                                        href="#"
-                                        target="_blank">Ouvrir</a>
+                                        href="#" target="_blank">Ouvrir</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="ul-list-user-right29">
                             <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> 
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
                                 </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Paris
                                 </li>
