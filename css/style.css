@@ -413,6 +413,12 @@ hr {
   border-top: 1px solid #ddd;
 }
 
+#content6 {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
 #main > input {
   display: none;
 }
@@ -470,7 +476,8 @@ hr {
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6 {
   display: block;
 }
 
