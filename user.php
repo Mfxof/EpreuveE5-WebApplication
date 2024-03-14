@@ -8,7 +8,7 @@
         <h3>Détails utilisateurs</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active">Détails utilisateurs</li>
+            <li class="active" id="sous_titre" >Détails utilisateurs</li>
         </ol>
     </div>
 </section>
