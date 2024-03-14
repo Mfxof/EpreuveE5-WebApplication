@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Insérer les données dans la base de données
   $sql = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, num, mot_de_passe) VALUES ('$pseudo', '$nom','$prenom', '$email', '$num', '$mot_de_passe')";
   if (mysqli_query($conn, $sql)) {
-    header("Location: index.php");
+    header("Location: profile.php");
   } else {
     echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
   }

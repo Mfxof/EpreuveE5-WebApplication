@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = mysqli_fetch_assoc($result);
     if ($row && password_verify($mot_de_passe, $row['mot_de_passe'])) {
         $_SESSION['email'] = $email;
-        header("Location: index.php");
+        header("Location: profile.php");
     } else {
         echo "Email ou mot de passe incorrect.";
     }
