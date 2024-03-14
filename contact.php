@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="mapouter">
             <div class="gmap_canvas">
                 <iframe width="100%" height="400" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=48.5827178%2C7.7704832&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Lycée+des+métiers+René+Cassin+4+rue+Schoch,+67000+Strasbourg&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="100px" scrolling="yes" marginheight="0" marginwidth="0">
                 </iframe>
             </div>
