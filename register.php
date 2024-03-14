@@ -65,7 +65,7 @@ mysqli_close($conn);
           <input type="email" placeholder="E-Mail*" name="email" required />
           <input type="tel" placeholder="Téléphone" name="num" />
           <input type="password" placeholder="Password*" name="mot_de_passe" required />
-          <input type="con-password" placeholder="Confirm Password*" />
+          <input type="password" placeholder="Confirm Password*" />
           <div class="col-md-4">
             <div class="row text-center sign-with">
               <div class="col-md-12">
