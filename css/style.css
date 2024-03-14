@@ -2153,6 +2153,18 @@ h5:hover {
   display: inline-block;
 }
 
+.badge201 a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 10px;
+  padding: 3px 10px 3px 10px;
+  background-color: #008000;
+  font-family: fontawesome;
+  border-radius: 2px;
+  display: inline-block;
+}
+
 .badge001 a {
   text-decoration: none;
   color: #fff;

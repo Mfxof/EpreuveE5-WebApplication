@@ -3,8 +3,8 @@
     <div class="status-part3821">
         <h4>Statistiques</h4>
 
-        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"> Questions(XX)</i></a>
-        <i class="fa fa-comment" aria-hidden="true"> Réponses(XX)</i>
+        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"> Questions(0)</i></a>
+        <i class="fa fa-comment" aria-hidden="true"> Réponses(0)</i>
     </div>
     <div class="categori-part329">
         <h4>Categories</h4>
@@ -114,15 +114,16 @@
 
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/images.png" alt="Image"></a>
+                <a href="#"><img src="image/IconOzu3rol.png" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>User0456</h5>
+                    <h5>CRUGNOLA Loris</h5>
                 </a>
+                <a href="#" class="designetion001">Admin</a>
                 <a href="#" class="designetion229">Expert</a>
                 <p>2065 points</p>
             </span>
@@ -131,7 +132,7 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/images.png" alt="Image"></a>
+                <a href="#"><img src="image/verouiller_logo.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
@@ -148,14 +149,14 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/images.png" alt="Image"></a>
+                <a href="#"><img src="image/loutrelogo.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>User0036</h5>
+                    <h5>Kirby Loutre<3</h5>
                 </a>
                 <a href="#" class="designetion201">Débutant</a>
                 <p>206 points</p>
@@ -165,15 +166,16 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/images.png" alt="Image"></a>
+                <a href="#"><img src="image/logoAshley.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>User6598</h5>
+                    <h5>Andrianarivony Ashley</h5>
                 </a>
+                <a href="#" class="designetion001">Admin</a>
                 <a href="#" class="designetion229">Expert</a>
                 <p>187 points</p>
             </span>
