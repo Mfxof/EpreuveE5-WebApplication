@@ -74,6 +74,83 @@
                             </span> </p>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="about-user2039 mt-70">
+                    <div class="user-title3930">
+                        <h3>À propos de <a
+                                href="https://arial-games.000webhostapp.com/portfolio/portfolio_New/index.php"
+                                target="_blank">Freyermuth
+                                Matys</a>
+
+                            <span class="badge229">
+                                <a>Admin</a></span>
+                            <span class="badge001">
+                                <a>Expert</a></span>
+                        </h3>
+                        <hr>
+                    </div>
+                    <div class="user-image293"> <img src="image/LogoXiode.png" alt="Image"> </div>
+                    <div class="user-list10039">
+                        <div class="ul-list-user-left29">
+                            <ul>
+                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 12 Mars
+                                    2024</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
+                                </li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 19</li>
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
+                                        href="https://arial-games.000webhostapp.com/portfolio/portfolio_New/index.php"
+                                        target="_blank">Ouvrir</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ul-list-user-right29">
+                            <ul>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> 07 88 XX
+                                    XX XX
+                                </li>
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Strasbourg
+                                </li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-description303">
+                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter Freyermuth Matys</a>
+                    </div>
+                    <div class="user-social3903">
+                        <p>Follow : <span>
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+
+                            </span> </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
                 <div class="user-statas921">
                     <div class="row">
                         <div class="col-md-6">
