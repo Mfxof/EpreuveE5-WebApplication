@@ -90,8 +90,7 @@
                     <div class="user-title3930">
                         <h3>À propos de <a
                                 href="https://arial-games.000webhostapp.com/portfolio/portfolio_New/index.php"
-                                target="_blank">Freyermuth
-                                Matys</a>
+                                target="_blank">CRUGNOLA Loris</a>
 
                             <span class="badge229">
                                 <a>Admin</a></span>
@@ -100,7 +99,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/LogoXiode.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/IconOzu3rol.png" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -108,9 +107,9 @@
                                     2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
-                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 19</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 20</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
-                                        href="https://arial-games.000webhostapp.com/portfolio/portfolio_New/index.php"
+                                        href="https://loris.crugnola.000webhostapp.com/index.php"
                                         target="_blank">Ouvrir</a>
                                 </li>
                             </ul>
@@ -127,7 +126,7 @@
                         </div>
                     </div>
                     <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter Freyermuth Matys</a>
+                        <p>Pationnate description... bla bla... bla...   LOUTRE !</p> <a href="#">Ajouter Crugnola Loris</a>
                     </div>
                     <div class="user-social3903">
                         <p>Follow : <span>
