@@ -51,16 +51,7 @@
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.php">Accueil</a></li>
-                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Thread<span class="caret"></span></a>
-                            <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="post.php">Categories des questions</a></li>
-                                <li><a href="XXXX">HTML //</a></li>
-                                <li><a href="XXXX">CSS //</a></li>
-                                <li><a href="XXXX">Javascript //</a></li>
-                                <li><a href="XXXX">Bootstrap //</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="post.php">Thread</a></li>
 
                         <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
