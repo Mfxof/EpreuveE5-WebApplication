@@ -9,7 +9,7 @@
         <h3>All Question</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active">Category Type</li>
+            <li class="active" id="sous_class">Type de categories</li>
         </ol>
     </div>
 </section>

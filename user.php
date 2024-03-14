@@ -8,7 +8,7 @@
         <h3>Détails utilisateurs</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active">Détails utilisateurs</li>
+            <li class="active" id="sous_class">Détails utilisateurs</li>
         </ol>
     </div>
 </section>
@@ -49,7 +49,7 @@
                         <div class="ul-list-user-right29">
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> </li>
-                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Strasbourg
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
                             </ul>
@@ -114,7 +114,7 @@
                         <div class="ul-list-user-right29">
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> </li>
-                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Strasbourg
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
                             </ul>
@@ -183,7 +183,7 @@
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
                                 </li>
-                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Strasbourg
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
                             </ul>
@@ -251,7 +251,7 @@
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
                                 </li>
-                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> Paris
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Paris
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
                             </ul>

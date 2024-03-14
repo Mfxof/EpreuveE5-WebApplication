@@ -7,7 +7,7 @@
         <h3>Questions des utilisateurs</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active">Questions des utilisateurs</li>
+            <li class="active" id="sous_class">Questions des utilisateurs</li>
         </ol>
     </div>
 </section>

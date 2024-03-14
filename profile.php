@@ -57,7 +57,7 @@ $conn->close();
         <h3>Mon profile</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active">Mon profile</li>
+            <li class="active" id="sous_class">Mon profile</li>
         </ol>
     </div>
 </section>
