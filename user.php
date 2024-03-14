@@ -109,7 +109,7 @@
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 20</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
-                                        href="https://loris.crugnola.000webhostapp.com/index.php"
+                                        href="https://loriscrugnola.000webhostapp.com/index.php"
                                         target="_blank">Ouvrir</a>
                                 </li>
                             </ul>
@@ -132,11 +132,10 @@
                         <p>Follow : <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i
-                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/loris-crugnola/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/ozu3rol/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 
                             </span> </p>
