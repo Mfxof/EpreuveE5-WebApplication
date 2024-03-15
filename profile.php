@@ -85,7 +85,47 @@ $conn->close();
     <div class="container">
         <div class="row">
             <div class="col-md-9">
+            <div class="about-user2039 mt-70">
+                    <div class="user-title3930">
+                        <h3>À propos de <a href=""
+                                target="_blank"></a>
 
+                            <!-- <span class="badge229">
+                                <a>Admin</a></span>
+                            <span class="badge001">
+                                <a>Expert</a></span> -->
+                        </h3>
+                        <hr>
+                    </div>
+                    <div class="user-image293"> <img src="image/verouiller_logo.jpg" alt="Image"> </div>
+                    <div class="user-list10039">
+                        <div class="ul-list-user-left29">
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays :</strong> <input type="text"/></li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> <input type="text"/></li>
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong> <input type="text"/></li>
+                            </ul>
+                        </div>
+                        <div class="ul-list-user-right29">
+                            <ul>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> <input type="text"/></li>
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Vile:</strong> <input type="text"/></li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong> <input type="text"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-description303">
+                        <p>Description... </p>
+                    </div>
+                    <div class="user-social3903">
+                        <p><i class="fa fa-facebook" aria-hidden="true"></i> Facebook : <input type="text" placeholder="Facebook" name="facebook" /></p>
+                        <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter : <input type="text" placeholder="Twitter" name="twitter" /></p>
+                        <p><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn : <input type="text" placeholder="LinkedIn" name="linkedin" /></p>
+                        <p><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest : <input type="text" placeholder="Pinterest" name="pinterest" /></p>
+                        <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram : <input type="text" placeholder="Instagram" name="instagram" /></p>
+                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail : <input type="text" placeholder="Mail" name="Mail" /></p>
+                    </div>
+                </div>
             </div>
 
             <!-- end of col-md-9 -->
