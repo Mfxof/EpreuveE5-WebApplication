@@ -158,7 +158,7 @@
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>Kirby Loutre<3</h5>
+                    <h5>Kirby Loutre<3< /h5>
                 </a>
                 <a href="#" class="designetion201">Débutant</a>
                 <p>206 points</p>
@@ -211,10 +211,22 @@
         <h4>Recent Post</h4>
         <div class="post-details021">
             <a href="#">
-                <h5>Combien gagnent les développeurs web</h5>
+                <h5>Comment préparer un
+                    entretien ?</h5>
             </a>
-            <p>Je pense à faire carrière dans le développement web et je me demandais...</p>
-            <small style="color: #848991">12, Mars 2024</small>
+            <p>Ne serait-il pas formidable de savoir exactement quelles questions un
+                responsable du recrutement...</p>
+            <small style="color: #848991">XX, Mars 2024</small>
+        </div>
+        <hr>
+        <div class="post-details021">
+            <a href="#">
+                <h5>Crée un site dynamique
+                    rapidement ?</h5>
+            </a>
+            <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
+                temps record ? Malheureusement...</p>
+            <small style="color: #848991">XX, Mars 2024</small>
         </div>
         <hr>
         <div class="post-details021">
@@ -222,15 +234,7 @@
                 <h5>Combien gagnent les développeurs web</h5>
             </a>
             <p>Je pense à faire carrière dans le développement web et je me demandais...</p>
-            <small style="color: #848991">7, Mars 2024</small>
-        </div>
-        <hr>
-        <div class="post-details021">
-            <a href="#">
-                <h5>Combien gagnent les développeurs web</h5>
-            </a>
-            <p>Je pense à faire carrière dans le développement web et je me demandais...</p>
-            <small style="color: #848991">16, Février 2024</small>
+            <small style="color: #848991">XX, Février 2024</small>
         </div>
 
         <!--       end recent post    -->
