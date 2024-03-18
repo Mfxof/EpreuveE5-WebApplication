@@ -27,6 +27,7 @@
 
                                 <span class="badge001">
                                     <a>Expert</a></span>
+                                    
                                 <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
                                     adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis
                                     neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac

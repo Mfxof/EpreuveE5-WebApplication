@@ -276,29 +276,6 @@
 
 
 
-
-
-
-
-
-                <div class="user-statas921">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="ul_list_ul_list-icon-ok281">
-                                <ul>
-                                    <li><a href="#">Questions ( 4 )</a></li>
-                                    <li><a href="#">Asked Questions ( 0 )</a></li>
-                                    <li><a href="#">Followed Questions ( 3 )</a></li>
-                                    <li><a href="#">Posts ( 10 )</a></li>
-                                    <li><a href="#">Points ( 208 )</a></li>
-                                    <li><a href="#">Followers ( 47 )</a></li>
-                                    <li><a href="#">Comments ( 1 )</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
             <!--                end of col-md-9 -->
             <?php include 'php/sideContent.php' ?>
