@@ -6,10 +6,10 @@
 <!--    breadcumb of category -->
 <section class="header-descriptin329">
     <div class="container">
-        <h3>All Question</h3>
+        <h3>Thread</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active" id="sous_class">Type de categories</li>
+            <li class="active" id="sous_class">Thread</li>
         </ol>
     </div>
 </section>

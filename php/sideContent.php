@@ -9,10 +9,11 @@
     <div class="categori-part329">
         <h4>Categories</h4>
         <ul>
-            <li><a href="divers/error.php">web developer</a></li>
-            <li><a href="divers/error.php">Andriod developer</a></li>
-            <li><a href="divers/error.php">grapics developer</a></li>
-            <li><a href="divers/error.php">web developer</a></li>
+            <li><a href="post.php#developpeur_web">Développeur web</a></li>
+            <li><a href="post.php#developpeur_Android">Développeur Android</a></li>
+            <li><a href="post.php#developpeur_graphique">Développeur graphique</a></li>
+            <li><a href="post.php#developpeur_web">Développeur web</a></li>
+
 
         </ul>
     </div>
@@ -189,15 +190,16 @@
     <div class="tags-part2398">
         <h4>Tags</h4>
         <ul>
-            <li><a href="#">Alytics</a></li>
-            <li><a href="#">Computer</a></li>
-            <li><a href="#">Developer</a></li>
-            <li><a href="#">Google</a></li>
-            <li><a href="#">Interview</a></li>
-            <li><a href="#">Programmer</a></li>
-            <li><a href="#">Salary</a></li>
-            <li><a href="#">University</a></li>
-            <li><a href="#">Employee</a></li>
+            <li><a href="post.php#Analytique">Analytique</a></li>
+            <li><a href="post.php#Ordinateur">Ordinateur</a></li>
+            <li><a href="post.php#Developpeur">Développeur</a></li>
+            <li><a href="post.php#Google">Google</a></li>
+            <li><a href="post.php#Entretien">Entretien</a></li>
+            <li><a href="post.php#Programmeur">Programmeur</a></li>
+            <li><a href="post.php#Salaire">Salaire</a></li>
+            <li><a href="post.php#Université">Université</a></li>
+            <li><a href="post.php#Employe">Employé</a></li>
+
 
         </ul>
 
