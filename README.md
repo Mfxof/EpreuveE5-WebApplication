@@ -29,13 +29,9 @@
   - [ ] Page Forum
     - [ ] Sortie des Post dynamiquement
   - Pages
-    - [ ] Page A propos
+    - [x] Page A propos
     - [ ] Page Servies
-    - [ ] Page FAQ
-  - [ ] Pages Magasin //?//
-    - [ ] Page Produits
-    - [ ] Page Panier
-    - [ ] Page Caisse
+    - [x] Page FAQ
   - [x]  Création de formulaire d'inscription
     - [ ]  Empécher les inscriptions double email / pseudo
   - [x] Création de formulaire de connexion

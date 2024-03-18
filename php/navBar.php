@@ -67,6 +67,7 @@
                                 <li><a href="user.php">Tout les utlisateurs</a></li>
                                 <li><a href="question_utilisateur.php">Question des utilisateurs</a></li>
                                 <li><a href="XXXX"> Categories //</a></li>
+                                <li><a href="faq.php">FAQ</a></li>
                             </ul>
                         </li>
                         <li><a href="about-us.php">À Propos</a></li>
