@@ -5,10 +5,10 @@
 <!-- ======breadcrumb ======-->
 <section class="header-descriptin329">
     <div class="container">
-        <h3>À Propos de nous</h3>
+        <h3>À Propos</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active" id="sous_class">About Us</li>
+            <li class="active" id="sous_class">À Propos</li>
         </ol>
     </div>
 </section>
@@ -224,25 +224,28 @@
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
-                        <h3>À propos de <a href="#" target="_blank">Kirby Loutre</a>
+                        <h3>À propos de <a href="https://william-carta.webador.fr/" target="_blank">William Carta</a>
 
 
-                            <span class="badge201">
-                                <a>Débutant</a></span>
+                        <span class="badge229">
+                                <a>Admin</a></span>
+                            <span class="badge001">
+                                <a>Expert</a></span>
+                                
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/loutrelogo.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/william.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 19 Mars
+                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 25 Mars
                                     2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
-                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 32</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 24</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
-                                        href="#" target="_blank">Ouvrir</a>
+                                        href="https://william-carta.webador.fr/" target="_blank">Ouvrir</a>
                                 </li>
                             </ul>
                         </div>
@@ -250,14 +253,14 @@
                             <ul>
                                 <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
                                 </li>
-                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Paris
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
                             </ul>
                         </div>
                     </div>
                     <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter Kirby Loutre</a>
+                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter William Carta</a>
                     </div>
                     <div class="user-social3903">
                         <p>Follow : <span>
