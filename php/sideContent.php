@@ -149,16 +149,17 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/loutrelogo.jpg" alt="Image"></a>
+                <a href="#"><img src="image/william.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>Kirby Loutre<3</h5>
+                    <h5>William Carta</h5>
                 </a>
-                <a href="#" class="designetion201">Débutant</a>
+                <a href="#" class="designetion001">Admin</a>
+                <a href="#" class="designetion229">Expert</a>
                 <p>206 points</p>
             </span>
 
