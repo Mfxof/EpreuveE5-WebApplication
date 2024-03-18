@@ -2181,6 +2181,18 @@ h5:hover {
   display: inline-block;
 }
 
+.badge210 a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 10px;
+  padding: 3px 10px 3px 10px;
+  background-color: #0077ff;
+  font-family: fontawesome;
+  border-radius: 2px;
+  display: inline-block;
+}
+
 .user-image293 img {
   height: 50px;
   width: 50px;
