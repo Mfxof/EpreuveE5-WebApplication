@@ -44,6 +44,8 @@ $conn->close();
 
 
 
+<!-- Metrre nom, prenom, pseudo, description, mot de passe, boutton modifier/sauvgarder -->
+
 
 
 
