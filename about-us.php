@@ -1,5 +1,5 @@
 <?php include 'php/header.php' ?>
-<title>About Us</title>
+<title>À Propos</title>
 <?php include 'php/navBar.php' ?>
 
 <!-- ======breadcrumb ======-->

@@ -1,5 +1,5 @@
 <?php include 'php/header.php' ?>
-<title>Nous contacter</title>
+<title>Blog</title>
 <?php include 'php/navBar.php' ?>
 
 

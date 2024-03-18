@@ -1,5 +1,5 @@
 <?php include 'php/header.php' ?>
-<title>Questions utilisateurs</title>
+<title>Utilisateurs</title>
 <?php include 'php/navBar.php' ?>
 
 <!-- ======breadcrumb ======-->
@@ -295,7 +295,7 @@
                                 <a>Admin</a></span>
                             <span class="badge001">
                                 <a>Expert</a></span>
-                                
+
                         </h3>
                         <hr>
                     </div>
