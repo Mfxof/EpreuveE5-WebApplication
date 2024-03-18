@@ -132,23 +132,6 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/verouiller_logo.jpg" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>User1289</h5>
-                </a>
-                <a href="#" class="designetion201">Débutant</a>
-                <p>1271 points</p>
-            </span>
-
-        </div>
-        <hr>
-        <div class="pints-wrapper">
-            <div class="left-user3898">
                 <a href="#"><img src="image/william.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
@@ -160,6 +143,23 @@
                 </a>
                 <a href="#" class="designetion001">Admin</a>
                 <a href="#" class="designetion229">Expert</a>
+                <p>1264 points</p>
+            </span>
+
+        </div>
+        <hr>
+        <div class="pints-wrapper">
+            <div class="left-user3898">
+                <a href="#"><img src="image/loutrelogo.jpg" alt="Image"></a>
+                <div class="imag-overlay39">
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <span class="points-details938">
+                <a href="#">
+                    <h5>Kirby Loutre<3</h5>
+                </a>
+                <a href="#" class="designetion201">Débutant</a>
                 <p>206 points</p>
             </span>
 

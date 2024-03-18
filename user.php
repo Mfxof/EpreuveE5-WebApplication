@@ -307,7 +307,7 @@
                                     2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
-                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 24</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 23</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
                                         href="https://william-carta.webador.fr/" target="_blank">Ouvrir</a>
                                 </li>
