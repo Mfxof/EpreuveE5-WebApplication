@@ -69,7 +69,7 @@
                                 <li><a href="XXXX"> Categories //</a></li>
                             </ul>
                         </li>
-                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="about-us.php">À Propos</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
