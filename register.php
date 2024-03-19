@@ -1,4 +1,33 @@
-<?php include 'php/db_connect.php'; ?>
+<?php
+// Connexion à la base de données
+$conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
+
+// Vérifier la connexion
+if (!$conn) {
+  die("La connexion à la base de données a échoué: " . mysqli_connect_error());
+}
+
+// Vérifier si le formulaire d'inscription est soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $pseudo = $_POST['pseudo'];
+  $nom = $_POST['nom'];
+  $prenom = $_POST['prenom'];
+  $email = $_POST['email'];
+  $num = $_POST['num'];
+  $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
+
+  // Insérer les données dans la base de données
+  $sql = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, num, mot_de_passe) VALUES ('$pseudo', '$nom','$prenom', '$email', '$num', '$mot_de_passe')";
+  if (mysqli_query($conn, $sql)) {
+    header("Location: profile.php");
+  } else {
+    echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
+  }
+}
+
+// Fermer la connexion à la base de données
+mysqli_close($conn);
+?>
 
 <!DOCTYPE html>
 <html>
