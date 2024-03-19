@@ -1,4 +1,3 @@
-
 <?php
 // Inclure la connexion à la base de données
 include 'php/db_connect.php';
