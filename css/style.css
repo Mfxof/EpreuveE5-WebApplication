@@ -1455,7 +1455,7 @@ h5:hover {
   text-decoration: none;
 }
 
-#sous_class{
+#sous_class {
   color: #dfdfdf;
 }
 
@@ -2404,13 +2404,11 @@ h5:hover {
   }
 }
 
-
-
 .sticky-button {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -2427,3 +2425,5 @@ h5:hover {
 .sticky-button i {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
 }
+
+/* Stat Side Bar */

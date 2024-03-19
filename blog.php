@@ -26,7 +26,7 @@
                 $articles_par_page = 3;
 
                 // Calculer la page actuelle
-                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+                $page = isset ($_GET['page']) ? $_GET['page'] : 1;
 
                 // Calculer l'offset
                 $offset = ($page - 1) * $articles_par_page;
@@ -55,7 +55,7 @@
                         echo '</div>';
                         echo '<p>' . $row["description"] . '</p>';
                         echo '<div class="continue-deatils738">';
-                        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a>';
+                        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continuer à lire</i></a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';

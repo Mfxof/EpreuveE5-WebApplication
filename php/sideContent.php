@@ -3,8 +3,35 @@
     <div class="status-part3821">
         <h4>Statistiques</h4>
 
-        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"> Questions(0)</i></a>
-        <i class="fa fa-comment" aria-hidden="true"> Réponses(0)</i>
+        <?php
+        // Inclure la connexion à la base de données
+        include 'php/db_connect.php';
+
+        // Requête pour compter le nombre total d'entrées dans la base de données
+        $sqlCountEntries = "SELECT COUNT(*) AS totalEntries FROM posts";
+        $resultCountEntries = $conn->query($sqlCountEntries);
+        $rowCountEntries = $resultCountEntries->fetch_assoc();
+        $totalEntries = $rowCountEntries['totalEntries'];
+
+        // Initialiser le total des réponses
+        $totalReponses = 0;
+
+        // Requête pour récupérer le nombre de réponses pour chaque question et les additionner
+        $sqlGetReponses = "SELECT nbReponses FROM posts WHERE tags NOT LIKE '%question%'";
+        $resultGetReponses = $conn->query($sqlGetReponses);
+        while ($row = $resultGetReponses->fetch_assoc()) {
+            $totalReponses += $row['nbReponses'];
+        }
+
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true"> Questions(' . $totalEntries . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true"> Réponses(' . $totalReponses . ')</i></p>';
+
+
+        // Fermeture de la connexion
+        $conn->close();
+
+        ?>
+
     </div>
     <div class="categori-part329">
         <h4>Categories</h4>
@@ -158,7 +185,7 @@
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>Kirby Loutre<3</h5>
+                    <h5>Kirby Loutre</h5>
                 </a>
                 <a href="#" class="designetion210">Vérifer</a>
                 <a href="#" class="designetion201">Débutant</a>
