@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 required></textarea>
                         </div>
                         <div class="publish-button2389">
-                            <input type="submit" name="submit" class="publis1291" value="Envoyer votre question">
+                            <input type="submit" name="submit" class="publis1291" value="Envoyer votre message">
                         </div>
                     </form>
                 </div>

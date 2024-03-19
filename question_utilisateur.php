@@ -1,5 +1,5 @@
 <?php include 'php/header.php' ?>
-<title>Utilisateurs</title>
+<title>Questions</title>
 <?php include 'php/navBar.php' ?>
 
 <section class="header-descriptin329">
@@ -24,7 +24,7 @@
                 $questions_par_page = 5;
 
                 // Calculer la page actuelle
-                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+                $page = isset ($_GET['page']) ? $_GET['page'] : 1;
 
                 // Calculer l'offset
                 $offset = ($page - 1) * $questions_par_page;
@@ -46,10 +46,21 @@
                         echo '</div>';
                         echo '<div class="col-md-11">';
                         echo '<div class="user-description3903"> <a href="#">Demander à ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
-                        echo '<span class="badge229">';
-                        echo '<a>Admin</a></span>';
-                        echo '<span class="badge001">';
-                        echo '<a>Expert</a></span>';
+                        if ($row["tags"] == 1) {
+                            echo '<span class="badge229"><a>Admin</a></span>';
+                        } elseif ($row["tags"] == 2) {
+                            echo '<span class="badge001"><a>Expert</a></span>';
+                        } elseif ($row["tags"] == 3) {
+                            echo '<span class="badge210"><a>Vérifer</a></span>';
+                        } elseif ($row["tags"] == 12) {
+                            echo '<span class="badge229"><a>Admin</a></span>';
+                            echo '<span class="badge001"><a>Expert</a></span>';
+                        } elseif ($row["tags"] == 13) {
+                            echo '<span class="badge210"><a>Vérifer</a></span>';
+                            echo '<span class="badge001"><a>Expert</a></span>';
+                        } else {
+                            echo ' ';
+                        }
                         echo '<p>' . $row["question"] . '</p>';
                         echo '</div>';
                         echo '<div class="user-social3903">';
@@ -107,7 +118,10 @@
                 mysqli_close($conn);
                 ?>
 
-<button class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
+<form action="send_user_question.php" method="post">
+    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
+</form>
+
 
             </div>
             <!--                end of col-md-9 -->
