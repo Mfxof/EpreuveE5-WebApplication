@@ -53,11 +53,7 @@
                         <li><a href="index.php">Accueil</a></li>
                         <li><a href="post.php">Thread</a></li>
 
-                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
-                            <ul class="dropdown-menu animated zoomIn">
-                                <li><a href="blog.php">Blog </a></li>
-                            </ul>
+                        <li><a href="blog.php">Blog</a>
                         </li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
