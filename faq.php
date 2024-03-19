@@ -34,10 +34,11 @@
                     </div>
                     <div class="accordion-content">
                         <br>
-                        <p>Inscription et profil utilisateur : Lorsque vous vous inscrivez sur le forum, vous fournissez des informations telles que votre nom d'utilisateur, votre adresse e-mail et d'autres détails pour créer un profil. Ces informations sont utilisées pour vous identifier sur le forum et pour personnaliser votre expérience utilisateur. <br><br>
+                        <p>Inscription et profil utilisateur : Lorsque vous vous inscrivez sur le forum, vous fournissez des informations telles que votre nom d'utilisateur, votre adresse e-mail et d'autres détails pour créer un profil. <br> Ces informations sont utilisées pour vous identifier sur le forum et pour personnaliser votre expérience utilisateur. <br><br>
                         Publication de messages : Lorsque vous publiez des messages sur le forum, ceux-ci deviennent visibles publiquement pour les autres utilisateurs. <br> Attention à ne pas fournir des informations à caractère personnelles, sensibles censés rester confidentiel. <br><br>
                         Analyse et suivi : Le forum collecte des données sur la manière dont vous utilisez le site, telles que les pages que vous consultez, le temps passé sur le site et les interactions avec d'autres utilisateurs. <br> Ces données sont utilisées à des fins d'analyse pour améliorer le fonctionnement du forum, personnaliser le contenu affiché et fournir des recommandations pertinentes. <br><br>
-                        Communication : Vos informations de contact, telles que votre adresse e-mail, peuvent être utilisées par le forum pour vous envoyer des notifications concernant vos activités sur le site, des mises à jour de la communauté ou des newsletters.. </p>
+                        Communication : Vos informations de contact, telles que votre adresse e-mail, peuvent être utilisées par le forum pour vous envoyer des notifications concernant vos activités sur le site, des mises à jour de la communauté ou des newsletters..
+                        </p>
                         <br>
                     </div>
                 </div>
@@ -47,11 +48,9 @@
                     </div>
                     <div class="accordion-content">
                         <br>
-                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
-                            adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis
-                            neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                            turpis egestas. Curabitur vitae velit in neque dictum blandit. Curabitur vitae velit
-                            in neque dictum blandit.Curabitur vitae velit in neque dictum blandit. </p>
+                        <p>Diriger vous sur la page <a href="login.php">Connexion</a> et y entrée votre adresse mail et votre mot de passe. <br>
+                        Sinon diriger vous sur la page <a href="register.php">Inscription</a> et y remplir le formulaire d'inscription
+                        </p>
                         <br>
                     </div>
                 </div>
@@ -61,11 +60,10 @@
                     </div>
                     <div class="accordion-content">
                         <br>
-                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
-                            adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis
-                            neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                            turpis egestas. Curabitur vitae velit in neque dictum blandit. Curabitur vitae velit
-                            in neque dictum blandit.Curabitur vitae velit in neque dictum blandit. </p>
+                        <p>Pour cela diriger vous sur la page <a href="question_utilisateur.php">Questions</a>. <br>
+                        Elle réferencie les différentes questions posées par les utilisateurs. <br>
+                        Cliquez ensuite en bas à droite sur "Poser une Question"  et remplire le formulaire de question.
+                        </p>
                         <br>
                     </div>
                 </div>
@@ -75,11 +73,10 @@
                     </div>
                     <div class="accordion-content">
                         <br>
-                        <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
-                            adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis
-                            neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                            turpis egestas. Curabitur vitae velit in neque dictum blandit. Curabitur vitae velit
-                            in neque dictum blandit.Curabitur vitae velit in neque dictum blandit. </p>
+                        <p>Pour cela diriger vous sur la page <a href="post.php">Thread</a>. <br>
+                        Elle réferencie les différents fil de discussion crées par les utilisateurs. <br>
+                        Cliquez ensuite en bas à droite sur "Crée un Fil de Discussion"  et remplire le formulaire.
+                        </p>
                         <br>
                     </div>
                 </div>
