@@ -58,11 +58,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter Freyermuth Matys</a>
-                    </div>
                     <div class="user-social3903">
-                        <p>Follow : <span>
+                        <p>
+                            <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="https://www.linkedin.com/in/matys-freyermuth/" target="_blank"><i
@@ -71,8 +69,8 @@
                                 <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-
-                            </span> </p>
+                            </span>
+                        </p>
                     </div>
                 </div>
 
@@ -123,12 +121,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla... LOUTRE !</p> <a href="#">Ajouter Crugnola
-                            Loris</a>
-                    </div>
                     <div class="user-social3903">
-                        <p>Follow : <span>
+                        <p>
+                            <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="https://www.linkedin.com/in/loris-crugnola/" target="_blank"><i
@@ -138,8 +133,8 @@
                                 <a href="https://www.instagram.com/ozu3rol/" target="_blank"><i class="fa fa-instagram"
                                         aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-
-                            </span> </p>
+                            </span>
+                        </p>
                     </div>
                 </div>
 
@@ -192,11 +187,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter Andrianarivony Ashley</a>
-                    </div>
                     <div class="user-social3903">
-                        <p>Follow : 
+                        <p>
                             <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -259,11 +251,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="user-description303">
-                        <p>Pationnate description... bla bla... bla...</p> <a href="#">Ajouter William Carta</a>
-                    </div>
                     <div class="user-social3903">
-                        <p>Follow : <span>
+                        <p>
+                            <span>
                                 <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -271,8 +261,8 @@
                                 <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-
-                            </span> </p>
+                            </span>
+                        </p>
                     </div>
                 </div>
 
