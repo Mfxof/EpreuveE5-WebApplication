@@ -99,7 +99,7 @@ $conn->close();
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/verouiller_logo.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/verouiller_logo.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>

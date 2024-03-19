@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/logoProfile_1.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/logoProfile_1.jpg" alt="image"> </a> <a href="#"><i
                                                 aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
                                                 class="fa fa-check" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
                                                 class="fa fa-check" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/logoProfile_2.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/logoProfile_2.jpg" alt="image"> </a> <a href="#"><i
                                                 aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -281,7 +281,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/logoProfile_3.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/logoProfile_3.jpg" alt="image"> </a> <a href="#"><i
                                                 class="fa fa-check" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -356,7 +356,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a href="#"><i
                                                 class="fa fa-check" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -494,7 +494,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/logoProfile_1.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/logoProfile_1.jpg" alt="image"> </a> <a href="#"><i
                                                 aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -580,7 +580,7 @@
                             <div class="row">
                                 <div class="col-md-1">
                                     <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/logoProfile_3.jpg" alt="image"> </a> <a href="#"><i
+                                        <a href="#"><img src="image/icones-user/logoProfile_3.jpg" alt="image"> </a> <a href="#"><i
                                                 class="fa fa-check" aria-hidden="true"></i></a>
                                     </div>
                                 </div>

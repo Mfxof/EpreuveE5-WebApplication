@@ -94,7 +94,7 @@
         <h4>Les points les plus élevés</h4>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/LogoXiode.png" alt="Image"></a>
+                <a href="#"><img src="image/icones-user/LogoXiode.png" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
@@ -115,7 +115,7 @@
 
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/IconOzu3rol.png" alt="Image"></a>
+                <a href="#"><img src="image/icones-user/IconOzu3rol.png" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
@@ -133,7 +133,7 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/william.jpg" alt="Image"></a>
+                <a href="#"><img src="image/icones-user/LogoWilliam.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
@@ -151,7 +151,7 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/loutrelogo.jpg" alt="Image"></a>
+                <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>
@@ -169,7 +169,7 @@
         <hr>
         <div class="pints-wrapper">
             <div class="left-user3898">
-                <a href="#"><img src="image/logoAshley.jpg" alt="Image"></a>
+                <a href="#"><img src="image/icones-user/logoAshley.jpg" alt="Image"></a>
                 <div class="imag-overlay39">
                     <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
                 </div>

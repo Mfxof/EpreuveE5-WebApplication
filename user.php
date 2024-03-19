@@ -31,7 +31,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/LogoXiode.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/LogoXiode.png" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -96,7 +96,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/IconOzu3rol.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/IconOzu3rol.png" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -165,7 +165,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/logoAshley.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/logoAshley.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -237,7 +237,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/loutrelogo.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/loutrelogo.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -303,7 +303,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/william.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/LogoWilliam.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -364,7 +364,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/logoProfile_1.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/logoProfile_1.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -474,7 +474,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/logoProfile_2.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/logoProfile_2.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -573,7 +573,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/logoProfile_3.jpg" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/logoProfile_3.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
