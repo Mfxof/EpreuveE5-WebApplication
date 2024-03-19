@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 14 Mars 2024 à 09:25
+-- Généré le :  Mar 19 Mars 2024 à 12:07
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -52,7 +52,8 @@ INSERT INTO `messages` (`id`, `pseudo`, `email`, `message`, `created_at`) VALUES
 (11, '', 'xiode.gam@gmail.com', 'sa', '2024-03-11 13:25:13'),
 (12, '', 'xiode.gam@gmail.com', 'a\r\n', '2024-03-11 13:25:22'),
 (13, '', 'xiode.gam@gmail.com', 'asa', '2024-03-11 13:25:51'),
-(14, 'matys FREYERMUTH', 'xiode.gam@gmail.com', 'as\r\n', '2024-03-11 13:26:27');
+(14, 'matys FREYERMUTH', 'xiode.gam@gmail.com', 'as\r\n', '2024-03-11 13:26:27'),
+(15, 'Pablo', 'msa^sa@zdz.dz', 'dad', '2024-03-18 15:54:00');
 
 -- --------------------------------------------------------
 
@@ -101,6 +102,10 @@ CREATE TABLE `utilisateurs` (
   `email` varchar(50) NOT NULL,
   `num` varchar(16) NOT NULL,
   `mot_de_passe` varchar(255) NOT NULL,
+  `contry` text NOT NULL,
+  `city` text NOT NULL,
+  `age` int(5) NOT NULL,
+  `web` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -108,12 +113,12 @@ CREATE TABLE `utilisateurs` (
 -- Contenu de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `created_at`) VALUES
-(1, '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '0', '$2y$10$Hs44h6mRmQUXavpE/Y1lD.KyCD.y5HcSkocsl7B8eiECP2.8JeQZa', '2024-03-11 13:44:40'),
-(2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '2024-03-11 13:44:40'),
-(4, '', 'sas', 'as', 'ass@as.as', '', '$2y$10$0GoHP1fvWHT3S.6UOPzOH.zMQRyrJNt9.dopNl//BJuqv/jIjws02', '2024-03-11 13:48:38'),
-(5, 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', '2024-03-12 12:38:19'),
-(7, 'matys FREYERMUTH', '', '', 'moi@sa.sa', '', '$2y$10$rN0sHRrCJz2XrYtUDNQF4uXf/j42J0iPGYb16dhDjMdSVo7iU18KS', '2024-03-12 14:44:10');
+INSERT INTO `utilisateurs` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `contry`, `city`, `age`, `web`, `created_at`) VALUES
+(1, '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '0', '$2y$10$Hs44h6mRmQUXavpE/Y1lD.KyCD.y5HcSkocsl7B8eiECP2.8JeQZa', 'France', 'Strasbourg', 0, 'https://arial-games.000webhostapp.com/portfolio/portfolio_New/index.php', '2024-03-11 13:44:40'),
+(2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '', '', 0, '', '2024-03-11 13:44:40'),
+(4, '', 'sas', 'as', 'ass@as.as', '', '$2y$10$0GoHP1fvWHT3S.6UOPzOH.zMQRyrJNt9.dopNl//BJuqv/jIjws02', '', '', 0, '', '2024-03-11 13:48:38'),
+(5, 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', '', '', 0, '', '2024-03-12 12:38:19'),
+(7, 'matys FREYERMUTH', '', '', 'moi@sa.sa', '', '$2y$10$rN0sHRrCJz2XrYtUDNQF4uXf/j42J0iPGYb16dhDjMdSVo7iU18KS', '', '', 0, '', '2024-03-12 14:44:10');
 
 --
 -- Index pour les tables exportées
@@ -146,7 +151,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT pour la table `posts`
 --

@@ -1,4 +1,46 @@
-<?php include 'php/header.php' ?>
+<?php
+// Inclure la connexion à la base de données
+include 'php/db_connect.php';
+
+// Requête pour récupérer les données des blogs depuis la base de données
+$sql = "SELECT * FROM Blogs";
+$result = mysqli_query($conn, $sql);
+
+// Vérifier s'il y a des données
+if (mysqli_num_rows($result) > 0) {
+    // Boucle à travers chaque ligne de résultat
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Afficher les données du blog
+        echo '<div class="blog-part3903">';
+        echo '<img src="' . $row["image"] . '" alt="Image" class="img-responsive">';
+        echo '<div class="blog-details3902">';
+        echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span>' . $row["titre"] . '</h3>';
+        echo '<hr>';
+        echo '<div class="ques-icon-info2933">';
+        echo '<a href="#"><i class="fa fa-user" aria-hidden="true"> ' . $row["auteur"] . '</i></a>';
+        echo '<a href="#"><i class="fa fa-calendar" aria-hidden="true"> ' . $row["date_publication"] . '</i></a>';
+        echo '<a href="#"><i class="fa fa-comments-o" aria-hidden="true"> ' . $row["nombre_commentaires"] . ' comments</i></a>';
+        echo '<a href="#"><i class="fa fa-eye" aria-hidden="true"> ' . $row["nombre_vues"] . ' views</i></a>';
+        echo '</div>';
+        echo '<p>' . $row["description"] . '</p>';
+        echo '<div class="continue-deatils738">';
+        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continue Reading</i></a>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }
+} else {
+    echo "Aucun résultat trouvé";
+}
+
+// Fermer la connexion à la base de données
+mysqli_close($conn);
+?>
+
+
+
+
+</var><?php include 'php/header.php' ?>
 <title>Blog</title>
 <?php include 'php/navBar.php' ?>
 
@@ -79,10 +121,6 @@
                             <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
                         </li>
                         <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
                         <li>
                             <a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
                         </li>

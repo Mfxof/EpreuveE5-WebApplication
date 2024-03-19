@@ -158,8 +158,9 @@
             </div>
             <span class="points-details938">
                 <a href="#">
-                    <h5>Kirby Loutre<3< /h5>
+                    <h5>Kirby Loutre<3</h5>
                 </a>
+                <a href="#" class="designetion210">Vérifer</a>
                 <a href="#" class="designetion201">Débutant</a>
                 <p>206 points</p>
             </span>
