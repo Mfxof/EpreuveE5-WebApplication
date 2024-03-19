@@ -2403,3 +2403,27 @@ h5:hover {
     font-size: 22px;
   }
 }
+
+
+
+.sticky-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sticky-button:hover {
+  background-color: #45a049;
+}
+
+/* Ajuster l'icône à l'intérieur du bouton */
+.sticky-button i {
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}

@@ -15,40 +15,99 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 user-profile328903">
-                <div class="about-user2039">
-                    <div class="row">
-                        <div class="col-md-1">
-                            <div class="user-image2939303"> <img src="image/LogoXiode.png" alt="Image"> </div>
-                        </div>
-                        <div class="col-md-11">
-                            <div class="user-description3903"> <a href="#">Demander à Feyermuth Matys</a>
-                                <span class="badge229">
-                                    <a>Admin</a></span>
 
-                                <span class="badge001">
-                                    <a>Expert</a></span>
-                                    
-                                <p>Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna
-                                    adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis
-                                    neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                    turpis egestas. Curabitur vitae velit in neque dictum blandit. Curabitur vitae velit
-                                    in neque dictum blandit.Curabitur vitae velit in neque dictum blandit. </p>
-                            </div>
-                            <div class="user-social3903">
-                                <p>Follow : <span>
-                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        <a href="https://www.linkedin.com/in/matys-freyermuth/"><i
-                                                class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                                    </span> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                // Inclure la connexion à la base de données
+                include 'php/db_connect.php';
+
+                // Nombre de questions par page
+                $questions_par_page = 5;
+
+                // Calculer la page actuelle
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                // Calculer l'offset
+                $offset = ($page - 1) * $questions_par_page;
+
+                // Requête pour récupérer les données des questions depuis la base de données avec pagination
+                $sql = "SELECT * FROM user_questions LIMIT $questions_par_page OFFSET $offset";
+                $result = mysqli_query($conn, $sql);
+
+                // Vérifier s'il y a des données
+                if (mysqli_num_rows($result) > 0) {
+                    // Boucle à travers chaque ligne de résultat
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        // Afficher les questions
+                        echo '<div class="about-user2039">';
+                        // Afficher les informations de l'utilisateur
+                        echo '<div class="row">';
+                        echo '<div class="col-md-1">';
+                        echo '<div class="user-image2939303"> <img src="' . $row["logo"] . '" alt="Image"> </div>';
+                        echo '</div>';
+                        echo '<div class="col-md-11">';
+                        echo '<div class="user-description3903"> <a href="#">Demander à ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
+                        echo '<span class="badge229">';
+                        echo '<a>Admin</a></span>';
+                        echo '<span class="badge001">';
+                        echo '<a>Expert</a></span>';
+                        echo '<p>' . $row["question"] . '</p>';
+                        echo '</div>';
+                        echo '<div class="user-social3903">';
+                        echo '<p>Follow : <span>';
+                        echo '<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>';
+                        echo '<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>';
+                        echo '<a href="https://www.linkedin.com/in/matys-freyermuth/"><i';
+                        echo 'class="fa fa-linkedin" aria-hidden="true"></i></a>';
+                        echo '<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>';
+                        echo '<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>';
+                        echo '<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>';
+                        echo '<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>';
+                        echo '</span> </p>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+
+                    // Vérifier s'il y a plus de 5 questions par page pour passer à la page suivante
+                    if (mysqli_num_rows($result) >= $questions_par_page) {
+                        $next_page = $page + 1;
+                        echo '<script>window.location.href = "?page=' . $next_page . '";</script>';
+                    }
+                } else {
+                    echo "Aucun résultat trouvé";
+                }
+
+                // Requête pour obtenir le nombre total de questions
+                $sql_total = "SELECT COUNT(*) AS total FROM user_questions";
+                $result_total = mysqli_query($conn, $sql_total);
+                $row_total = mysqli_fetch_assoc($result_total);
+                $total_questions = $row_total['total'];
+                $total_pages = ceil($total_questions / $questions_par_page);
+
+                // Afficher les liens de pagination
+                echo '<nav aria-label="Page navigation">';
+                echo '<ul class="pagination">';
+                // Bouton précédent
+                if ($page > 1) {
+                    echo '<li><a href="?page=' . ($page - 1) . '" aria-label="Précédent"><span aria-hidden="true">&laquo;</span></a></li>';
+                }
+                // Afficher les numéros de page
+                for ($i = 1; $i <= $total_pages; $i++) {
+                    echo '<li><a href="?page=' . $i . '">' . $i . '</a></li>';
+                }
+                // Bouton suivant
+                if ($page < $total_pages) {
+                    echo '<li><a href="?page=' . ($page + 1) . '" aria-label="Suivant"><span aria-hidden="true">&raquo;</span></a></li>';
+                }
+                echo '</ul>';
+                echo '</nav>';
+
+                // Fermer la connexion à la base de données
+                mysqli_close($conn);
+                ?>
+
+<button class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
 
             </div>
             <!--                end of col-md-9 -->
