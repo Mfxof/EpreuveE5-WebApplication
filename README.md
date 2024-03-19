@@ -11,7 +11,9 @@
     - [Plugins visual Studio :](#plugins-visual-studio-)
 
 ---
+
 ---
+
 ---
 
 # Niveau de progression du site
@@ -30,27 +32,33 @@
     - [ ] Sortie des Post dynamiquement
   - Pages
     - [x] Page A propos
-    - [ ] Page Servies
+    - [ ] Page Servies -- Annulé
     - [x] Page FAQ
-  - [x]  Création de formulaire d'inscription
-    - [ ]  Empécher les inscriptions double email / pseudo
+    - [x] Utilisateurs
+  - [x] Création de formulaire d'inscription
+    - [ ] Empécher les inscriptions double email / pseudo
   - [x] Création de formulaire de connexion
   - [x] Page Contact
+  - [x] Page question
+    - [ ] Envoyer question
   - [ ] Page mon Compte
-
 
 ---
 
 ### Progression global
-- [ ] 25%
-- [ ] 50%
+
+- [x] 25%
+- [x] 50%
 - [ ] 75%
 - [ ] 99%
-
 
 # Divers
 
 ## Liens
+
+- [Page du site](https://monportfolio-freyermuthmatys.000webhostapp.com/EpreuveE5-WebApplication/)
+
+---
 
 - [Page GitHub](https://github.com/Mfxof/EpreuveE5-WebApplication)
 - [Hébergeur WebHost](https://panel.000webhost.com/)
@@ -82,4 +90,4 @@ Aide a la creation de site Web
 - Markdown table
 - French - code spell checker
 - Pettier code formatter
-- Code snap *(Rajouter en activation a la sauvegarde pour le faire automatiquement | deux derniers lignes de la photo "gitSnapVs.jpg" )*
+- Code snap _(Rajouter en activation a la sauvegarde pour le faire automatiquement | deux derniers lignes de la photo "gitSnapVs.jpg" )_
