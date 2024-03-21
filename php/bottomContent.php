@@ -40,10 +40,22 @@
         }
 
 
+        $totalVues_blog = 0;
+
+        // Requête pour récupérer le nombre de vues pour chaque question et les additionner
+        $sqlGetVues = "SELECT nombre_vues FROM blogs WHERE tags NOT LIKE '%question%'";
+        $stmtGetVues = $conn->query($sqlGetVues);
+        while ($row = $stmtGetVues->fetch_assoc()) {
+            $totalVues_blog += $row['nombre_vues'];
+        }
+
+
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues (' . $totalVues . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues - thread (' . $totalVues . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
+
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues - blog (' . $totalVues_blog . ')</i></p>';
 
 
         // Fermeture de la connexion

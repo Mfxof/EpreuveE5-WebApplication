@@ -44,7 +44,7 @@
                         // Afficher le contenu du blog
                         echo '<img src="' . $row["image"] . '" alt="Image" class="img-responsive">';
                         echo '<div class="blog-details3902">';
-                        echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span>' . $row["titre"] . '</h3>';
+                        echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> ' . $row["titre"] . '</h3>';
                         echo '<hr>';
                         echo '<div class="ques-icon-info2933">';
                         echo '<a href="#"><i class="fa fa-user" aria-hidden="true"> ' . $row["auteur"] . '</i></a>';
@@ -55,10 +55,11 @@
                         echo '</div>';
                         echo '<p>' . $row["description"] . '</p>';
                         echo '<div class="continue-deatils738">';
-                        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continuer à lire</i></a>';
+                        echo '<a href="blog_article.php?id=' . $row["id"] . '"><i class="fa fa-plus" aria-hidden="true"> Continuer à lire</i></a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
+
                     }
                 } else {
                     echo "Aucun résultat trouvé";
