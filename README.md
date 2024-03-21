@@ -54,8 +54,9 @@
     - [x] Empécher les inscriptions double email / pseudo
   - [x] Création de formulaire de connexion
     - [ ] Possibilité de se connécter avec Google / Facebook (Pas prioritaire)
-  - [ ] Page profile
-  - [ ] Rester connecter grace aux cookies
+  - [x] Page profile
+    - [ ] Modification du profile
+  - [x] Rester connecter (grace aux cookies)
     - [ ] Pouvoir poster commentaire / thread sans devoir remmetre l'email a chaque fois
   - [x] Page Contact
   - [ ] Page support
