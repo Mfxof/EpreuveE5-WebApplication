@@ -13,6 +13,13 @@
         $rowCountEntries = $resultCountEntries->fetch_assoc();
         $totalEntries = $rowCountEntries['totalEntries'];
 
+        // Requête pour compter le nombre total de questions dans la base de données
+        $sqlCountEntriesQuestion = "SELECT COUNT(*) AS totalEntries FROM user_questions";
+        $resultCountEntriesQuestion = $conn->query($sqlCountEntriesQuestion);
+        $rowCountEntriesQuestion = $resultCountEntriesQuestion->fetch_assoc();
+        $totalEntriesQuestion = $rowCountEntriesQuestion['totalEntries'];
+
+
         // Initialiser le total des réponses
         $totalReponses = 0;
 
@@ -23,8 +30,10 @@
             $totalReponses += $row['nbReponses'];
         }
 
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues (X)</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
 
 
         // Fermeture de la connexion
@@ -53,10 +62,10 @@
 
         $sql = "SELECT logo, nom, prenom, tags, points_activite FROM utilisateurs ORDER BY points_activite DESC LIMIT 5";
         $result = $conn->query($sql);
-        
+
         if ($result->num_rows > 0) {
             // Afficher les données de chaque utilisateur dans la structure HTML
-            while($row = $result->fetch_assoc()) {
+            while ($row = $result->fetch_assoc()) {
                 echo "<div class='pints-wrapper'>";
                 echo "<div class='left-user3898'>";
                 echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
@@ -95,7 +104,7 @@
         } else {
             echo "Aucun résultat trouvé";
         }
-        
+
         // Fermer la connexion
         $conn->close();
         ?>
@@ -115,6 +124,13 @@
             <li><a href="post.php#Université">Université</a></li>
             <li><a href="post.php#Employe">Employé</a></li>
 
+            <li><a href="post.php#jeux">Jeux</a></li>
+            <li><a href="post.php#wow">WOW</a></li>
+            <li><a href="post.php#Jobs">Jobs</a></li>
+            <li><a href="post.php#HTML">HTML</a></li>
+            <li><a href="post.php#CSS">CSS</a></li>
+            <li><a href="post.php#JavaScript">JavaScript</a></li>
+
 
         </ul>
 
@@ -123,7 +139,7 @@
     <!--          End tags part-->
     <!--        start recent post  -->
     <div class="recent-post3290" style="width : 350px">
-        <h4>Recent Post</h4>
+        <h4>Recent Thread</h4>
         <div class="post-details021">
             <a href="#">
                 <h5>Comment préparer un
@@ -140,7 +156,7 @@
                     rapidement ?</h5>
             </a>
             <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
-            ps record ? Malheureusement...</p>
+                ps record ? Malheureusement...</p>
             <small style="color: #848991">XX, Mars 2024</small>
         </div>
         <hr>
@@ -157,42 +173,46 @@
 </section>
 
 <style>
-section{
-  display: flex;
-}
+    section {
+        display: flex;
+    }
 
-.status-part3821 {
-  flex: 1;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-}
-.categori-part329 {
-  flex: 1;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-}
-.highest-part302 {
-  flex: 1;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-}
-.tags-part2398 {
-  flex: 1;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-}
-.recent-post3290 {
-  flex: 1;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-}
+    .status-part3821 {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
 
-li{
-    font-size: 16px;
-}
+    .categori-part329 {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .highest-part302 {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .tags-part2398 {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .recent-post3290 {
+        flex: 1;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    li {
+        font-size: 16px;
+    }
 </style>

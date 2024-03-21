@@ -132,7 +132,7 @@
     <!--          End tags part-->
     <!--        start recent post  -->
     <div class="recent-post3290" style="width : 350px">
-        <h4>Recent Post</h4>
+        <h4>Recent Thread</h4>
         <div class="post-details021">
             <a href="#">
                 <h5>Comment préparer un
