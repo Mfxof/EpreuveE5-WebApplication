@@ -87,8 +87,8 @@
                         echo '</div>';
                         echo '<div class="col-md-2">';
                         echo '<div class="ques-type302">';
-                        echo '<a><button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true"> 42 réponses</i></button></a>';
-                        echo '<a><button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> 378 vues</i></button></a>';
+                        echo '<a><button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true"> ' . $row["nbReponses"] . ' réponses</i></button></a>';
+                        echo '<a><button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> ' . $row["nbVues"] . ' vues</i></button></a>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
