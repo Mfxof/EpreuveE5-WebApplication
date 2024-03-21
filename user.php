@@ -31,7 +31,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/icones-user/LogoXiode.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/LogoXiode.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -96,7 +96,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/icones-user/IconOzu3rol.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/IconOzu3rol.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>

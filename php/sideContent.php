@@ -47,98 +47,66 @@
 
     <div class="highest-part302" style="width : 350px">
         <h4>Les points les plus élevés</h4>
-        <div class="pints-wrapper">
-            <div class="left-user3898">
-                <a href="#"><img src="image/icones-user/LogoXiode.png" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>Freyermuth Matys</h5>
-                </a>
-                <a href="#" class="designetion001">Admin</a>
-                <a href="#" class="designetion229">Expert</a>
-                <p>23 406 points</p>
-            </span>
-
-        </div>
-        <hr>
 
 
 
-        <div class="pints-wrapper">
-            <div class="left-user3898">
-                <a href="#"><img src="image/icones-user/IconOzu3rol.png" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>CRUGNOLA Loris</h5>
-                </a>
-                <a href="#" class="designetion001">Admin</a>
-                <a href="#" class="designetion229">Expert</a>
-                <p>2065 points</p>
-            </span>
 
-        </div>
-        <hr>
-        <div class="pints-wrapper">
-            <div class="left-user3898">
-                <a href="#"><img src="image/icones-user/LogoWilliam.jpg" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>William Carta</h5>
-                </a>
-                <a href="#" class="designetion001">Admin</a>
-                <a href="#" class="designetion229">Expert</a>
-                <p>1264 points</p>
-            </span>
 
-        </div>
-        <hr>
-        <div class="pints-wrapper">
-            <div class="left-user3898">
-                <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>Kirby Loutre</h5>
-                </a>
-                <a href="#" class="designetion210">Vérifer</a>
-                <a href="#" class="designetion201">Débutant</a>
-                <p>206 points</p>
-            </span>
 
-        </div>
-        <hr>
-        <div class="pints-wrapper">
-            <div class="left-user3898">
-                <a href="#"><img src="image/icones-user/logoAshley.jpg" alt="Image"></a>
-                <div class="imag-overlay39">
-                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <span class="points-details938">
-                <a href="#">
-                    <h5>Andrianarivony Ashley</h5>
-                </a>
-                <a href="#" class="designetion001">Admin</a>
-                <a href="#" class="designetion229">Expert</a>
-                <p>187 points</p>
-            </span>
 
-        </div>
+
+        <?php
+        include 'php/db_connect.php';
+
+
+        $sql = "SELECT logo, nom, prenom, tags, points_activite FROM utilisateurs ORDER BY points_activite DESC LIMIT 5";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0) {
+            // Afficher les données de chaque utilisateur dans la structure HTML
+            while($row = $result->fetch_assoc()) {
+                echo "<div class='pints-wrapper'>";
+                echo "<div class='left-user3898'>";
+                echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
+                echo "<div class='imag-overlay39'>";
+                echo "<a href='#'><i class='fa fa-plus' aria-hidden='true'></i></a>";
+                echo "</div>";
+                echo "</div>";
+                echo "<span class='points-details938'>";
+                echo "<a href='#'><h5>{$row["nom"]} {$row["prenom"]}</h5></a>";
+                // Vous pouvez ajouter des conditions pour les designations
+                if ($row["tags"] == 1) {
+                    echo '<a href="#" class="designetion001">Admin</a> ';
+                } elseif ($row["tags"] == 2) {
+                    echo '<a href="#" class="designetion229">Expert</a> ';
+                } elseif ($row["tags"] == 3) {
+                    echo '<a href="#" class="designetion210">Vérifer</a> ';
+                } elseif ($row["tags"] == 4) {
+                    echo '<a href="#" class="designetion201">Débutant</a> ';
+                } elseif ($row["tags"] == 12) {
+                    echo '<a href="#" class="designetion001">Admin</a> ';
+                    echo '<a href="#" class="designetion229">Expert</a> ';
+                } elseif ($row["tags"] == 13) {
+                    echo '<a href="#" class="designetion210">Vérifer</a> ';
+                    echo '<a href="#" class="designetion229">Expert</a> ';
+                } elseif ($row["tags"] == 14) {
+                    echo '<a href="#" class="designetion210">Vérifer</a> ';
+                    echo '<a href="#" class="designetion201">Débutant</a> ';
+                } else {
+                    echo ' ';
+                }
+                echo "<p>{$row["points_activite"]} points</p>";
+                echo "</span>";
+                echo "</div>";
+                echo "<hr>";
+            }
+        } else {
+            echo "Aucun résultat trouvé";
+        }
+        
+        // Fermer la connexion
+        $conn->close();
+        ?>
 
     </div>
     <!--               end of Highest points -->

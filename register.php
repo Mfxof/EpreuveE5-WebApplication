@@ -58,7 +58,7 @@ mysqli_close($conn);
         <div class="title">S'inscrire</div>
         <div class="description">Bonjour, formulaire d'inscription</div>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-          <input type="text" placeholder="Pseudo*" name="pseudo" required />
+          <input type="text" placeholder="Pseudo" name="pseudo" />
           <input type="text" placeholder="Nom" name="nom" />
           <input type="text" placeholder="Prenom" name="prenom" />
           <input type="email" placeholder="E-Mail*" name="email" required />
