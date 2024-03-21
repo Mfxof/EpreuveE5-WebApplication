@@ -25,3 +25,28 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-102282699-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102282699-1');
+
+        document.addEventListener('copy', (event) => {
+            event.preventDefault();
+            alert('Le copier-coller est désactivé sur ce site.');
+        });
+
+        window.onload = function () {
+            var images = document.getElementsByTagName('img');
+            for (var i = 0; i < images.length; i++) {
+                images[i].oncontextmenu = function () {
+                    return false;
+                }
+            }
+        }
+
+    </script>
