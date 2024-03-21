@@ -45,7 +45,14 @@
                         echo '<div class="user-image2939303"> <img src="' . $row["logo"] . '" alt="Image"> </div>';
                         echo '</div>';
                         echo '<div class="col-md-11">';
-                        echo '<div class="user-description3903"> <a href="#">Demander à ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
+                        echo '<div class="user-description3903"> <a href="#">Demander à ';
+                        if (isset ($row["pseudo"]) && !empty ($row["pseudo"])) {
+                            echo $row["pseudo"];
+                        } else {
+                            echo $row["nom"] . ' ' . $row["prenom"];
+                        }
+                        echo '</a>';
+
                         if ($row["tags"] == 1) {
                             echo '<span class="badge229"><a>Admin</a></span>';
                         } elseif ($row["tags"] == 2) {
@@ -118,9 +125,9 @@
                 mysqli_close($conn);
                 ?>
 
-<form action="send_user_question.php" method="post">
-    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
-</form>
+                <form action="send_user_question.php">
+                    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
+                </form>
 
 
             </div>
