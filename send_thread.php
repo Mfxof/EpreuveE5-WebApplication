@@ -1,7 +1,7 @@
-<?php
-include 'php/header.php';
-$title = "Poster un thread";
-include 'php/navBar.php';
+<?php include 'php/header.php';?>
+<title>Poster un thread</title>
+
+<?php include 'php/navBar.php';
 include 'php/db_connect.php';
 
 // Traitement du formulaire lors de la soumission

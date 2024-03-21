@@ -649,9 +649,10 @@
 
 
 
-                    <form action="send_thread.php" method="post">
-    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un thread</button>
-</form>
+                    <form action="send_thread.php">
+                        <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un
+                            thread</button>
+                    </form>
 
 
 

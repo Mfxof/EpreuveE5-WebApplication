@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 21 Mars 2024 à 07:15
+-- Généré le :  Jeu 21 Mars 2024 à 08:11
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -109,23 +109,42 @@ CREATE TABLE `posts` (
   `nbVues` int(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Contenu de la table `posts`
+-- Structure de la table `posts_inside`
 --
 
-INSERT INTO `posts` (`id`, `image`, `titre`, `contenu`, `resolu`, `note`, `tags`, `date`, `nbReponses`, `nbVues`) VALUES
-(14, '', 'L\'inflations des loutres', 'Lâ€™inflation des loutres est un phÃ©nomÃ¨ne fascinant qui a captivÃ© lâ€™attention des chercheurs et des amateurs de la faune. Bien que le terme â€œinflationâ€ puisse Ã©voquer des images de ballons gonflÃ©s, dans le cas des loutres, il sâ€™agit dâ€™un tout autre processus.\r\n\r\nLâ€™histoire de la Loutre dâ€™Europe\r\nLa Loutre dâ€™Europe (Lutra lutra) est une espÃ¨ce semi-aquatique qui vit dans les riviÃ¨res, les lacs et les zones humides dâ€™Europe et dâ€™Asie. Autrefois largement rÃ©pandue, elle a subi un dÃ©clin dramatique au cours du 20e siÃ¨cle. La fourrure de la loutre Ã©tait trÃ¨s prisÃ©e, et sa viande Ã©tait consommÃ©e pendant le carÃªme. De plus, lâ€™homme la considÃ©rait comme un concurrent, qualifiant souvent cet animal de â€œnuisibleâ€.\r\n\r\nAu dÃ©but des annÃ©es 80, la Loutre dâ€™Europe nâ€™Ã©tait prÃ©sente que dans certaines rÃ©gions de France, notamment le cÅ“ur du Massif Central et certains grands marais du littoral atlantique. Heureusement, des mesures de protection ont Ã©tÃ© mises en place, interdisant la chasse Ã  la loutre depuis 1972 et lui accordant le statut dâ€™espÃ¨ce protÃ©gÃ©e en 1981. Ces protections lÃ©gales, associÃ©es Ã  des amÃ©liorations environnementales, ont permis de freiner son dÃ©clin et dâ€™amorcer un mouvement de recolonisation.\r\n\r\nLe Plan National dâ€™Actions pour la Loutre\r\nEn France, la Loutre dâ€™Europe bÃ©nÃ©ficie dâ€™un Plan National dâ€™Actions (PNA) mis en place par le MinistÃ¨re de lâ€™Ã‰cologie. Ce plan vise Ã  Ã©laborer des stratÃ©gies pour la conservation de lâ€™espÃ¨ce. Le premier PNA, rÃ©digÃ© en 2009 par la SociÃ©tÃ© FranÃ§aise pour lâ€™Ã‰tude et la Protection des MammifÃ¨res (SFEPM), a permis dâ€™impulser une dynamique positive autour de la loutre. Actuellement, un second PNA est en cours pour la pÃ©riode 2019-2028, toujours animÃ© par la SFEPM. Son objectif est de poursuivre la recolonisation de lâ€™aire de rÃ©partition originelle de la loutre, tout en minimisant les risques anthropiques tels que les collisions avec des vÃ©hicules.\r\n\r\nLoutres et Ã©cosystÃ¨mes\r\nLa rÃ©introduction des loutres dans certaines rÃ©gions a eu des effets sur les Ã©cosystÃ¨mes locaux. Par exemple, au large de Vancouver, au Canada, les loutres ont dÃ©vorÃ© les crustacÃ©s dont dÃ©pendaient les pÃªcheurs locaux. Cependant, une analyse rÃ©vÃ¨le que les retombÃ©es Ã©conomiques sont positives pour la rÃ©gion. Les loutres contribuent Ã  la santÃ© des Ã©cosystÃ¨mes aquatiques en rÃ©gulant les populations de proies et en favorisant la biodiversitÃ©.\r\n\r\nEn somme, lâ€™inflation des loutres, bien quâ€™elle ne soit pas littÃ©ralement liÃ©e Ã  des ballons gonflables, est un phÃ©nomÃ¨ne qui mÃ©rite notre attention. ProtÃ©ger ces adorables crÃ©atures contribue non seulement Ã  leur survie, mais aussi Ã  lâ€™Ã©quilibre de nos Ã©cosystÃ¨mes. ðŸ¦¦ðŸŒ¿', 0, '', '', '2024-03-11 15:49:20', 89, 0),
-(28, '', 'Les patates ? Leurs histoire ?', 'Lâ€™inflation des loutres est un phÃ©nomÃ¨ne fascinant qui a captivÃ© lâ€™attention des chercheurs et des amateurs de la faune. Bien que le terme â€œinflationâ€ puisse Ã©voquer des images de ballons gonflÃ©s, dans le cas des loutres, il sâ€™agit dâ€™un tout autre processus.\r\n\r\nLâ€™histoire de la Loutre dâ€™Europe\r\nLa Loutre dâ€™Europe (Lutra lutra) est une espÃ¨ce semi-aquatique qui vit dans les riviÃ¨res, les lacs et les zones humides dâ€™Europe et dâ€™Asie. Autrefois largement rÃ©pandue, elle a subi un dÃ©clin dramatique au cours du 20e siÃ¨cle. La fourrure de la loutre Ã©tait trÃ¨s prisÃ©e, et sa viande Ã©tait consommÃ©e pendant le carÃªme. De plus, lâ€™homme la considÃ©rait comme un concurrent, qualifiant souvent cet animal de â€œnuisibleâ€.\r\n\r\nAu dÃ©but des annÃ©es 80, la Loutre dâ€™Europe nâ€™Ã©tait prÃ©sente que dans certaines rÃ©gions de France, notamment le cÅ“ur du Massif Central et certains grands marais du littoral atlantique. Heureusement, des mesures de protection ont Ã©tÃ© mises en place, interdisant la chasse Ã  la loutre depuis 1972 et lui accordant le statut dâ€™espÃ¨ce protÃ©gÃ©e en 1981. Ces protections lÃ©gales, associÃ©es Ã  des amÃ©liorations environnementales, ont permis de freiner son dÃ©clin et dâ€™amorcer un mouvement de recolonisation.\r\n\r\nLe Plan National dâ€™Actions pour la Loutre\r\nEn France, la Loutre dâ€™Europe bÃ©nÃ©ficie dâ€™un Plan National dâ€™Actions (PNA) mis en place par le MinistÃ¨re de lâ€™Ã‰cologie. Ce plan vise Ã  Ã©laborer des stratÃ©gies pour la conservation de lâ€™espÃ¨ce. Le premier PNA, rÃ©digÃ© en 2009 par la SociÃ©tÃ© FranÃ§aise pour lâ€™Ã‰tude et la Protection des MammifÃ¨res (SFEPM), a permis dâ€™impulser une dynamique positive autour de la loutre. Actuellement, un second PNA est en cours pour la pÃ©riode 2019-2028, toujours animÃ© par la SFEPM. Son objectif est de poursuivre la recolonisation de lâ€™aire de rÃ©partition originelle de la loutre, tout en minimisant les risques anthropiques tels que les collisions avec des vÃ©hicules.\r\n\r\nLoutres et Ã©cosystÃ¨mes\r\nLa rÃ©introduction des loutres dans certaines rÃ©gions a eu des effets sur les Ã©cosystÃ¨mes locaux. Par exemple, au large de Vancouver, au Canada, les loutres ont dÃ©vorÃ© les crustacÃ©s dont dÃ©pendaient les pÃªcheurs locaux. Cependant, une analyse rÃ©vÃ¨le que les retombÃ©es Ã©conomiques sont positives pour la rÃ©gion. Les loutres contribuent Ã  la santÃ© des Ã©cosystÃ¨mes aquatiques en rÃ©gulant les populations de proies et en favorisant la biodiversitÃ©.\r\n\r\nEn somme, lâ€™inflation des loutres, bien quâ€™elle ne soit pas littÃ©ralement liÃ©e Ã  des ballons gonflables, est un phÃ©nomÃ¨ne qui mÃ©rite notre attention. ProtÃ©ger ces adorables crÃ©atures contribue non seulement Ã  leur survie, mais aussi Ã  lâ€™Ã©quilibre de nos Ã©cosystÃ¨mes. ðŸ¦¦ðŸŒ¿\r\n\r\n1: Le Plan National dâ€™Actions pour la Loutre | SFEPM 2: AprÃ¨s avoir frÃ´lÃ© lâ€™extinction, les loutres font leur grand retour\r\n\r\nEn savoir plus\r\n1\r\n\r\nsfepm.org\r\n2\r\n\r\nnationalgeographic.fr\r\n3\r\n\r\ninsee.fr\r\n4\r\n\r\nsfepm.org\r\n5\r\n\r\ngeo.fr\r\n+1 plus\r\n\r\n\r\nVous\r\nCrÃ©e moi un cours sur les patate\r\nCopilot\r\nLa pomme de terre, Ã©galement appelÃ©e patate dans le registre informel ou en franÃ§ais canadien, suisse ou belge, est un tubercule comestible produit par lâ€™espÃ¨ce Solanum tuberosum. Originaire de la cordillÃ¨re des Andes au PÃ©rou, elle est cultivÃ©e dans plus de 150 pays sous presque toutes les latitudes habitÃ©es. Voici quelques points clÃ©s sur la pomme de terre :\r\n\r\nHistoire et Origine:\r\nLa pomme de terre est utilisÃ©e depuis environ 8 000 ans dans les Andes.\r\nElle a Ã©tÃ© introduite en Europe Ã  la fin du XVIe siÃ¨cle aprÃ¨s la dÃ©couverte de lâ€™AmÃ©rique par les conquistadors espagnols.\r\nNutrition et Culture:\r\nLa pomme de terre est une source importante de glucides, principalement sous forme de fÃ©cule.\r\nSelon son mode de cuisson, elle peut apporter des quantitÃ©s notables de protÃ©ines et de vitamines.\r\nCultivÃ©e localement et recommandÃ©e par lâ€™ONU pour atteindre la sÃ©curitÃ© alimentaire1.\r\nElle est la principale denrÃ©e alimentaire non cÃ©rÃ©aliÃ¨re du monde.\r\nProductivitÃ© et Utilisation:\r\nLa pomme de terre est la culture alimentaire la plus productive, produisant plus de matiÃ¨re sÃ¨che Ã  lâ€™hectare que les cÃ©rÃ©ales.\r\nEnviron 85 % de la matiÃ¨re sÃ¨che produite par la plante est comestible pour lâ€™homme.\r\nSon rendement moyen est dâ€™environ 17 tonnes Ã  lâ€™hectare au niveau mondial.\r\nIndustrie de Transformation:\r\nLa fÃ©cule de pomme de terre est utilisÃ©e dans lâ€™industrie agro-alimentaire, cosmÃ©tique, pharmaceutique et industrielle.\r\nEn somme, la patate est bien plus quâ€™un simple tubercule : elle est un aliment essentiel Ã  lâ€™humanitÃ© et joue un rÃ´le crucial dans notre sÃ©curitÃ© alimentaire1. ðŸ¥”ðŸŒŽ', 0, '', '', '2024-03-11 16:11:46', 0, 12),
-(29, '', 'Test DÃ©pos documents', 'Oui que un test', 0, '', '', '2024-03-11 16:15:29', 0, 0),
-(30, '', 'Artcile OUi', 'as', 0, '', '', '2024-03-12 13:05:05', 0, 0),
-(31, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:41', 0, 0),
-(32, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:44', 0, 0),
-(33, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:45', 0, 0),
-(34, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:45', 0, 0),
-(35, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:45', 0, 0),
-(36, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:46', 0, 0),
-(37, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:46', 0, 0),
-(38, '', 'Quelle est la meilleur armure sur Wow ?', 'En vrai ? \r\nJSP', 0, '', '', '2024-03-12 13:05:47', 0, 0);
+CREATE TABLE `posts_inside` (
+  `idPrimaire` int(11) NOT NULL,
+  `pseudo` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `titre` text,
+  `categorie` varchar(255) DEFAULT NULL,
+  `fichier` varchar(255) DEFAULT NULL,
+  `contenu` varchar(255) DEFAULT NULL,
+  `date_creation` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `posts_inside`
+--
+
+INSERT INTO `posts_inside` (`idPrimaire`, `pseudo`, `email`, `titre`, `categorie`, `fichier`, `contenu`, `date_creation`) VALUES
+(1, '', '', '', '', '', '', '2024-03-21 07:49:32'),
+(2, '', '', '', '', '', '', '2024-03-21 07:49:38'),
+(3, '', '', '', '', '', '', '2024-03-21 07:51:22'),
+(4, '', '', '', '', '', '', '2024-03-21 07:52:27'),
+(5, '', '', '', '', '', '', '2024-03-21 07:54:12'),
+(6, '', '', '', '', '', '', '2024-03-21 07:54:52'),
+(7, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '', 'azerty', '2024-03-21 07:55:26'),
+(8, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '1695901324974.jpg', 'aze', '2024-03-21 07:56:49'),
+(9, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '1695901324974.jpg', 'aze', '2024-03-21 07:56:53'),
+(10, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '', 'bn,', '2024-03-21 08:00:58'),
+(11, '', '', '', '', '', ';', '2024-03-21 08:04:48'),
+(12, '', '', '', '', '', '', '2024-03-21 08:09:19'),
+(13, '', '', '', '', '', '', '2024-03-21 08:09:34'),
+(14, '', '', '', '', '', '', '2024-03-21 08:09:39');
 
 -- --------------------------------------------------------
 
@@ -232,6 +251,12 @@ ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `posts_inside`
+--
+ALTER TABLE `posts_inside`
+  ADD PRIMARY KEY (`idPrimaire`);
+
+--
 -- Index pour la table `user_questions`
 --
 ALTER TABLE `user_questions`
@@ -270,6 +295,11 @@ ALTER TABLE `messages`
 --
 ALTER TABLE `posts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+--
+-- AUTO_INCREMENT pour la table `posts_inside`
+--
+ALTER TABLE `posts_inside`
+  MODIFY `idPrimaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT pour la table `user_questions`
 --
