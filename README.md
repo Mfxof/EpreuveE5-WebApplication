@@ -138,4 +138,3 @@ SET nb_commentaires = (
     WHERE cb.id_commentaire_blog = b.id_commentaire_blog
 );
 ```
-
