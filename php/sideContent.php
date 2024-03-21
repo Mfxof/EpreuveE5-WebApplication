@@ -1,6 +1,6 @@
 <!--           strart col-md-3 (side bar)-->
 <aside class="col-md-3 sidebar97239">
-    <div class="status-part3821">
+    <div class="status-part3821" style="width : 350px">
         <h4>Statistiques</h4>
 
         <?php
@@ -23,8 +23,8 @@
             $totalReponses += $row['nbReponses'];
         }
 
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true"> Questions(' . $totalEntries . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true"> Réponses(' . $totalReponses . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
 
 
         // Fermeture de la connexion
@@ -33,7 +33,7 @@
         ?>
 
     </div>
-    <div class="categori-part329">
+    <div class="categori-part329" style="width : 350px">
         <h4>Categories</h4>
         <ul>
             <li><a href="post.php#developpeur_web">Développeur web</a></li>
@@ -45,79 +45,7 @@
         </ul>
     </div>
 
-    <!--             social part -->
-    <!-- <div class="social-part2189">
-        <h4>Find us</h4>
-        <li class="rss-one">
-            <a href="#" target="_blank">
-                <strong>
-                    <span>Subscribe</span>
-                    <i class="fa fa-rss" aria-hidden="true"></i>
-
-                    <br>
-                    <small>To RSS Feed</small>
-
-                </strong>
-            </a>
-        </li>
-        <li class="facebook-two">
-            <a href="#" target="_blank">
-                <strong>
-                    <span>Subscribe</span>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-
-                    <br>
-                    <small>To Facebook Feed</small>
-
-                </strong>
-            </a>
-        </li>
-        <li class="twitter-three">
-            <a href="#" target="_blank">
-                <strong>
-                    <span>Subscribe</span>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-
-                    <br>
-                    <small>To twitter Feed</small>
-
-                </strong>
-            </a>
-        </li>
-        <li class="youtube-four">
-            <a href="#" target="_blank">
-                <strong>
-                    <span>Subscribe</span>
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-
-                    <br>
-                    <small>To youtube Feed</small>
-
-                </strong>
-            </a>
-        </li>
-
-    </div> -->
-
-    <!--              login part-->
-    <!-- <div class="login-part2389">
-        <h4>Login</h4>
-        <div class="input-group300">
-            <span><i class="fa fa-user" aria-hidden="true"></i></span>
-            <input type="text" class="namein309" placeholder="Username">
-        </div>
-        <div class="input-group300">
-            <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-            <input type="password" class="passin309" placeholder="Name">
-        </div>
-        <a href="#"><button type="button" class="userlogin320">Log In</button></a>
-        <div class="rememberme">
-            <label><input type="checkbox" checked="checked"> Remember Me</label>
-            <a href="#" class="resbutton3892">Register</a>
-        </div>
-    </div> -->
-    <!--              highest part-->
-    <div class="highest-part302">
+    <div class="highest-part302" style="width : 350px">
         <h4>Les points les plus élevés</h4>
         <div class="pints-wrapper">
             <div class="left-user3898">
@@ -215,7 +143,7 @@
     </div>
     <!--               end of Highest points -->
     <!--          start tags part-->
-    <div class="tags-part2398">
+    <div class="tags-part2398" style="width : 350px">
         <h4>Tags</h4>
         <ul>
             <li><a href="post.php#Analytique">Analytique</a></li>
@@ -235,7 +163,7 @@
     </div>
     <!--          End tags part-->
     <!--        start recent post  -->
-    <div class="recent-post3290">
+    <div class="recent-post3290" style="width : 350px">
         <h4>Recent Post</h4>
         <div class="post-details021">
             <a href="#">
