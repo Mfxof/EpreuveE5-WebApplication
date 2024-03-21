@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h3>Poster un thread</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
+            <li><a href="post.php">Thread</a></li>
             <li class="active" id="sous_class">Poster un thread</li>
         </ol>
     </div>

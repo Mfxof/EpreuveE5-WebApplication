@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 21 Mars 2024 à 08:11
+-- Généré le :  Jeu 21 Mars 2024 à 13:30
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -98,16 +98,29 @@ INSERT INTO `messages` (`id`, `pseudo`, `email`, `message`, `created_at`) VALUES
 
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `titre` text NOT NULL,
-  `contenu` text NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_bin NOT NULL,
+  `certifier` int(8) NOT NULL,
+  `titre` tinytext COLLATE utf8mb4_bin NOT NULL,
+  `contenu` text COLLATE utf8mb4_bin NOT NULL,
   `resolu` int(16) NOT NULL,
-  `note` varchar(16) NOT NULL,
-  `tags` varchar(128) NOT NULL,
+  `note` varchar(16) COLLATE utf8mb4_bin NOT NULL,
+  `tags` varchar(128) COLLATE utf8mb4_bin NOT NULL,
+  `index_tri` tinytext COLLATE utf8mb4_bin NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `nbReponses` int(128) NOT NULL,
   `nbVues` int(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+--
+-- Contenu de la table `posts`
+--
+
+INSERT INTO `posts` (`id`, `image`, `certifier`, `titre`, `contenu`, `resolu`, `note`, `tags`, `index_tri`, `date`, `nbReponses`, `nbVues`) VALUES
+(1, 'logoProfile_1', 0, 'Je suis coincé, quelle est la meilleur arumure sur Wow ?', '🤔 Salut ! Je suis actuellement coincé dans WoW et j\'ai du mal à décider quelle armure serait la meilleure pour mon personnage. J\'ai besoin de conseils pour choisir la meilleure protection possible. Quelle armure me recommandez-vous et pourquoi ? 💼🛡️.', 1, '3.6', 'WorldOfWarcraft', 'JeuxVideo', '2024-03-21 13:10:07', 42, 378),
+(2, 'loutrelogo', 1, 'Comment préparer un entretien ?', 'Ne serait-il pas formidable de savoir exactement quelles questions un responsable du recrutement vous poserait lors de votre prochain entretien d\'embauche ? Malheureusement, nous ne pouvons pas lire dans les pensées, mais nous vous offrirons la meilleure alternative : une liste de plus de 40 questions d\'entrevue les plus couramment posées, accompagné...', 0, '4.7', 'Jobs', 'Jobs', '2024-03-21 13:23:28', 2, 17),
+(3, 'logoProfile_2', 0, 'Combien gagnent les développeurs web ?', 'Je pense à faire carrière dans le développement web et je me demandais combien gagnais un développeur débutant dans le WEB.', 0, '?', 'Jobs', 'Jobs', '2024-03-21 13:25:41', 0, 18),
+(4, 'logoProfile_1', 1, 'Connaissez-vous un jeu similaire à Remnant 2 ?', 'Connaissez-vous un jeu similaire à Remnant 2, de préférence un jeu d\'action-aventure avec des éléments de tir à la troisième personne et un système de combat exigeant, dans un univers post-apocalyptique ou fantastique ? 🎮', 2, '?', 'JeuxVideo', 'JeuxVideo', '2024-03-21 13:26:30', 0, 2),
+(5, 'loutrelogo', 1, 'Crée un site dynamique rapidement ?', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17);
 
 -- --------------------------------------------------------
 
@@ -144,7 +157,8 @@ INSERT INTO `posts_inside` (`idPrimaire`, `pseudo`, `email`, `titre`, `categorie
 (11, '', '', '', '', '', ';', '2024-03-21 08:04:48'),
 (12, '', '', '', '', '', '', '2024-03-21 08:09:19'),
 (13, '', '', '', '', '', '', '2024-03-21 08:09:34'),
-(14, '', '', '', '', '', '', '2024-03-21 08:09:39');
+(14, '', '', '', '', '', '', '2024-03-21 08:09:39'),
+(15, 'mts', 'TheKingXiode@gmail.com', 'sa', 'sa', '', 'sa', '2024-03-21 13:00:48');
 
 -- --------------------------------------------------------
 
@@ -154,10 +168,12 @@ INSERT INTO `posts_inside` (`idPrimaire`, `pseudo`, `email`, `titre`, `categorie
 
 CREATE TABLE `user_questions` (
   `id` int(11) NOT NULL,
+  `pseudo` varchar(128) NOT NULL,
   `logo` varchar(255) DEFAULT NULL,
   `nom` varchar(255) DEFAULT NULL,
-  `prenom` varchar(255) NOT NULL,
-  `tags` int(11) NOT NULL,
+  `prenom` varchar(255) DEFAULT NULL,
+  `email` varchar(128) NOT NULL,
+  `tags` int(11) DEFAULT NULL,
   `question` text,
   `date_envoi` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -166,8 +182,16 @@ CREATE TABLE `user_questions` (
 -- Contenu de la table `user_questions`
 --
 
-INSERT INTO `user_questions` (`id`, `logo`, `nom`, `prenom`, `tags`, `question`, `date_envoi`) VALUES
-(1, 'image/icones-user/LogoXiode.png', 'Freyermuth', 'Matys', 12, 'La programmation web est un domaine fascinant et dynamique qui englobe toutes les technologies et pratiques utilisées pour créer des sites web et des applications web. Que vous soyez un débutant curieux ou un développeur expérimenté cherchant à élargir vos compétences, plongeons dans un cours rapide sur la programmation web.', '2024-03-19 14:34:22');
+INSERT INTO `user_questions` (`id`, `pseudo`, `logo`, `nom`, `prenom`, `email`, `tags`, `question`, `date_envoi`) VALUES
+(1, '', 'image/icones-user/LogoXiode.jpg', 'Freyermuth', 'Matys', '', 12, 'La programmation web est un domaine fascinant et dynamique qui englobe toutes les technologies et pratiques utilisées pour créer des sites web et des applications web. Que vous soyez un débutant curieux ou un développeur expérimenté cherchant à élargir vos compétences, plongeons dans un cours rapide sur la programmation web.', '2024-03-19 14:34:22'),
+(2, '', 'image/icones-user/logoProfile_1.jpg', 'Meyer', 'Matthieu', '', 4, 'Quel est l\'impact des technologies de l\'IA sur la productivité des entreprises et comment peuvent-elles être intégrées de manière efficace pour améliorer les processus opérationnels et la prise de décision ?', '2024-03-21 09:09:09'),
+(8, '', 'image/icones-user/logoProfile_1.jpg', 'Meyer', 'Matthieu', '', 4, 'Quelles sont les principales étapes de développement d\'une stratégie de marketing numérique réussie et comment peuvent-elles être adaptées à différents secteurs industriels ?', '2024-03-21 09:09:09'),
+(9, 'DragonBorn', 'image/icones-user/logoProfile_3.jpg', 'Wolfmaul', 'Tarvad', '', 13, 'Comment les récentes mises à jour de World of Warcraft ont-elles influencé l\'équilibre du jeu entre les différentes classes de personnages et quelles ont été les réactions de la communauté de joueurs ?', '2024-03-21 09:09:09'),
+(10, '', 'image/icones-user/LogoXiode.jpg', 'Freyermuth', 'Matys', '', 12, 'Quelles sont les implications éthiques de l\'utilisation croissante des robots autonomes dans des domaines tels que la médecine, l\'industrie et l\'assistance à la personne ?', '2024-03-21 09:55:22'),
+(11, '', 'image/icones-user/logoProfile_2.jpg', 'Wagner', 'Ambre', '', 4, 'Comment les plateformes de streaming vidéo comme Netflix utilisent-elles les algorithmes de recommandation pour personnaliser l\'expérience utilisateur et augmenter l\'engagement ?\r\nQuels sont les défis de sécurit', '2024-03-21 09:51:09'),
+(12, 'DragonBorn', 'image/icones-user/logoProfile_3.jpg', 'Wolfmaul', 'Tarvad', '', 13, 'Quels éléments distinctifs distinguent les jeux dark fantasy des autres genres de jeux de rôle, et comment ces jeux explorent-ils les thèmes de la moralité, du pouvoir et de la corruption dans des mondes sombres et fantastiques ?', '2024-03-21 09:52:09'),
+(13, '', 'image/icones-user/loutrelogo.jpg', 'Kirby', 'Loutre', '', 14, 'Quels sont les défis de sécurité spécifiques liés à l\'Internet des objets (IoT) et quelles sont les meilleures pratiques pour garantir la protection des données et la confidentialité des utilisateurs ?', '2024-03-21 09:52:09'),
+(14, '', 'image/icones-user/loutrelogo.jpg', 'Kirby', 'Loutre', '', 14, 'Quel âge a Kirby, le célèbre personnage rose de la franchise de jeux vidéo, et comment son apparence juvénile contraste-t-elle avec sa capacité à vaincre des ennemis redoutables et à sauver son univers coloré ?', '2024-03-21 09:52:09');
 
 -- --------------------------------------------------------
 
@@ -177,12 +201,15 @@ INSERT INTO `user_questions` (`id`, `logo`, `nom`, `prenom`, `tags`, `question`,
 
 CREATE TABLE `utilisateurs` (
   `id` int(11) NOT NULL,
+  `logo` varchar(128) NOT NULL,
   `pseudo` varchar(50) NOT NULL,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `num` varchar(16) NOT NULL,
   `mot_de_passe` varchar(255) NOT NULL,
+  `tags` int(11) NOT NULL,
+  `points_activite` int(128) NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -190,43 +217,14 @@ CREATE TABLE `utilisateurs` (
 -- Contenu de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `created_at`) VALUES
-(2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '2024-03-11 13:44:40'),
-(5, 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', '2024-03-12 12:38:19'),
-(8, 'Mf', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '', '$2y$10$UjYcCBd1.C0fMUvbadl02uk6BSXzrHXtU9r5tThArHxKoeX8AmkGO', '2024-03-14 09:37:49'),
-(9, 'ozu3rol', 'CRUGNOLA', 'LORIS', 'loris067@hotmail.fr', '', '$2y$10$TSj2QoXf.PwFyUZehNMrQ.UZuJiOlMwcnAXtkTURBgsNPld5uC52u', '2024-03-14 09:38:51'),
-(10, 'Ashley', 'Andrianarivony', 'Ashley', 'lantoharyashley@gmail.com', '', '$2y$10$Bdi3A5F81LL9K.BiOCq8eebPCqGkvah9jFa6POpDuARL6wZzdNYtK', '2024-03-14 09:39:52'),
-(11, 'wcarta', 'CARTA', 'William', 'william57650@yahoo.fr', '', '$2y$10$G4BY8Y2tQAe2hPFni5.MqO2pR9UhQ3o7Lo9MhjzOWxJXI14ds0pSu', '2024-03-18 12:52:34'),
-(12, 'TestUser', 'test', 'user', 'testuser@gmail.com', '', '$2y$10$relW9vW3KAwApPv1c4x/WOfUB.z.Qvkysp.WX2lup9kvXgk9Y8/ue', '2024-03-19 22:54:51');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `utilisateurs_old`
---
-
-CREATE TABLE `utilisateurs_old` (
-  `id` int(11) NOT NULL,
-  `pseudo` varchar(50) NOT NULL,
-  `nom` varchar(50) NOT NULL,
-  `prenom` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `num` varchar(16) NOT NULL,
-  `mot_de_passe` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `utilisateurs_old`
---
-
-INSERT INTO `utilisateurs_old` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `created_at`) VALUES
-(1, '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '0', '$2y$10$Hs44h6mRmQUXavpE/Y1lD.KyCD.y5HcSkocsl7B8eiECP2.8JeQZa', '2024-03-11 13:44:40'),
-(2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '2024-03-11 13:44:40'),
-(4, '', 'sas', 'as', 'ass@as.as', '', '$2y$10$0GoHP1fvWHT3S.6UOPzOH.zMQRyrJNt9.dopNl//BJuqv/jIjws02', '2024-03-11 13:48:38'),
-(5, 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', '2024-03-12 12:38:19'),
-(7, 'matys FREYERMUTH', '', '', 'moi@sa.sa', '', '$2y$10$rN0sHRrCJz2XrYtUDNQF4uXf/j42J0iPGYb16dhDjMdSVo7iU18KS', '2024-03-12 14:44:10'),
-(9, 'matys FREYERMUTH', 'zerty', 'ertyu', 'rtyu@sa.sa', '', '$2y$10$XOv8w/PiiCdfvLvzJmq/O.g3.K8fww4IH8EKjpdiMklN1ivjMZROe', '2024-03-19 12:50:44');
+INSERT INTO `utilisateurs` (`id`, `logo`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `tags`, `points_activite`, `created_at`) VALUES
+(2, 'verouiller_logo', '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', 0, 0, '2024-03-11 13:44:40'),
+(5, 'loutrelogo', 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', 14, 206, '2024-03-12 12:38:19'),
+(8, 'LogoXiode', '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '', '$2y$10$UjYcCBd1.C0fMUvbadl02uk6BSXzrHXtU9r5tThArHxKoeX8AmkGO', 12, 23406, '2024-03-14 09:37:49'),
+(9, 'IconOzu3rol', 'ozu3rol', 'CRUGNOLA', 'LORIS', 'loris067@hotmail.fr', '', '$2y$10$TSj2QoXf.PwFyUZehNMrQ.UZuJiOlMwcnAXtkTURBgsNPld5uC52u', 12, 3, '2024-03-14 09:38:51'),
+(10, 'logoAshley', '', 'Andrianarivony', 'Ashley', 'lantoharyashley@gmail.com', '', '$2y$10$Bdi3A5F81LL9K.BiOCq8eebPCqGkvah9jFa6POpDuARL6wZzdNYtK', 12, 187, '2024-03-14 09:39:52'),
+(11, 'LogoWilliam', '', 'CARTA', 'William', 'william57650@yahoo.fr', '', '$2y$10$G4BY8Y2tQAe2hPFni5.MqO2pR9UhQ3o7Lo9MhjzOWxJXI14ds0pSu', 12, 1264, '2024-03-18 12:52:34'),
+(12, '', 'TestUser', 'test', 'user', 'testuser@gmail.com', '', '$2y$10$relW9vW3KAwApPv1c4x/WOfUB.z.Qvkysp.WX2lup9kvXgk9Y8/ue', 0, 0, '2024-03-19 22:54:51');
 
 --
 -- Index pour les tables exportées
@@ -270,13 +268,6 @@ ALTER TABLE `utilisateurs`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Index pour la table `utilisateurs_old`
---
-ALTER TABLE `utilisateurs_old`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
 -- AUTO_INCREMENT pour les tables exportées
 --
 
@@ -294,27 +285,22 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT pour la table `posts_inside`
 --
 ALTER TABLE `posts_inside`
-  MODIFY `idPrimaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `idPrimaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT pour la table `user_questions`
 --
 ALTER TABLE `user_questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
---
--- AUTO_INCREMENT pour la table `utilisateurs_old`
---
-ALTER TABLE `utilisateurs_old`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
