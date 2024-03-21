@@ -8,7 +8,7 @@
         include 'php/db_connect.php';
 
         // Requête pour compter le nombre total d'entrées dans la base de données
-        $sqlCountEntries = "SELECT COUNT(*) AS totalEntries FROM posts_inside";
+        $sqlCountEntries = "SELECT COUNT(*) AS totalEntries FROM posts";
         $resultCountEntries = $conn->query($sqlCountEntries);
         $rowCountEntries = $resultCountEntries->fetch_assoc();
         $totalEntries = $rowCountEntries['totalEntries'];
@@ -30,9 +30,19 @@
             $totalReponses += $row['nbReponses'];
         }
 
+        $totalVues = 0;
+
+        // Requête pour récupérer le nombre de vues pour chaque question et les additionner
+        $sqlGetVues = "SELECT nbVues FROM posts WHERE tags NOT LIKE '%question%'";
+        $stmtGetVues = $conn->query($sqlGetVues);
+        while ($row = $stmtGetVues->fetch_assoc()) {
+            $totalVues += $row['nbVues'];
+        }
+
+
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues (X)</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues (' . $totalVues . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
 
 
