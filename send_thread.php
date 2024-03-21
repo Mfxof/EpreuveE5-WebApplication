@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 class="username029" placeholder="Mettre son Pseudo" required>
                         </div>
                         <div class="email-part320">
-                            <span class="form-description442">E-Mail* </span><input type="text" name="email"
+                            <span class="form-description442">E-Mail* </span><input type="email" name="email"
                                 class="email30" placeholder="Mettre son E-mail" required>
                         </div>
                         <div class="question-title39">
