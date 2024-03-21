@@ -1,6 +1,7 @@
 <?php
 // Inclure la connexion à la base de données
 include 'php/db_connect.php';
+include 'php/token_session.php';
 
 // Vérifier si le formulaire d'inscription est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

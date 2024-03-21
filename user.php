@@ -1,3 +1,4 @@
+<?php include 'php/token_session.php' ?>
 <?php include 'php/header.php' ?>
 <title>Utilisateurs</title>
 <?php include 'php/navBar.php' ?>
@@ -617,8 +618,8 @@
                             </span> </p>
                     </div>
                 </div>
-                
-                </div>
-                <!--                end of col-md-9 -->
-                <?php include 'php/sideContent.php' ?>
-                <?php include 'php/footer.php' ?>
+
+            </div>
+            <!--                end of col-md-9 -->
+            <?php include 'php/sideContent.php' ?>
+            <?php include 'php/footer.php' ?>

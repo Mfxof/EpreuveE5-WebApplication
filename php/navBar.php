@@ -13,8 +13,18 @@
                                         aria-hidden="true"></i>Contact</a></li>
                             <li><a href="-divers-/error.php" target="_blank"><i class="fa fa-headphones"
                                         aria-hidden="true"></i>Support</a></li>
-                            <li><a href="login.php" target="_blank"><i class="fa fa-user"
-                                        aria-hidden="true"></i>Connexion / Inscription</a></li>
+
+
+                            <?php
+                            // Check if the user is logged in
+                            if (isset ($_SESSION['email'])) {
+                                // If logged in, display "Mon compte" with a link to profile.php
+                                echo '<li><a href="profile.php"><i class="fa fa-user" aria-hidden="true"></i>Mon compte</a></li>';
+                            } else {
+                                // If not logged in, display "Connexion / Inscription" with a link to login.php
+                                echo '<li><a href="login.php"><i class="fa fa-user" aria-hidden="true"></i>Connexion / Inscription</a></li>';
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>

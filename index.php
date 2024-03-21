@@ -1,3 +1,4 @@
+<?php include 'php/token_session.php' ?>
 <?php include 'php/header.php' ?>
 <title>Accueil</title>
 <?php include 'php/navBar.php' ?>

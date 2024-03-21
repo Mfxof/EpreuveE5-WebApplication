@@ -1,29 +1,38 @@
 <?php
+session_start(); // Démarrez la session au début du script
+
 include 'php/db_connect.php';
 
-// Vérifier la connexion
+// Vérifiez la connexion à la base de données
 if (!$conn) {
-    die("La connexion à la base de données a échoué: " . mysqli_connect_error());
+    die ("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
 
-// Vérifier si le formulaire de connexion est soumis
+// Vérifiez si le formulaire de connexion est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mot_de_passe = $_POST['mot_de_passe'];
 
-    // Vérifier les informations d'identification dans la base de données
+    // Vérifiez les informations d'identification dans la base de données
     $sql = "SELECT * FROM utilisateurs WHERE email='$email'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     if ($row && password_verify($mot_de_passe, $row['mot_de_passe'])) {
-        $_SESSION['email'] = $email;
+        $_SESSION['email'] = $email; // Stockez l'email de l'utilisateur en session
         header("Location: profile.php");
+        exit; // Toujours quitter après la redirection
     } else {
         echo "Email ou mot de passe incorrect.";
     }
 }
 
-// Fermer la connexion à la base de données
+// Vérifiez si l'utilisateur est déjà connecté
+if (isset ($_SESSION['email'])) {
+    header("Location: profile.php"); // Redirigez vers la page de profil si déjà connecté
+    exit; // Toujours quitter après la redirection
+}
+
+// Fermez la connexion à la base de données
 mysqli_close($conn);
 ?>
 

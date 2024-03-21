@@ -2433,3 +2433,55 @@ h5:hover {
 .sticky-button i {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
 }
+
+.logout-button {
+  background-color: #ff0000; /* Couleur de fond */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+  border: none; /* Supprime les bordures */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de la souris */
+  font-size: 16px; /* Taille de la police */
+}
+
+.logout-button:hover {
+  background-color: #e20101; /* Darker Green */
+}
+
+.icon {
+  margin-right: 5px; /* Marge à droite pour séparer l'icône du texte */
+}
+
+.save-button {
+  background-color: #4caf50; /* Couleur de fond */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+  border: none; /* Supprime les bordures */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de la souris */
+  font-size: 16px; /* Taille de la police */
+}
+
+.save-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.save-button i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-button,
+.logout-button {
+  margin: 0 10px; /* Ajoute un espace de 10px entre les boutons */
+}
+
+.button-spacing {
+  width: 20px; /* Définit la largeur de l'espace entre les boutons */
+}

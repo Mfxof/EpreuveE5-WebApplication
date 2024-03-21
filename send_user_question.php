@@ -1,5 +1,6 @@
 <?php
 include 'php/db_connect.php';
+include 'php/token_session.php';
 
 // Traitement du formulaire lors de la soumission
 // Vérifier si le formulaire est soumis

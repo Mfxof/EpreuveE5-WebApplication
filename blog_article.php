@@ -1,4 +1,5 @@
 <?php
+include 'php/token_session.php';
 include 'php/header.php';
 include 'php/navBar.php';
 include 'php/db_connect.php';

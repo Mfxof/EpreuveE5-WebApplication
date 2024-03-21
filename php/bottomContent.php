@@ -67,10 +67,10 @@
     <div class="categori-part329" style="width : 350px">
         <h4>Categories</h4>
         <ul>
-            <li><a href="post.php#developpeur_web">Développeur web</a></li>
-            <li><a href="post.php#developpeur_Android">Développeur Android</a></li>
-            <li><a href="post.php#developpeur_graphique">Développeur graphique</a></li>
-            <li><a href="post.php#developpeur_web">Développeur web</a></li>
+            <li class="bottomCtn"><a href="post.php#developpeur_web">Développeur web</a></li>
+            <li class="bottomCtn"><a href="post.php#developpeur_Android">Développeur Android</a></li>
+            <li class="bottomCtn"><a href="post.php#developpeur_graphique">Développeur graphique</a></li>
+            <li class="bottomCtn"><a href="post.php#developpeur_web">Développeur web</a></li>
 
 
         </ul>
@@ -136,22 +136,22 @@
     <div class="tags-part2398" style="width : 350px">
         <h4>Tags</h4>
         <ul>
-            <li><a href="post.php#Analytique">Analytique</a></li>
-            <li><a href="post.php#Ordinateur">Ordinateur</a></li>
-            <li><a href="post.php#Developpeur">Développeur</a></li>
-            <li><a href="post.php#Google">Google</a></li>
-            <li><a href="post.php#Entretien">Entretien</a></li>
-            <li><a href="post.php#Programmeur">Programmeur</a></li>
-            <li><a href="post.php#Salaire">Salaire</a></li>
-            <li><a href="post.php#Université">Université</a></li>
-            <li><a href="post.php#Employe">Employé</a></li>
+            <li class="bottomCtn"><a href="post.php#Analytique">Analytique</a></li>
+            <li class="bottomCtn"><a href="post.php#Ordinateur">Ordinateur</a></li>
+            <li class="bottomCtn"><a href="post.php#Developpeur">Développeur</a></li>
+            <li class="bottomCtn"><a href="post.php#Google">Google</a></li>
+            <li class="bottomCtn"><a href="post.php#Entretien">Entretien</a></li>
+            <li class="bottomCtn"><a href="post.php#Programmeur">Programmeur</a></li>
+            <li class="bottomCtn"><a href="post.php#Salaire">Salaire</a></li>
+            <li class="bottomCtn"><a href="post.php#Université">Université</a></li>
+            <li class="bottomCtn"><a href="post.php#Employe">Employé</a></li>
 
-            <li><a href="post.php#jeux">Jeux</a></li>
-            <li><a href="post.php#wow">WOW</a></li>
-            <li><a href="post.php#Jobs">Jobs</a></li>
-            <li><a href="post.php#HTML">HTML</a></li>
-            <li><a href="post.php#CSS">CSS</a></li>
-            <li><a href="post.php#JavaScript">JavaScript</a></li>
+            <li class="bottomCtn"><a href="post.php#jeux">Jeux</a></li>
+            <li class="bottomCtn"><a href="post.php#wow">WOW</a></li>
+            <li class="bottomCtn"><a href="post.php#Jobs">Jobs</a></li>
+            <li class="bottomCtn"><a href="post.php#HTML">HTML</a></li>
+            <li class="bottomCtn"><a href="post.php#CSS">CSS</a></li>
+            <li class="bottomCtn"><a href="post.php#JavaScript">JavaScript</a></li>
 
 
         </ul>
@@ -234,7 +234,7 @@
         margin: 5px;
     }
 
-    li {
+    li.bottomCtn {
         font-size: 16px;
     }
 </style>

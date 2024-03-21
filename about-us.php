@@ -1,3 +1,5 @@
+<?php include 'php/token_session.php' ?>
+
 <?php include 'php/header.php' ?>
 <title>À Propos</title>
 <?php include 'php/navBar.php' ?>
@@ -18,7 +20,10 @@
             <!--    body content-->
             <div class="col-md-9">
 
-                <p style="padding-top : 50px; font-size: 24px; ">Bienvenue et un grand merci de vous être aventuré sur cette page. <br> Nous sommes des étudiants de BTS Services Informatiques aux Organisations. <br> Ce site est un projet de groupe réalisé en vue d'une présentation orale. <br> Vous trouverez ci-dessous nos profils respectif.</p>
+                <p style="padding-top : 50px; font-size: 24px; ">Bienvenue et un grand merci de vous être aventuré sur
+                    cette page. <br> Nous sommes des étudiants de BTS Services Informatiques aux Organisations. <br> Ce
+                    site est un projet de groupe réalisé en vue d'une présentation orale. <br> Vous trouverez ci-dessous
+                    nos profils respectif.</p>
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
@@ -34,7 +39,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/icones-user/LogoXiode.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/LogoXiode.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -97,7 +102,7 @@
                         </h3>
                         <hr>
                     </div>
-                    <div class="user-image293"> <img src="image/icones-user/IconOzu3rol.png" alt="Image"> </div>
+                    <div class="user-image293"> <img src="image/icones-user/IconOzu3rol.jpg" alt="Image"> </div>
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
@@ -219,11 +224,11 @@
                         <h3>À propos de <a href="https://william-carta.webador.fr/" target="_blank">William Carta</a>
 
 
-                        <span class="badge229">
+                            <span class="badge229">
                                 <a>Admin</a></span>
                             <span class="badge001">
                                 <a>Expert</a></span>
-                                
+
                         </h3>
                         <hr>
                     </div>
@@ -268,4 +273,5 @@
 
             </div>
             <!--                end of col-md-9 -->
+            <?php include 'php/sideContent.php' ?>
             <?php include 'php/footer.php' ?>
