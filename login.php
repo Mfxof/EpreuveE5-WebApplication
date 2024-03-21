@@ -1,9 +1,5 @@
 <?php
-// Démarrer la session
-session_start();
-
-// Connexion à la base de données
-$conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
+include 'php/db_connect.php';
 
 // Vérifier la connexion
 if (!$conn) {
