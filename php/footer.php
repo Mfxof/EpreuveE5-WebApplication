@@ -5,14 +5,34 @@
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <input type="text" class="search-query form-control user-control30"
+                    <input id="searchInput" type="text" class="search-query form-control user-control30"
                         placeholder="Rechercher ici...." />
                     <span class="input-group-btn">
-                        <button class="btn btn-danger" type="button">
+                        <button id="searchButton" class="btn btn-danger" type="button">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
                 </div>
+
+                <script>
+                    document.getElementById('searchButton').addEventListener('click', function (event) {
+                        event.preventDefault(); // Empêche le bouton de se comporter comme un bouton de formulaire
+
+                        // Récupère le texte entré dans le champ de recherche
+                        var searchQuery = document.getElementById('searchInput').value.trim();
+
+                        // Effectue une action de recherche (par exemple, redirection vers une page de résultats de recherche)
+                        if (searchQuery !== '') {
+                            // Ici, vous pouvez définir l'action que vous souhaitez effectuer avec la requête de recherche,
+                            // telle que la redirection vers une page de résultats de recherche
+                            // Par exemple :
+                            // window.location.href = 'votre_page_de_resultats_de_recherche.php?query=' + encodeURIComponent(searchQuery);
+                            alert("Vous recherchez : " + searchQuery);
+                        } else {
+                            alert("Veuillez entrer une requête de recherche.");
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>
@@ -64,12 +84,12 @@
                     <div class="news-info209">
 
                         <h5>Pourquoi les Britanniques sont-ils confus</h5>
-                        <p>(Pourquoi oserais-je dire, ils n'osent pas se vexer quand ils le font ...</p>
+                        <p>Pourquoi oserais-je dire, ils n'osent pas se vexer quand ils le font ...</p>
                         <small>16 juillet 2017</small>
                     </div>
                     <div class="news-info209">
                         <h5>Comment aborder la candidature pour</h5>
-                        <p>(J'essaie de trouver/changer ma trajectoire professionnelle. C'est confortable ...</p>
+                        <p>J'essaie de trouver/changer ma trajectoire professionnelle. C'est confortable ...</p>
                         <small>16 juillet 2017</small>
                     </div>
                     <div class="news-info209">
@@ -84,25 +104,25 @@
                 <div class="info-part-four320">
                     <h4>Derniers Tweets</h4>
                     <div class="tweet-details29">
-                    <small> il y a environ 2 semaines</small>
+                        <small> il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                </a></p>
+                            </a></p>
                     </div>
                     <div class="tweet-details29">
-                    <small>il y a environ 2 semaines</small>
+                        <small>il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                </a></p>
+                            </a></p>
                     </div>
                     <div class="tweet-details29">
-                    <small>il y a environ 2 semaines</small>
+                        <small>il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                </a></p>
+                            </a></p>
                     </div>
 
                 </div>

@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="navbar-serch-right-side">
-                        <form class="navbar-form" role="search">
+                        <form class="navbar-form" id="searchForm" role="search">
                             <div class="input-group add-on">
                                 <input class="form-control form-control222" placeholder="Rechercher" name="srch-term"
                                     id="srch-term" type="text">
@@ -31,6 +31,26 @@
                             </div>
                         </form>
                     </div>
+
+                    <script>
+                        document.getElementById('searchForm').addEventListener('submit', function (event) {
+                            event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+
+                            // Récupère le texte entré dans le champ de recherche
+                            var searchQuery = document.getElementById('srch-term').value.trim();
+
+                            // Effectue une action de recherche (par exemple, redirection vers une page de résultats de recherche)
+                            if (searchQuery !== '') {
+                                // Ici, vous pouvez définir l'action que vous souhaitez effectuer avec la requête de recherche,
+                                // telle que la redirection vers une page de résultats de recherche
+                                // Par exemple :
+                                // window.location.href = 'votre_page_de_resultats_de_recherche.php?query=' + encodeURIComponent(searchQuery);
+                                alert("Vous recherchez : " + searchQuery);
+                            } else {
+                                alert("Veuillez entrer une requête de recherche.");
+                            }
+                        });
+                    </script>
                 </div>
             </div>
         </div>

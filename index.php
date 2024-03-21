@@ -21,13 +21,33 @@
                 </a>
             </div>
             <div class="form-style8292">
-                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-pencil-square"
-                            aria-hidden="true"></i></span>
-                    <input type="text" class="form-control form-control8392"
-                        placeholder="Posez n'importe quelle question et vous trouverez sûrement votre réponse"> <span
-                        class="input-group-addon"><a href="#">Rechercher</a></span>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-pencil-square" aria-hidden="true"></i></span>
+                    <input id="searchInput" type="text" class="form-control form-control8392"
+                        placeholder="Posez n'importe quelle question et vous trouverez sûrement votre réponse">
+                    <span class="input-group-addon"><a href="#" id="searchLink">Rechercher</a></span>
                 </div>
             </div>
+
+            <script>
+                document.getElementById('searchLink').addEventListener('click', function (event) {
+                    event.preventDefault(); // Empêche le lien de se comporter comme un lien normal
+
+                    // Récupère le texte entré dans le champ de recherche
+                    var searchQuery = document.getElementById('searchInput').value.trim();
+
+                    // Effectue une action de recherche (par exemple, redirection vers une page de résultats de recherche)
+                    if (searchQuery !== '') {
+                        // Ici, vous pouvez définir l'action que vous souhaitez effectuer avec la requête de recherche,
+                        // telle que la redirection vers une page de résultats de recherche
+                        // Par exemple :
+                        // window.location.href = 'votre_page_de_resultats_de_recherche.php?query=' + encodeURIComponent(searchQuery);
+                        alert("Vous recherchez : " + searchQuery);
+                    } else {
+                        alert("Veuillez entrer une requête de recherche.");
+                    }
+                });
+            </script>
         </div>
     </div>
 </section>
