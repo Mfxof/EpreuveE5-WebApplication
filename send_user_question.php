@@ -9,24 +9,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $question = $_POST['question'];
 
     // Requête SQL pour insérer les données dans la base de données
-    $sql = "INSERT INTO posts_inside (pseudo, email, question) VALUES ('$pseudo', '$email', '$question')";
+    $sql = "INSERT INTO user_questions (pseudo, email, question) VALUES ('$pseudo', '$email', '$question')";
 
     if (mysqli_query($conn, $sql)) {
         // Redirection vers contact.php avec un délai de 2 secondes
         echo '<script>
                 setTimeout(function() {
-                    window.location.href = "send_thread.php";
+                    window.location.href = "question_utilisateur.php";
                 }, 500);
              </script>';
         // Affichage du message "Message envoyé" après la redirection
         echo '<script>
                 setTimeout(function() {
-                    alert("Thread envoyé");
+                    alert("Question envoyé");
                 }, 500);
              </script>';
     } else {
         // Si la requête échoue, afficher "Une erreur est survenue" en JavaScript
-        echo '<script>alert("Une erreur est survenue lors de l\'envoi du thread");
+        echo '<script>alert("Une erreur est survenue lors de l\'envoi");
         window.location.href = "send_user_question.php";
         </script>';
     }
@@ -49,8 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </ol>
     </div>
 </section>
-
-<p>Bon bah sa marche pas</p>
 
 <section class="main-content920">
     <div class="container">
