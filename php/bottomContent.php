@@ -157,7 +157,7 @@
             </a>
             <p>Ne serait-il pas formidable de savoir exaent quelles questions un
                 responsable du recrent...</p>
-            <small style="color: #848991">XX, Mars 2024</small>
+            <small style="color: #848991">21, Mars 2024</small>
         </div>
         <hr>
         <div class="post-details021">
@@ -167,7 +167,7 @@
             </a>
             <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
                 ps record ? Malheureusement...</p>
-            <small style="color: #848991">XX, Mars 2024</small>
+            <small style="color: #848991">20, Mars 2024</small>
         </div>
         <hr>
         <div class="post-details021">
@@ -175,7 +175,7 @@
                 <h5>Combien gagnent les développeurs web</h5>
             </a>
             <p>Je pense à faire carrière dans le développement web et je me demandais...</p>
-            <small style="color: #848991">XX, Février 2024</small>
+            <small style="color: #848991">16, Mars 2024</small>
         </div>
 
         <!--       end recent post    -->

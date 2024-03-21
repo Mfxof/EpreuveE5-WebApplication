@@ -61,10 +61,10 @@
 
         $sql = "SELECT logo, nom, prenom, tags, points_activite FROM utilisateurs ORDER BY points_activite DESC LIMIT 5";
         $result = $conn->query($sql);
-        
+
         if ($result->num_rows > 0) {
             // Afficher les données de chaque utilisateur dans la structure HTML
-            while($row = $result->fetch_assoc()) {
+            while ($row = $result->fetch_assoc()) {
                 echo "<div class='pints-wrapper'>";
                 echo "<div class='left-user3898'>";
                 echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
@@ -103,7 +103,7 @@
         } else {
             echo "Aucun résultat trouvé";
         }
-        
+
         // Fermer la connexion
         $conn->close();
         ?>
@@ -131,8 +131,11 @@
     </div>
     <!--          End tags part-->
     <!--        start recent post  -->
+
+
+
     <div class="recent-post3290" style="width : 350px">
-        <h4>Recent Thread</h4>
+        <h4>Thread recent</h4>
         <div class="post-details021">
             <a href="#">
                 <h5>Comment préparer un
@@ -140,7 +143,7 @@
             </a>
             <p>Ne serait-il pas formidable de savoir exactement quelles questions un
                 responsable du recrutement...</p>
-            <small style="color: #848991">XX, Mars 2024</small>
+            <small style="color: #848991">21, Mars 2024</small>
         </div>
         <hr>
         <div class="post-details021">
@@ -150,7 +153,7 @@
             </a>
             <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
                 temps record ? Malheureusement...</p>
-            <small style="color: #848991">XX, Mars 2024</small>
+            <small style="color: #848991">20, Mars 2024</small>
         </div>
         <hr>
         <div class="post-details021">
@@ -158,7 +161,7 @@
                 <h5>Combien gagnent les développeurs web</h5>
             </a>
             <p>Je pense à faire carrière dans le développement web et je me demandais...</p>
-            <small style="color: #848991">XX, Février 2024</small>
+            <small style="color: #848991">16, Mars 2024</small>
         </div>
 
         <!--       end recent post    -->

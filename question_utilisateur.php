@@ -45,7 +45,7 @@
                         echo '<div class="user-image2939303"> <img src="' . $row["logo"] . '" alt="Image"> </div>';
                         echo '</div>';
                         echo '<div class="col-md-11">';
-                        echo '<div class="user-description3903"> <a href="#">Demander à ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
+                        echo '<div class="user-description3903"> <a href="#">Ajouter ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
                         if ($row["tags"] == 1) {
                             echo '<span class="badge229"><a>Admin</a></span>';
                         } elseif ($row["tags"] == 2) {

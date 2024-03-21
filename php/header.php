@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Ask online Form">
-    <meta name="description"
-        content="Un super site de forum en cours de création !">
+    <meta name="description" content="Un super site de forum en cours de création !">
     <meta name="keywords"
         content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment">
     <meta name="robots" content="index, nofollow">
@@ -18,36 +17,11 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/animate.css" rel="stylesheet" type="text/css"> -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
 
-    
-    <link class="logo" rel="icon" type="image/png" href="image/Logo.png"/>
+
+
+    <link class="logo" rel="icon" type="image/png" href="image/Logo.png" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-102282699-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-102282699-1');
-
-        document.addEventListener('copy', (event) => {
-            event.preventDefault();
-            alert('Le copier-coller est désactivé sur ce site.');
-        });
-
-        window.onload = function () {
-            var images = document.getElementsByTagName('img');
-            for (var i = 0; i < images.length; i++) {
-                images[i].oncontextmenu = function () {
-                    return false;
-                }
-            }
-        }
-
-    </script>
