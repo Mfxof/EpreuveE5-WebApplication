@@ -8,7 +8,7 @@
         include 'php/db_connect.php';
 
         // Requête pour compter le nombre total d'entrées dans la base de données
-        $sqlCountEntries = "SELECT COUNT(*) AS totalEntries FROM posts";
+        $sqlCountEntries = "SELECT COUNT(*) AS totalEntries FROM posts_inside";
         $resultCountEntries = $conn->query($sqlCountEntries);
         $rowCountEntries = $resultCountEntries->fetch_assoc();
         $totalEntries = $rowCountEntries['totalEntries'];
