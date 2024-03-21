@@ -19,10 +19,13 @@
 # Niveau de progression du site
 
 ## Site projet E5
+### Versions
 
-- [ ] Version 1.0.0 : Base du site et des pages
+- [ ] Version 1.0.0 : Base du site et des pages - Premiere version totalement oppérationelle
 
 ---
+
+### Contenus
 
 - [x] Création de la base de donnés
 - [ ] Pages dynamique si on est connecter ou non
@@ -30,18 +33,35 @@
   - [ ] Page Accueil
   - [ ] Page Forum
     - [ ] Sortie des Post dynamiquement
+    - [ ] Commentaires / vues fonctionnelles
+      - [ ] Poster commentaire (Besoin du cookie de connexion)
+    - [ ] Pouvoir consulter l'articles individuellement
+    - [ ] Changment de page dynamique
+  - [ ] Page Post
+    - [x] Commentaires / vues fonctionnelles
+      - [ ] Poster commentaire (Besoin du cookie de connexion)
+    - [x] Pouvoir consulter l'articles individuellement
+    - [x] Changment de page dynamique
   - Pages
-    - [x] Page A propos
+    - [ ] Page A propos
+      - [x] Contenu
+      - [ ] Visuelle
     - [ ] Page Servies -- Annulé
     - [x] Page FAQ
-    - [x] Utilisateurs
+    - [ ] Utilisateurs
+      - [ ] Affichage via PHP (+tri ?)
   - [x] Création de formulaire d'inscription
-    - [ ] Empécher les inscriptions double email / pseudo
+    - [x] Empécher les inscriptions double email / pseudo
   - [x] Création de formulaire de connexion
+    - [ ] Possibilité de se connécter avec Google / Facebook (Pas prioritaire)
+  - [ ] Page profile
+  - [ ] Rester connecter grace aux cookies
+    - [ ] Pouvoir poster commentaire / thread sans devoir remmetre l'email a chaque fois
   - [x] Page Contact
-  - [x] Page question
-    - [ ] Envoyer question
-  - [ ] Page mon Compte
+  - [ ] Page support
+  - [ ] Page question
+    - [x] Affichage des question
+    - [ ] Envoyer question (Besoin du cookie de connexion)
 
 ---
 
@@ -49,8 +69,9 @@
 
 - [x] 25%
 - [x] 50%
-- [ ] 75%
+- [x] 75%
 - [ ] 99%
+
 
 # Divers
 
@@ -90,4 +111,21 @@ Aide a la creation de site Web
 - Markdown table
 - French - code spell checker
 - Pettier code formatter
-- Code snap _(Rajouter en activation a la sauvegarde pour le faire automatiquement | deux derniers lignes de la photo "gitSnapVs.jpg" )_
+- Code snap _(Rajouter en activation a la sauvegarde pour le faire automatiquement | deux derniers lignes de la photo "gitSnapVs.jpg" )_+
+
+
+## Code
+
+**SQL de lien commun**
+```SQL
+ALTER TABLE blog
+ADD COLUMN nb_commentaires INT DEFAULT 0;
+
+UPDATE blog b
+SET nb_commentaires = (
+    SELECT COUNT(*) 
+    FROM commentaires_blog cb 
+    WHERE cb.id_commentaire_blog = b.id_commentaire_blog
+);
+```
+
