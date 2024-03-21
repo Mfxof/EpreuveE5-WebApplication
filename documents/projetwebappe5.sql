@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 19 Mars 2024 à 21:38
+-- Généré le :  Jeu 21 Mars 2024 à 07:15
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -148,7 +148,7 @@ CREATE TABLE `user_questions` (
 --
 
 INSERT INTO `user_questions` (`id`, `logo`, `nom`, `prenom`, `tags`, `question`, `date_envoi`) VALUES
-(1, 'image/icones-user/LogoXiode.png', 'Feyermuth', '', 12, 'La programmation web est un domaine fascinant et dynamique qui englobe toutes les technologies et pratiques utilisées pour créer des sites web et des applications web. Que vous soyez un débutant curieux ou un développeur expérimenté cherchant à élargir vos compétences, plongeons dans un cours rapide sur la programmation web.', '2024-03-19 14:34:22');
+(1, 'image/icones-user/LogoXiode.png', 'Freyermuth', 'Matys', 12, 'La programmation web est un domaine fascinant et dynamique qui englobe toutes les technologies et pratiques utilisées pour créer des sites web et des applications web. Que vous soyez un débutant curieux ou un développeur expérimenté cherchant à élargir vos compétences, plongeons dans un cours rapide sur la programmation web.', '2024-03-19 14:34:22');
 
 -- --------------------------------------------------------
 
@@ -172,6 +172,36 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `created_at`) VALUES
+(2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '2024-03-11 13:44:40'),
+(5, 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', '2024-03-12 12:38:19'),
+(8, 'Mf', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '', '$2y$10$UjYcCBd1.C0fMUvbadl02uk6BSXzrHXtU9r5tThArHxKoeX8AmkGO', '2024-03-14 09:37:49'),
+(9, 'ozu3rol', 'CRUGNOLA', 'LORIS', 'loris067@hotmail.fr', '', '$2y$10$TSj2QoXf.PwFyUZehNMrQ.UZuJiOlMwcnAXtkTURBgsNPld5uC52u', '2024-03-14 09:38:51'),
+(10, 'Ashley', 'Andrianarivony', 'Ashley', 'lantoharyashley@gmail.com', '', '$2y$10$Bdi3A5F81LL9K.BiOCq8eebPCqGkvah9jFa6POpDuARL6wZzdNYtK', '2024-03-14 09:39:52'),
+(11, 'wcarta', 'CARTA', 'William', 'william57650@yahoo.fr', '', '$2y$10$G4BY8Y2tQAe2hPFni5.MqO2pR9UhQ3o7Lo9MhjzOWxJXI14ds0pSu', '2024-03-18 12:52:34'),
+(12, 'TestUser', 'test', 'user', 'testuser@gmail.com', '', '$2y$10$relW9vW3KAwApPv1c4x/WOfUB.z.Qvkysp.WX2lup9kvXgk9Y8/ue', '2024-03-19 22:54:51');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateurs_old`
+--
+
+CREATE TABLE `utilisateurs_old` (
+  `id` int(11) NOT NULL,
+  `pseudo` varchar(50) NOT NULL,
+  `nom` varchar(50) NOT NULL,
+  `prenom` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `num` varchar(16) NOT NULL,
+  `mot_de_passe` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `utilisateurs_old`
+--
+
+INSERT INTO `utilisateurs_old` (`id`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `created_at`) VALUES
 (1, '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '0', '$2y$10$Hs44h6mRmQUXavpE/Y1lD.KyCD.y5HcSkocsl7B8eiECP2.8JeQZa', '2024-03-11 13:44:40'),
 (2, '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '2024-03-11 13:44:40'),
 (4, '', 'sas', 'as', 'ass@as.as', '', '$2y$10$0GoHP1fvWHT3S.6UOPzOH.zMQRyrJNt9.dopNl//BJuqv/jIjws02', '2024-03-11 13:48:38'),
@@ -215,6 +245,13 @@ ALTER TABLE `utilisateurs`
   ADD UNIQUE KEY `email` (`email`);
 
 --
+-- Index pour la table `utilisateurs_old`
+--
+ALTER TABLE `utilisateurs_old`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
 -- AUTO_INCREMENT pour les tables exportées
 --
 
@@ -242,6 +279,11 @@ ALTER TABLE `user_questions`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT pour la table `utilisateurs_old`
+--
+ALTER TABLE `utilisateurs_old`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
