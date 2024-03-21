@@ -52,10 +52,10 @@
 
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues - thread (' . $totalVues . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des thread (' . $totalVues . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
 
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Total des vues - blog (' . $totalVues_blog . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des blogs (' . $totalVues_blog . ')</i></p>';
 
 
         // Fermeture de la connexion

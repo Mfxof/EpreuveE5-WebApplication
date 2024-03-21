@@ -93,6 +93,7 @@
                 mysqli_close($conn);
                 ?>
 
+
             </div>
             <!--                fin de col-md-9 -->
             <?php include 'php/sideContent.php' ?>
