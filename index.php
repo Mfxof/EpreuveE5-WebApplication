@@ -13,7 +13,7 @@
                 velit in neque dictum blandit
             </p>
             <div class="button0239-item">
-                <a href="#custom-search-input">
+                <a href="about-us.php">
                     <button type="button" class="aboutus022">À propos de nous</button>
                 </a>
                 <a href="login.php" target="_blank">
