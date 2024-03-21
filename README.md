@@ -138,3 +138,40 @@ SET nb_commentaires = (
     WHERE cb.id_commentaire_blog = b.id_commentaire_blog
 );
 ```
+**Anti copi-coller**
+```js
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102282699-1');
+
+        document.addEventListener('copy', (event) => {
+            event.preventDefault();
+            alert('Le copier-coller est désactivé sur ce site.');
+        });
+
+        window.onload = function () {
+            var images = document.getElementsByTagName('img');
+            for (var i = 0; i < images.length; i++) {
+                images[i].oncontextmenu = function () {
+                    return false;
+                }
+            }
+        }
+```
+
+**Vérification de token session**
+```php
+session_start();
+
+// Vérifie si l'email est défini dans la session et s'il n'est pas vide
+if (isset ($_SESSION['email']) && !empty ($_SESSION['email'])) {
+    // Si l'email est défini et n'est pas vide, tu peux le récupérer
+    $email = $_SESSION['email'];
+    // Charge la page normalement ou exécute les actions nécessaires
+}
+```
