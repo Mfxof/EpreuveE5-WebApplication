@@ -32,13 +32,5 @@
     </div>
 </section>
 
-
-<section class="main-content920">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-
-            </div>
-            <!--end of col-md-9 -->
-            <?php include 'php/sideContent.php' ?>
-            <?php include 'php/footer.php' ?>
+<?php include 'php/bottomContent.php' ?>
+<?php include 'php/footer.php' ?>
