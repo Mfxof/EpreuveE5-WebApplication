@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Si la requête échoue, afficher "Une erreur est survenue" en JavaScript
         echo '<script>alert("Une erreur est survenue lors de l\'envoi du thread");
-        window.location.href = "send_thread.php";
+        window.location.href = "send_user_question.php";
         </script>';
     }
 }
