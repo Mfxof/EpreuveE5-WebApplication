@@ -1,7 +1,4 @@
-<?php include 'php/header.php';?>
-<title>Poster un thread</title>
-
-<?php include 'php/navBar.php';
+<?php
 include 'php/db_connect.php';
 
 // Traitement du formulaire lors de la soumission
@@ -40,6 +37,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
+<?php include 'php/header.php'; ?>
+<title>Poster un thread</title>
+<?php include 'php/navBar.php'; ?>
+
 <!-- Votre code HTML pour le formulaire ici -->
 
 
@@ -66,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class="email-part320">
                             <span class="form-description442">E-Mail* </span><input type="text" name="email"
-                                class="email30" placeholder="Mettre son Email" required>
+                                class="email30" placeholder="Mettre son E-mail" required>
                         </div>
                         <div class="question-title39">
                             <span class="form-description433">Titre du thread* </span><input type="text" name="titre"
