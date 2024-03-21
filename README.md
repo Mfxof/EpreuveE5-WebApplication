@@ -57,3 +57,17 @@ Aide a la creation de site Web
 - French - code spell checker
 - Pettier code formatter
 - Code snap *(Rajouter en activation a la sauvegarde pour le faire automatiquement | deux derniers lignes de la photo "gitSnapVs.jpg" )*
+
+## Code
+
+```SQL
+ALTER TABLE blog
+ADD COLUMN nb_commentaires INT DEFAULT 0;
+
+UPDATE blog b
+SET nb_commentaires = (
+    SELECT COUNT(*) 
+    FROM commentaires_blog cb 
+    WHERE cb.id_commentaire_blog = b.id_commentaire_blog
+);
+```
