@@ -1,5 +1,5 @@
 <?php include 'php/header.php' ?>
-<title>Nous contacter</title>
+<title>Thread</title>
 <?php include 'php/navBar.php' ?>
 
 
@@ -31,7 +31,7 @@
                     <label for="tab5">Résolu</label>
                     <input id="tab6" type="radio" name="tabs">
                     <label for="tab6">En attente</label>
-
+                    <hr>
                     <?php
 
                 // Inclure la connexion à la base de données
@@ -54,23 +54,42 @@
                 if (mysqli_num_rows($result) > 0) {
                     // Boucle à travers chaque ligne de résultat
                     while ($row = mysqli_fetch_assoc($result)) {
-                        // Afficher les données du blog
-                        echo '<div class="blog-part3903">';
-                        // Afficher le contenu du blog
-                        echo '<div class="blog-details3902">';
+                        echo '<div class="question-type2033">';
+                        echo '<div class="row">';
+                        echo '<div class="col-md-1">';
+                        echo '<div class="left-user12923 left-user12923-repeat">';
                         echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
-                        echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span>' . $row["titre"] . '</h3>';
-                        echo '<p>' . $row["description"] . '</p>';
-                        echo '<hr>';
-                        echo '<div class="ques-icon-info2933">';
-                        echo '<a href="#"><i class="fa fa-check" aria-hidden="true"> ' . $row["resolu"] . '</i></a>';
-                        echo '<a href="#"><i class="fa fa-star" aria-hidden="true"> ' . $row["note"] . '</i></a>';
-                        echo '<a href="#"><i class="fa fa-folder" aria-hidden="true"> ' . $row["tags"] . ' comments</i></a>';
-                        echo '<a href="#"><i class="fa fa-clock" aria-hidden="true"> ' . $row["date"] . ' views</i></a>';
-                        echo '<a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>';
                         echo '</div>';
-                        echo '<div class="continue-deatils738">';
-                        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continuer à lire</i></a>';
+                        echo '</div>';
+                        echo '<div class="col-md-9">';
+                        echo '<div class="right-description893">';
+                        echo '<div id="que-hedder2983">';
+                        echo '<h3><a href="temp-post-deatils.php" target="_blank">' . $row["titre"] . '</a></h3>';
+                        echo '</div>';
+                        echo '<div class="ques-details10018">';
+                        echo '<p>' . $row["contenu"] . '</p>';
+                        echo '</div>';
+                        echo '<hr>';
+                        echo '<div class="ques-icon-info3293">';
+                        if ($row["resolu"] == 1) {
+                            echo '<a><i class="fa fa-check" aria-hidden="true"> Résolu</i></a> ';
+                        } elseif ($row["resolu"] == 2) {
+                            echo '<a><i class="fa fa-check check-color329" aria-hidden="true"> Résolu</i></a> ';
+                        } else {
+                            echo ' ';
+                        }
+                        echo '<a><i class="fa fa-star" aria-hidden="true">' . $row["note"] . '</i></a>';
+                        echo '<a href="#' . $row["tags"] . '"><i class="fa fa-folder" aria-hidden="true">' . $row["tags"] . '</i></a>';
+                        echo '<a><i class="fa fa-clock-o" aria-hidden="true">' . $row["date"] . '</i></a>';
+                        echo '<a><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '<div class="col-md-2">';
+                        echo '<div class="ques-type302">';
+                        echo '<a><button type="button" class="q-type238"><i class="fa fa-comment" aria-hidden="true"> 42 réponses</i></button></a>';
+                        echo '<a><button type="button" class="q-type23 button-ques2973"> <i class="fa fa-user-circle-o" aria-hidden="true"> 378 vues</i></button></a>';
+                        echo '</div>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
@@ -106,11 +125,10 @@
                 // Fermer la connexion à la base de données
                 mysqli_close($conn);
                 ?>
-</section>
-<!--End of content-5-->
-<form action="send_thread.php">
-    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un thread</button>
-</form>
-<!-- end of col-md-9 -->
-<?php include 'php/sideContent.php' ?>
-<?php include 'php/footer.php' ?>
+            </div>
+            </div>
+            <?php include 'php/sideContent.php' ?>
+            <?php include 'php/footer.php' ?>
+            <form action="send_thread.php">
+                <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un thread</button>
+            </form>
