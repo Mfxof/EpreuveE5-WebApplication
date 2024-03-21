@@ -54,7 +54,6 @@
         echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des thread (' . $totalVues . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
-
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des blogs (' . $totalVues_blog . ')</i></p>';
 
 
@@ -82,7 +81,7 @@
         include 'php/db_connect.php';
 
 
-        $sql = "SELECT logo, nom, prenom, tags, points_activite FROM utilisateurs ORDER BY points_activite DESC LIMIT 5";
+        $sql = "SELECT logo, pseudo, nom, prenom, tags, points_activite FROM utilisateurs ORDER BY points_activite DESC LIMIT 5";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -96,7 +95,9 @@
                 echo "</div>";
                 echo "</div>";
                 echo "<span class='points-details938'>";
-                echo "<a href='#'><h5>{$row["nom"]} {$row["prenom"]}</h5></a>";
+                $nameToDisplay = !empty ($row["pseudo"]) ? $row["pseudo"] : $row["nom"] . " " . $row["prenom"];
+                echo "<a href='#'><h5>{$nameToDisplay}</h5></a>";
+
                 // Vous pouvez ajouter des conditions pour les designations
                 if ($row["tags"] == 1) {
                     echo '<a href="#" class="designetion001">Admin</a> ';
@@ -106,6 +107,8 @@
                     echo '<a href="#" class="designetion210">Vérifer</a> ';
                 } elseif ($row["tags"] == 4) {
                     echo '<a href="#" class="designetion201">Débutant</a> ';
+                } elseif ($row["tags"] == 99) {
+                    echo '<a href="#" class="designetion099">Explorateur</a> ';
                 } elseif ($row["tags"] == 12) {
                     echo '<a href="#" class="designetion001">Admin</a> ';
                     echo '<a href="#" class="designetion229">Expert</a> ';

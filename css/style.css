@@ -1089,9 +1089,17 @@ hr {
   margin-right: 30px;
 }
 
-.designetion201 {
+.designetion209 {
   padding: 3px;
   background-color: #008000;
+  color: #fff;
+  font-family: fontawesome;
+  border-radius: 2px;
+}
+
+.designetion099 {
+  padding: 3px;
+  background-color: #996633;
   color: #fff;
   font-family: fontawesome;
   border-radius: 2px;
