@@ -30,6 +30,16 @@
             $totalReponses += $row['nbReponses'];
         }
 
+        // Initialiser le total des réponses
+        $totalQuestion_blog = 0;
+
+        // Requête pour récupérer le nombre de réponses pour chaque question et les additionner
+        $sqlGetCommentaires = "SELECT nombre_commentaires FROM blogs WHERE tags NOT LIKE '%question%'";
+        $resultGetQuestionReponses = $conn->query($sqlGetCommentaires);
+        while ($row = $resultGetQuestionReponses->fetch_assoc()) {
+            $totalQuestion_blog += $row['nombre_commentaires'];
+        }
+
         $totalVues = 0;
 
         // Requête pour récupérer le nombre de vues pour chaque question et les additionner
@@ -49,12 +59,20 @@
             $totalVues_blog += $row['nombre_vues'];
         }
 
+        // Requête pour compter le nombre total d'entrées dans la base de données
+        $sqlCountPostEntries = "SELECT COUNT(*) AS totalPostEntries FROM blogs";
+        $resultCountEntries = $conn->query($sqlCountPostEntries);
+        $rowCountEntries = $resultCountEntries->fetch_assoc();
+        $totalPostEntries = $rowCountEntries['totalPostEntries'];
 
-        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Fil de Discussion (' . $totalEntries . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses (' . $totalReponses . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des thread (' . $totalVues . ')</i></p>';
+
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Nombre de thread (' . $totalEntries . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Réponses thread (' . $totalReponses . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Vues des thread (' . $totalVues . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des blogs (' . $totalVues_blog . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions des blogs (' . $totalQuestion_blog . ')</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Nombre de posts (' . $totalPostEntries . ')</i></p>';
 
 
         // Fermeture de la connexion
