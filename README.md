@@ -62,6 +62,14 @@
   - [ ] Page question
     - [x] Affichage des question
     - [ ] Envoyer question (Besoin du cookie de connexion)
+- Petits points
+  - [x] Statistiques live
+  - [x] Tags Fonctionelle
+  - [ ] Systeme de points live
+  - [ ] Thread récents
+  - [ ] Bar de recherche
+  - [ ] Finir le Footer
+  
 
 ---
 
