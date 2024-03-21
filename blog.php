@@ -50,8 +50,8 @@
                         echo '<a href="#"><i class="fa fa-user" aria-hidden="true"> ' . $row["auteur"] . '</i></a>';
                         echo '<a href="#"><i class="fa fa-calendar" aria-hidden="true"> ' . $row["date_publication"] . '</i></a>';
                         echo '<a href="#"><i class="fa fa-briefcase" aria-hidden="true"> ' . $row["tags"] . '</i></a>';
-                        echo '<a href="#"><i class="fa fa-comments-o" aria-hidden="true"> ' . $row["nombre_commentaires"] . ' comments</i></a>';
-                        echo '<a href="#"><i class="fa fa-eye" aria-hidden="true"> ' . $row["nombre_vues"] . ' views</i></a>';
+                        echo '<a href="#"><i class="fa fa-comments-o" aria-hidden="true"> ' . $row["nombre_commentaires"] . ' commentaires</i></a>';
+                        echo '<a href="#"><i class="fa fa-eye" aria-hidden="true"> ' . $row["nombre_vues"] . ' vues</i></a>';
                         echo '</div>';
                         echo '<p>' . $row["description"] . '</p>';
                         echo '<div class="continue-deatils738">';
