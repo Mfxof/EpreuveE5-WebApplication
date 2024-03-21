@@ -31,645 +31,86 @@
                     <label for="tab5">Résolu</label>
                     <input id="tab6" type="radio" name="tabs">
                     <label for="tab6">En attente</label>
-                    <section id="content1">
-                        <!--Recent Question Content Section -->
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/logoProfile_1.jpg" alt="image"> </a> <a
-                                            href="#"><i aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Je suis coincé, quelle
-                                                    est la meilleur arumure sur Wow ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>🤔 Salut ! Je suis actuellement coincé dans WoW et j'ai du mal à décider
-                                                quelle armure serait la meilleure pour mon personnage. J'ai besoin de
-                                                conseils pour choisir la meilleure protection possible. Quelle armure me
-                                                recommandez-vous et pourquoi ? 💼🛡️.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-check"
-                                                    aria-hidden="true"> Résolu</i></a> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> 3.6</i> </a> <a href="#WorldOfWarcraft"><i
-                                                    class="fa fa-folder" aria-hidden="true"> WorldOfWarcraft</i></a> <a
-                                                href="#"><i class="fa fa-clock-o" aria-hidden="true"> Il y a 16
-                                                    jours</i>
-                                                <a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 42 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 378 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a
-                                            href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Comment préparer un
-                                                    entretien ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>Ne serait-il pas formidable de savoir exactement quelles questions un
-                                                responsable du recrutement vous poserait lors de votre prochain
-                                                entretien d'embauche ?
-                                                Malheureusement, nous ne pouvons pas lire dans les pensées, mais nous
-                                                vous offrirons la meilleure alternative : une liste de plus de 40
-                                                questions d'entrevue les plus couramment posées, accompagnée de conseils
-                                                pour y répondre toutes.
-
-                                                Bien que nous ne recommandions pas d'avoir une réponse préfabriquée pour
-                                                chaque question d'entrevue (en fait, s'il vous plaît, ne le faites pas),
-                                                nous recommandons tout de même de passer du temps à vous familiariser
-                                                avec ce qui pourrait vous être demandé, ce que les responsables du
-                                                recrutement recherchent vraiment dans vos réponses et ce qu'il faut
-                                                faire pour montrer que vous êtes la bonne personne pour le poste.</p>
-                                        </div>
-
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> 4.7 </i> </a> <a href="#jobs"><i
-                                                    class="fa fa-folder" aria-hidden="true"> Jobs</i></a> <a href="#"><i
-                                                    class="fa fa-clock-o" aria-hidden="true"> Il y a 2
-                                                    jours</i></a> <a href="#"><i class="fa fa-question-circle-o"
-                                                    aria-hidden="true">
-                                                    Questions</i></a> <a href="#"><i class="fa fa-bug"
-                                                    aria-hidden="true"> Signaler</i></a> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 7 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 86 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a
-                                            href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Crée un site dynamique
-                                                    rapidement ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
-                                                temps record ? Malheureusement, nous ne possédons pas le don de lire
-                                                dans les pensées, mais nous vous proposons la meilleure alternative : un
-                                                guide exhaustif pour vous aider à accomplir cette tâche avec efficacité
-                                                et rapidité.
-
-                                                Bien que nous ne puissions pas fournir une solution toute faite pour
-                                                chaque cas de création de site dynamique (et, franchement, cela ne
-                                                serait pas recommandé), nous vous conseillons vivement de consacrer du
-                                                temps à vous familiariser avec les exigences spécifiques, les outils
-                                                disponibles et les meilleures pratiques pour répondre à cette demande.
-                                                En effet, il est essentiel de comprendre les attentes et les critères de
-                                                succès, afin de démontrer votre compétence et votre aptitude à réaliser
-                                                ce projet dans les délais impartis.</p>
-                                        </div>
-
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> 4.2 </i> </a> <a href="#HTML"><i
-                                                    class="fa fa-folder" aria-hidden="true"> HTML</i></a> <a href="#"><i
-                                                    class="fa fa-clock-o" aria-hidden="true"> Il y a 6 heures</i></a>
-                                            <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true">
-                                                    Questions</i></a> <a href="#"><i class="fa fa-bug"
-                                                    aria-hidden="true"> Signaler</i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 2 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 17 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/logoProfile_2.jpg" alt="image"> </a> <a
-                                            href="#"><i aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Combien gagnent les
-                                                    développeurs web ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>Je pense à faire carrière dans le développement web et je me demandais
-                                                combien gagnais un développeur débutant dans le WEB.</p>
-                                        </div>
-
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> ? </i> </a> <a href="#jobs"><i
-                                                    class="fa fa-folder" aria-hidden="true"> Jobs</i></a> <a href="#"><i
-                                                    class="fa fa-clock-o" aria-hidden="true"> Il y a 49
-                                                    minutes</i></a> <a href="#"><i class="fa fa-question-circle-o"
-                                                    aria-hidden="true">
-                                                    Questions</i></a> <a href="#"><i class="fa fa-bug"
-                                                    aria-hidden="true"> Signaler</i></a> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 0 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 18 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/logoProfile_3.jpg" alt="image"> </a> <a
-                                            href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Connaissez-vous un jeu
-                                                    similaire à Remnant 2 ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p> Connaissez-vous un jeu similaire à Remnant 2, de préférence un jeu
-                                                d'action-aventure avec des éléments de tir à la troisième personne et un
-                                                système de combat exigeant, dans un univers post-apocalyptique ou
-                                                fantastique ? 🎮</p>
-                                        </div>
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i
-                                                    class="fa fa-check check-color329" aria-hidden="true">
-                                                    Résolu</i></a> <a href="#"><i class="fa fa-star" aria-hidden="true">
-                                                    ?</i> </a> <a href="#"><i class="fa fa-folder" aria-hidden="true">
-                                                    JeuxVidéo</i></a> <a href="#"><i class="fa fa-clock-o"
-                                                    aria-hidden="true"> Il y a 12 minutes</i>
-                                                <a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>
-                                            </a> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 0 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 2 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <!--  End of content-1------>
-
-                    <section id="content2">
-                        <!--Most Response Content Section -->
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/loutrelogo.jpg" alt="image"> </a> <a
-                                            href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Crée un site dynamique
-                                                    rapidement ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un
-                                                temps record ? Malheureusement, nous ne possédons pas le don de lire
-                                                dans les pensées, mais nous vous proposons la meilleure alternative : un
-                                                guide exhaustif pour vous aider à accomplir cette tâche avec efficacité
-                                                et rapidité.
-
-                                                Bien que nous ne puissions pas fournir une solution toute faite pour
-                                                chaque cas de création de site dynamique (et, franchement, cela ne
-                                                serait pas recommandé), nous vous conseillons vivement de consacrer du
-                                                temps à vous familiariser avec les exigences spécifiques, les outils
-                                                disponibles et les meilleures pratiques pour répondre à cette demande.
-                                                En effet, il est essentiel de comprendre les attentes et les critères de
-                                                succès, afin de démontrer votre compétence et votre aptitude à réaliser
-                                                ce projet dans les délais impartis.</p>
-                                        </div>
-
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> 4.2 </i> </a> <a href="#"><i
-                                                    class="fa fa-folder" aria-hidden="true"> HTML</i></a> <a href="#"><i
-                                                    class="fa fa-clock-o" aria-hidden="true"> Il y a 6 heures</i></a>
-                                            <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true">
-                                                    Questions</i></a> <a href="#"><i class="fa fa-bug"
-                                                    aria-hidden="true"> Signaler</i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 2 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 17 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-
-                    <!----end of content-2----->
-
-                    <section id="content3">
-                        <!--Recently answered Content Section -->
-
-
-
-
-
-
-
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <!--End content-3 -->
-
-
-                    <section id="content4">
-                        <!--No answered Content Section -->
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <!--End of content-4-->
-
-
-
-
-                    <section id="content5">
-                        <!--Recent Question Content Section -->
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/logoProfile_1.jpg" alt="image"> </a> <a
-                                            href="#"><i aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Je suis coincé, quelle
-                                                    est la meilleur arumure sur Wow ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p>🤔 Salut ! Je suis actuellement coincé dans WoW et j'ai du mal à décider
-                                                quelle armure serait la meilleure pour mon personnage. J'ai besoin de
-                                                conseils pour choisir la meilleure protection possible. Quelle armure me
-                                                recommandez-vous et pourquoi ? 💼🛡️.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i class="fa fa-check"
-                                                    aria-hidden="true"> Résolu</i></a> <a href="#"><i class="fa fa-star"
-                                                    aria-hidden="true"> 3.6</i> </a> <a href="#WorldOfWarcraft"><i
-                                                    class="fa fa-folder" aria-hidden="true"> WorldOfWarcraft</i></a> <a
-                                                href="#"><i class="fa fa-clock-o" aria-hidden="true"> Il y a 16
-                                                    jours</i>
-                                                <a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 42 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 378 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <!--End of content-5-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <section id="content6">
-                        <!--Recent Question Content Section -->
-
-                        <div class="question-type2033">
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <div class="left-user12923 left-user12923-repeat">
-                                        <a href="#"><img src="image/icones-user/logoProfile_3.jpg" alt="image"> </a> <a
-                                            href="#"><i class="fa fa-check" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <div class="right-description893">
-                                        <div id="que-hedder2983">
-                                            <h3><a href="temp-post-deatils.php" target="_blank">Connaissez-vous un jeu
-                                                    similaire à Remnant 2 ?</a></h3>
-                                        </div>
-                                        <div class="ques-details10018">
-                                            <p> Connaissez-vous un jeu similaire à Remnant 2, de préférence un jeu
-                                                d'action-aventure avec des éléments de tir à la troisième personne et un
-                                                système de combat exigeant, dans un univers post-apocalyptique ou
-                                                fantastique ? 🎮</p>
-                                        </div>
-                                        <hr>
-                                        <div class="ques-icon-info3293"> <a href="#"><i
-                                                    class="fa fa-check check-color329" aria-hidden="true">
-                                                    Résolu</i></a> <a href="#"><i class="fa fa-star" aria-hidden="true">
-                                                    5</i> </a> <a href="#"><i class="fa fa-folder" aria-hidden="true">
-                                                    JeuxVidéo</i></a> <a href="#"><i class="fa fa-clock-o"
-                                                    aria-hidden="true"> Il y a 12 minutes</i>
-                                                <a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>
-                                            </a> </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="ques-type302">
-                                        <a href="#">
-                                            <button type="button" class="q-type238"><i class="fa fa-comment"
-                                                    aria-hidden="true"> 0 réponses</i></button>
-                                        </a>
-                                        <a href="#">
-                                            <button type="button" class="q-type23 button-ques2973"> <i
-                                                    class="fa fa-user-circle-o" aria-hidden="true"> 2 vues</i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <!--End of content-6-->
-
-
-
-
-
-
-
-                    <form action="send_thread.php">
-                        <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un
-                            thread</button>
-                    </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-            </div>
-            <!-- end of col-md-9 -->
-            <?php include 'php/sideContent.php' ?>
-            <?php include 'php/footer.php' ?>
+                    <?php
+
+                // Inclure la connexion à la base de données
+                include 'php/db_connect.php';
+
+                // Nombre d'articles par page
+                $articles_par_page = 5;
+
+                // Calculer la page actuelle
+                $page = isset ($_GET['page']) ? $_GET['page'] : 1;
+
+                // Calculer l'offset
+                $offset = ($page - 1) * $articles_par_page;
+
+                // Requête pour récupérer les données des blogs depuis la base de données avec pagination
+                $sql = "SELECT * FROM posts LIMIT $articles_par_page OFFSET $offset";
+                $result = mysqli_query($conn, $sql);
+
+                // Vérifier s'il y a des données
+                if (mysqli_num_rows($result) > 0) {
+                    // Boucle à travers chaque ligne de résultat
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        // Afficher les données du blog
+                        echo '<div class="blog-part3903">';
+                        // Afficher le contenu du blog
+                        echo '<div class="blog-details3902">';
+                        echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
+                        echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span>' . $row["titre"] . '</h3>';
+                        echo '<p>' . $row["description"] . '</p>';
+                        echo '<hr>';
+                        echo '<div class="ques-icon-info2933">';
+                        echo '<a href="#"><i class="fa fa-check" aria-hidden="true"> ' . $row["resolu"] . '</i></a>';
+                        echo '<a href="#"><i class="fa fa-star" aria-hidden="true"> ' . $row["note"] . '</i></a>';
+                        echo '<a href="#"><i class="fa fa-folder" aria-hidden="true"> ' . $row["tags"] . ' comments</i></a>';
+                        echo '<a href="#"><i class="fa fa-clock" aria-hidden="true"> ' . $row["date"] . ' views</i></a>';
+                        echo '<a href="#"><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>';
+                        echo '</div>';
+                        echo '<div class="continue-deatils738">';
+                        echo '<a href="#"><i class="fa fa-plus" aria-hidden="true"> Continuer à lire</i></a>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo "Aucun résultat trouvé";
+                }
+
+                // Afficher les liens de pagination
+                $sql_total = "SELECT COUNT(*) AS total FROM Blogs";
+                $result_total = mysqli_query($conn, $sql_total);
+                $row_total = mysqli_fetch_assoc($result_total);
+                $total_articles = $row_total['total'];
+                $total_pages = ceil($total_articles / $articles_par_page);
+
+                echo '<nav aria-label="Page navigation">';
+                echo '<ul class="pagination">';
+                // Bouton précédent
+                if ($page > 1) {
+                    echo '<li><a href="?page=' . ($page - 1) . '" aria-label="Précédent"><span aria-hidden="true">&laquo;</span></a></li>';
+                }
+                // Afficher les numéros de page
+                for ($i = 1; $i <= $total_pages; $i++) {
+                    echo '<li><a href="?page=' . $i . '">' . $i . '</a></li>';
+                }
+                // Bouton suivant
+                if ($page < $total_pages) {
+                    echo '<li><a href="?page=' . ($page + 1) . '" aria-label="Suivant"><span aria-hidden="true">&raquo;</span></a></li>';
+                }
+                echo '</ul>';
+                echo '</nav>';
+
+                // Fermer la connexion à la base de données
+                mysqli_close($conn);
+                ?>
+</section>
+<!--End of content-5-->
+<form action="send_thread.php">
+    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un thread</button>
+</form>
+<!-- end of col-md-9 -->
+<?php include 'php/sideContent.php' ?>
+<?php include 'php/footer.php' ?>
