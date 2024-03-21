@@ -25,14 +25,14 @@
             <div class="col-md-3">
                 <div class="info-part-one320">
                     <h4>Où sommes-nous ?</h4>
-                    <p>NOUS SOMME OMNIPOTENT.</p>
+                    <p>Lycée René Cassin</p>
                     <h4>Adresse :</h4>
                     <p>4 Rue Schoch<br> 67000 Strasbourg, France.</p>
                     <h4>Support :</h4>
                     <p>Numéro de téléphone du support : </p>
                     <p>(+33)07 XX XX XX XX</p><br>
                     <p>Email de support : </p>
-                    <p>XXXX@XXXXXX.com</p>
+                    <p>support@XXXXXX.com</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -41,20 +41,17 @@
                     <a href="index.php">
                         <p>- Accueil</p>
                     </a>
-                    <a href="#">
-                        <p>- Poser une question //</p>
+                    <a href="send_user_question.php">
+                        <p>- Poser une question</p>
                     </a>
                     <a href="question_utilisateur.php">
                         <p>- Questions</p>
                     </a>
                     <a href="user.php">
-                        <p>- List des utilisateurs</p>
+                        <p>- Utilisateurs</p>
                     </a>
-                    <a href="#">
-                        <p>- Modifier le profil //</p>
-                    </a>
-                    <a href="#">
-                        <p>- Page //</p>
+                    <a href="profile.php">
+                        <p>- Modifier le profil</p>
                     </a>
                     <a href="contact.php">
                         <p>- Nous contacter</p>
@@ -87,25 +84,25 @@
                 <div class="info-part-four320">
                     <h4>Derniers Tweets</h4>
                     <div class="tweet-details29">
+                    <small> il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                Thèmehttps://t.co/urb3LgsOCi</a></p>
-                        <small>il y a environ 2 semaines</small>
+                                </a></p>
                     </div>
                     <div class="tweet-details29">
+                    <small>il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                Thèmehttps://t.co/urb3LgsOCi</a></p>
-                        <small>il y a environ 2 semaines</small>
+                                </a></p>
                     </div>
                     <div class="tweet-details29">
+                    <small>il y a environ 2 semaines</small>
                         <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck une
                                 nouvelle
                                 mise à jour #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                                Thèmehttps://t.co/urb3LgsOCi</a></p>
-                        <small>il y a environ 2 semaines</small>
+                                </a></p>
                     </div>
 
                 </div>
@@ -120,7 +117,7 @@
                 <p>Droits d'auteur 2024 | <strong>Arial Games</strong></p>
             </div>
             <div class="col-md-6">
-                <div class="social-right2389">
+                <div class="social-right3903" style="padding-left: 300px; font-size : 20px">
                     <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
