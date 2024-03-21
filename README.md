@@ -29,7 +29,7 @@
 
 - [x] Création de la base de donnés
 - [ ] Pages dynamique si on est connecter ou non
-- [ ] Création de pages et les finir a 100%
+- Création de pages et les finir a 100%
   - [ ] Page Accueil
   - [ ] Page Forum
     - [ ] Sortie des Post dynamiquement
@@ -69,6 +69,8 @@
   - [ ] Thread récents
   - [ ] Bar de recherche
   - [ ] Finir le Footer
+- [ ] Faire la documentation
+- [ ] Faire le diagramme de grantt
   
 
 ---
