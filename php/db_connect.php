@@ -6,4 +6,6 @@ $conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 if (!$conn) {
     die("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
+
+mysqli_set_charset($conn, "utf8");
 ?>
