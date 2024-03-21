@@ -15,22 +15,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 user-profile328903">
-
                 <?php
+
                 // Inclure la connexion à la base de données
                 include 'php/db_connect.php';
 
-                // Nombre de questions par page
-                $questions_par_page = 5;
+                // Nombre d'articles par page
+                $articles_par_page = 8;
 
                 // Calculer la page actuelle
                 $page = isset ($_GET['page']) ? $_GET['page'] : 1;
 
                 // Calculer l'offset
-                $offset = ($page - 1) * $questions_par_page;
+                $offset = ($page - 1) * $articles_par_page;
 
-                // Requête pour récupérer les données des questions depuis la base de données avec pagination
-                $sql = "SELECT * FROM user_questions LIMIT $questions_par_page OFFSET $offset";
+                // Requête pour récupérer les données des blogs depuis la base de données avec pagination
+                $sql = "SELECT * FROM user_questions LIMIT $articles_par_page OFFSET $offset";
                 $result = mysqli_query($conn, $sql);
 
                 // Vérifier s'il y a des données
@@ -45,26 +45,24 @@
                         echo '<div class="user-image2939303"> <img src="' . $row["logo"] . '" alt="Image"> </div>';
                         echo '</div>';
                         echo '<div class="col-md-11">';
-                        echo '<div class="user-description3903"> <a href="#">Demander à ';
-                        if (isset ($row["pseudo"]) && !empty ($row["pseudo"])) {
-                            echo $row["pseudo"];
-                        } else {
-                            echo $row["nom"] . ' ' . $row["prenom"];
-                        }
-                        echo '</a>';
-
+                        echo '<div class="user-description3903"> <a href="#">Demander à ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
                         if ($row["tags"] == 1) {
                             echo '<span class="badge229"><a>Admin</a></span>';
                         } elseif ($row["tags"] == 2) {
                             echo '<span class="badge001"><a>Expert</a></span>';
                         } elseif ($row["tags"] == 3) {
                             echo '<span class="badge210"><a>Vérifer</a></span>';
+                        } elseif ($row["tags"] == 4) {
+                            echo '<span class="badge201"><a>Débutant</a></span>';
                         } elseif ($row["tags"] == 12) {
                             echo '<span class="badge229"><a>Admin</a></span>';
                             echo '<span class="badge001"><a>Expert</a></span>';
                         } elseif ($row["tags"] == 13) {
                             echo '<span class="badge210"><a>Vérifer</a></span>';
                             echo '<span class="badge001"><a>Expert</a></span>';
+                        } elseif ($row["tags"] == 14) {
+                            echo '<span class="badge210"><a>Vérifer</a></span>';
+                            echo '<span class="badge201"><a>Débutant</a></span>';
                         } else {
                             echo ' ';
                         }
@@ -86,24 +84,17 @@
                         echo '</div>';
                         echo '</div>';
                     }
-
-                    // Vérifier s'il y a plus de 5 questions par page pour passer à la page suivante
-                    if (mysqli_num_rows($result) >= $questions_par_page) {
-                        $next_page = $page + 1;
-                        echo '<script>window.location.href = "?page=' . $next_page . '";</script>';
-                    }
                 } else {
                     echo "Aucun résultat trouvé";
                 }
 
-                // Requête pour obtenir le nombre total de questions
+                // Afficher les liens de pagination
                 $sql_total = "SELECT COUNT(*) AS total FROM user_questions";
                 $result_total = mysqli_query($conn, $sql_total);
                 $row_total = mysqli_fetch_assoc($result_total);
-                $total_questions = $row_total['total'];
-                $total_pages = ceil($total_questions / $questions_par_page);
+                $total_articles = $row_total['total'];
+                $total_pages = ceil($total_articles / $articles_par_page);
 
-                // Afficher les liens de pagination
                 echo '<nav aria-label="Page navigation">';
                 echo '<ul class="pagination">';
                 // Bouton précédent
@@ -124,6 +115,24 @@
                 // Fermer la connexion à la base de données
                 mysqli_close($conn);
                 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <form action="send_user_question.php">
                     <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
