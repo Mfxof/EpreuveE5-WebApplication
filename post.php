@@ -31,7 +31,7 @@
                     <label for="tab5">Résolu</label>
                     <input id="tab6" type="radio" name="tabs">
                     <label for="tab6">En attente</label>
-
+                    <hr>
                     <?php
 
                 // Inclure la connexion à la base de données
