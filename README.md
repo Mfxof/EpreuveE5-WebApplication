@@ -138,3 +138,8 @@ SET nb_commentaires = (
     WHERE cb.id_commentaire_blog = b.id_commentaire_blog
 );
 ```
+
+**Ajout pour ajouter TimeStamp**
+```SQL
+ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+```
