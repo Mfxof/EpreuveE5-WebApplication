@@ -54,8 +54,9 @@
     - [x] Empécher les inscriptions double email / pseudo
   - [x] Création de formulaire de connexion
     - [ ] Possibilité de se connécter avec Google / Facebook (Pas prioritaire)
-  - [ ] Page profile
-  - [ ] Rester connecter grace aux cookies
+  - [x] Page profile
+    - [ ] Modification du profile
+  - [x] Rester connecter (grace aux cookies)
     - [ ] Pouvoir poster commentaire / thread sans devoir remmetre l'email a chaque fois
   - [x] Page Contact
   - [ ] Page support
@@ -138,8 +139,40 @@ SET nb_commentaires = (
     WHERE cb.id_commentaire_blog = b.id_commentaire_blog
 );
 ```
+**Anti copi-coller**
+```js
+        window.dataLayer = window.dataLayer || [];
 
-**Ajout pour ajouter TimeStamp**
-```SQL
-ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102282699-1');
+
+        document.addEventListener('copy', (event) => {
+            event.preventDefault();
+            alert('Le copier-coller est désactivé sur ce site.');
+        });
+
+        window.onload = function () {
+            var images = document.getElementsByTagName('img');
+            for (var i = 0; i < images.length; i++) {
+                images[i].oncontextmenu = function () {
+                    return false;
+                }
+            }
+        }
+```
+
+**Vérification de token session**
+```php
+session_start();
+
+// Vérifie si l'email est défini dans la session et s'il n'est pas vide
+if (isset ($_SESSION['email']) && !empty ($_SESSION['email'])) {
+    // Si l'email est défini et n'est pas vide, tu peux le récupérer
+    $email = $_SESSION['email'];
+    // Charge la page normalement ou exécute les actions nécessaires
+}
 ```
