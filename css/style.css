@@ -2479,6 +2479,30 @@ h5:hover {
   margin-right: 10px;
 }
 
+
+
+.admin-panel-button {
+  background-color: #ffc107; /* Couleur de fond */
+  color: #212529; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+  border: none; /* Supprime les bordures */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de la souris */
+  font-size: 16px; /* Taille de la police */
+}
+
+.admin-panel-button:hover {
+  background-color: #e9af00; /* Darker Green */
+}
+
+.admin-panel-button i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+
+
 .button-container {
   display: flex;
   justify-content: center;

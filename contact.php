@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Insérer les données dans la base de données
-    $sql = "INSERT INTO messages (pseudo, email, message) VALUES ('$pseudo', '$email', '$message')";
+    $sql = "INSERT INTO contact (pseudo, email, message) VALUES ('$pseudo', '$email', '$message')";
     if (mysqli_query($conn, $sql)) {
         // Redirection vers contact.php avec un délai de 2 secondes
         echo '<script>

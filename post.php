@@ -81,7 +81,7 @@
                             }
                             echo '<a><i class="fa fa-star" aria-hidden="true">' . $row["note"] . '</i></a>';
                             echo '<a href="#' . $row["tags"] . '"><i class="fa fa-folder" aria-hidden="true">' . $row["tags"] . '</i></a>';
-                            echo '<a><i class="fa fa-clock-o" aria-hidden="true">' . $row["date"] . '</i></a>';
+                            echo '<a><i class="fa fa-clock-o" aria-hidden="true">' . $row["created_at"] . '</i></a>';
                             echo '<a><i class="fa fa-bug" aria-hidden="true"> Signaler</i></a>';
                             echo '</div>';
                             echo '</div>';

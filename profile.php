@@ -136,56 +136,53 @@ if (isset ($_POST['logout'])) {
                                 echo "</div>";
 
 
+                                echo "</div>";
 
+                                echo "<div class='button-container'>";
+                                echo "<button type='submit' name='save_profile' class='save-button'>";
+                                echo "<i class='fa fa-save'></i> Enregistrer";
+                                echo "</button>";
 
-                                // echo "<li><i class='fa fa-user' aria-hidden='true'></i> <strong>Pseudo: </strong> <input type='text' name='pseudo' value='{$row["pseudo"]}'></li>";
-                                // echo "<li><i class='fa fa-user' aria-hidden='true'></i> <strong>Nom: </strong> <input type='text' name='nom' value='{$row["nom"]}'></li>";
-                                // echo "<li><i class='fa fa-user' aria-hidden='true'></i> <strong>Prénom: </strong> <input type='text' name='prenom' value='{$row["prenom"]}'></li>";
-                        
+                                if ($row['admin_id'] == 8) {
+                                    echo "<form method='post' action='admin_panel.php'>";
+                                    echo "<button type='submit' name='admin_panel' class='admin-panel-button'>";
+                                    echo "<i class='fa fa-cogs'></i> Panneau d'administration";
+                                    echo "</button>";
+                                    echo "</form>";
+
+                                }
+
+                                echo "<form method='post'>";
+                                echo "<button type='submit' name='logout' class='logout-button'>";
+                                echo "<span class='icon'>&#x2716;</span> Déconnexion";
+                                echo "</button>";
+                                echo "</form>";
+
+                                echo "</div>";
 
                             }
                         } else {
                             echo "Aucun résultat trouvé.";
                         }
+
+
+
+                        // Logout functionality
+                        if (isset ($_POST['logout'])) {
+                            // Destroy the session
+                            session_unset();
+                            session_destroy();
+                            // Redirect the user to the login page or another page
+                            header("Location: index.php");
+                            exit; // Always exit after redirection
+                        }
                         ?>
 
 
+
+
                     </div>
+                    <!-- end of col-md-9 -->
 
-
-                    <div class="button-container">
-                        <button type="submit" name="save_profile" class="save-button">
-                            <i class="fa fa-save"></i> Enregistrer
-                        </button>
-
-                        <form method="post">
-                            <button type="submit" name="logout" class="logout-button">
-                                <span class="icon">&#x2716;</span> Déconnexion
-                            </button>
-                        </form>
-                    </div>
-
-
-
-
-
-                    <?php
-                    // Logout functionality
-                    if (isset ($_POST['logout'])) {
-                        // Destroy the session
-                        session_unset();
-                        session_destroy();
-                        // Redirect the user to the login page or another page
-                        header("Location: index.php");
-                        exit; // Always exit after redirection
-                    }
-                    ?>
-
-
-
-
-                </div>
-                <!-- end of col-md-9 -->
-
-                <?php include 'php/sideContent.php' ?>
-                <?php include 'php/footer.php' ?>
+                    <?php include 'php/sideContent.php' ?>
+                    <?php include 'php/footer.php' ?>
