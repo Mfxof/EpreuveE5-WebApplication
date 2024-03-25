@@ -97,7 +97,7 @@ if (isset ($_POST['logout'])) {
                                 echo '<hr>';
                                 echo '</div>';
 
-                                // Start HTML output
+                                // Sortie HTML
                                 echo "<div class='user-image293'> <img src='image/icones-user/{$row["logo"]}.jpg' alt='Logo'> </div>";
                                 echo "<div class='user-list10039'>";
                                 echo "<div class='ul-list-user-left29'>";
