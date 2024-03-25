@@ -30,8 +30,12 @@
                 // Calculer l'offset
                 $offset = ($page - 1) * $articles_par_page;
 
-                // Requête pour récupérer les données des blogs depuis la base de données avec pagination
-                $sql = "SELECT * FROM user_questions LIMIT $articles_par_page OFFSET $offset";
+                // Requête pour récupérer les données des questions avec les informations de l'utilisateur
+                $sql = "SELECT u.logo, u.tags, u.nom, u.prenom, u.pseudo, q.question FROM user_questions q
+                        CROSS JOIN utilisateurs u ON q.utilisateur_id = u.id
+
+                        ORDER BY q.created_at
+                        LIMIT $articles_par_page OFFSET $offset";
                 $result = mysqli_query($conn, $sql);
 
                 // Vérifier s'il y a des données
@@ -43,7 +47,7 @@
                         // Afficher les informations de l'utilisateur
                         echo '<div class="row">';
                         echo '<div class="col-md-1">';
-                        echo '<div class="user-image2939303"> <img src="' . $row["logo"] . '" alt="UserLogo"> </div>';
+                        echo '<div class="user-image2939303"> <img src="image/icones-user/' . $row["logo"] . '.jpg" alt="UserLogo"> </div>';
                         echo '</div>';
                         echo '<div class="col-md-11">';
                         echo '<div class="user-description3903"> <a href="#">Ajouter ' . $row["nom"] . ' ' . $row["prenom"] . '</a>';
@@ -55,6 +59,8 @@
                             echo '<span class="badge210"><a>Vérifer</a></span>';
                         } elseif ($row["tags"] == 4) {
                             echo '<span class="badge201"><a>Débutant</a></span>';
+                        } elseif ($row["tags"] == 99) {
+                            echo '<span class="badge099"><a>Explorateur</a></span> ';
                         } elseif ($row["tags"] == 12) {
                             echo '<span class="badge229"><a>Admin</a></span>';
                             echo '<span class="badge001"><a>Expert</a></span>';
@@ -117,24 +123,6 @@
                 mysqli_close($conn);
                 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <form action="send_user_question.php">
                     <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
                 </form>
@@ -143,4 +131,3 @@
             </div>
             <!--                end of col-md-9 -->
             <?php include 'php/sideContent.php' ?>
-            <?php include 'php/footer.php' ?>
