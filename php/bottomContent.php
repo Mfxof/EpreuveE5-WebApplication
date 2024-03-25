@@ -72,8 +72,9 @@
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions (' . $totalEntriesQuestion . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Vues des blogs (' . $totalVues_blog . ')</i></p>';
         echo '<p class="inline"><i class="fa fa-question-circle" aria-hidden="true" style="width : 320px"> Questions des blogs (' . $totalQuestion_blog . ')</i></p>';
-        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Nombre de posts (' . $totalPostEntries . ')</i></p>';
 
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Nombre de tags (15)</i></p>';
+        echo '<p class="inline"><i class="fa fa-comment" aria-hidden="true" style="width : 320px"> Nombre de catégories (4)</i></p>';
 
         // Fermeture de la connexion
         $conn->close();
@@ -82,7 +83,7 @@
 
     </div>
     <div class="categori-part329" style="width : 350px">
-        <h4>Categories</h4>
+        <h4>Catégories</h4>
         <ul>
             <li class="bottomCtn"><a href="post.php#developpeur_web">Développeur web</a></li>
             <li class="bottomCtn"><a href="post.php#developpeur_Android">Développeur Android</a></li>

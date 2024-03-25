@@ -82,7 +82,7 @@
                 } elseif ($row["tags"] == 3) {
                     echo '<a href="#" class="designetion210">Vérifer</a> ';
                 } elseif ($row["tags"] == 4) {
-                    echo '<a href="#" class="designetion201">Débutant</a> ';
+                    echo '<a href="#" class="designetion209">Débutant</a> ';
                 } elseif ($row["tags"] == 99) {
                     echo '<a href="#" class="designetion099">Explorateur</a> ';
                 } elseif ($row["tags"] == 12) {
@@ -93,7 +93,7 @@
                     echo '<a href="#" class="designetion229">Expert</a> ';
                 } elseif ($row["tags"] == 14) {
                     echo '<a href="#" class="designetion210">Vérifer</a> ';
-                    echo '<a href="#" class="designetion201">Débutant</a> ';
+                    echo '<a href="#" class="designetion209">Débutant</a> ';
                 } else {
                     echo ' ';
                 }
