@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 21 Mars 2024 à 13:30
+-- Généré le :  Lun 25 Mars 2024 à 09:38
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -33,22 +33,43 @@ CREATE TABLE `blogs` (
   `auteur` varchar(128) NOT NULL,
   `date_publication` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `tags` varchar(255) DEFAULT NULL,
-  `nombre_commentaires` int(11) DEFAULT NULL,
   `nombre_vues` int(11) DEFAULT NULL,
-  `description` text
+  `description` text,
+  `nombre_commentaires` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `blogs`
 --
 
-INSERT INTO `blogs` (`id`, `image`, `titre`, `auteur`, `date_publication`, `tags`, `nombre_commentaires`, `nombre_vues`, `description`) VALUES
-(1, 'image/blog-bg/blog-2-806x440.png', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demtester', '2024-03-19 13:07:50', 'Jobs', 2, 179, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en évidence les faits clés à son sujet, comme la popularité de la question, le nombre de personnes intéressées par elle et qui est le public. Pour accomplir...'),
-(2, 'image/blog-bg/blog-3-806x440.jpg', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demetester', '2024-03-19 13:18:31', 'Jobs', 0, 6, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...'),
-(3, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demetester', '2024-03-19 13:20:26', 'Jobs', 3, 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...'),
-(4, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 2\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demetester', '2024-03-19 13:20:26', 'Jobs', 3, 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...'),
-(5, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 3\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demetester', '2024-03-19 13:20:26', 'Jobs', 3, 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...'),
-(6, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 4\r\n                            clavier, notre première fonctionnalité en laboratoire', 'Demetester', '2024-03-19 13:20:26', 'Jobs', 3, 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...');
+INSERT INTO `blogs` (`id`, `image`, `titre`, `auteur`, `date_publication`, `tags`, `nombre_vues`, `description`, `nombre_commentaires`) VALUES
+(1, 'image/blog-bg/blog-2-806x440.png', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:07:50', 'Jobs', 232, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en évidence les faits clés à son sujet, comme la popularité de la question, le nombre de personnes intéressées par elle et qui est le public. Pour accomplir...', 1),
+(2, 'image/blog-bg/blog-3-806x440.jpg', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:18:31', 'Jobs', 12, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...', 0),
+(3, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:20:26', 'Jobs', 10, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...', 0),
+(4, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 2\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:20:26', 'Jobs', 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...', 0),
+(5, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 3\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:20:26', 'Jobs', 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...', 0),
+(6, 'image/blog-bg/blog-4-806x440.jpg', 'Présentation des raccourcis 4\r\n                            clavier, notre première fonctionnalité en laboratoire', 'User_0012', '2024-03-19 13:20:26', 'Jobs', 9, 'Nous voulons rendre plus facile d\'en savoir plus sur une question et de mettre en\r\n                            évidence les faits clés à son sujet, comme la popularité de la question, le nombre de\r\n                            personnes intéressées par elle et qui est le public. Pour accomplir...', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `commentaires_blog`
+--
+
+CREATE TABLE `commentaires_blog` (
+  `id` int(11) NOT NULL,
+  `blog_id` int(11) DEFAULT NULL,
+  `contenu` text,
+  `date_commentaire` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `commentaires_blog`
+--
+
+INSERT INTO `commentaires_blog` (`id`, `blog_id`, `contenu`, `date_commentaire`, `user_id`) VALUES
+(1, 1, 'En vrai.....\r\nL\'article est top !', '2024-03-21 17:32:17', 8);
 
 -- --------------------------------------------------------
 
@@ -98,7 +119,7 @@ INSERT INTO `messages` (`id`, `pseudo`, `email`, `message`, `created_at`) VALUES
 
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
-  `image` varchar(255) COLLATE utf8mb4_bin NOT NULL,
+  `logo` varchar(128) COLLATE utf8mb4_bin NOT NULL,
   `certifier` int(8) NOT NULL,
   `titre` tinytext COLLATE utf8mb4_bin NOT NULL,
   `contenu` text COLLATE utf8mb4_bin NOT NULL,
@@ -115,50 +136,18 @@ CREATE TABLE `posts` (
 -- Contenu de la table `posts`
 --
 
-INSERT INTO `posts` (`id`, `image`, `certifier`, `titre`, `contenu`, `resolu`, `note`, `tags`, `index_tri`, `date`, `nbReponses`, `nbVues`) VALUES
+INSERT INTO `posts` (`id`, `logo`, `certifier`, `titre`, `contenu`, `resolu`, `note`, `tags`, `index_tri`, `date`, `nbReponses`, `nbVues`) VALUES
 (1, 'logoProfile_1', 0, 'Je suis coincé, quelle est la meilleur arumure sur Wow ?', '🤔 Salut ! Je suis actuellement coincé dans WoW et j\'ai du mal à décider quelle armure serait la meilleure pour mon personnage. J\'ai besoin de conseils pour choisir la meilleure protection possible. Quelle armure me recommandez-vous et pourquoi ? 💼🛡️.', 1, '3.6', 'WorldOfWarcraft', 'JeuxVideo', '2024-03-21 13:10:07', 42, 378),
 (2, 'loutrelogo', 1, 'Comment préparer un entretien ?', 'Ne serait-il pas formidable de savoir exactement quelles questions un responsable du recrutement vous poserait lors de votre prochain entretien d\'embauche ? Malheureusement, nous ne pouvons pas lire dans les pensées, mais nous vous offrirons la meilleure alternative : une liste de plus de 40 questions d\'entrevue les plus couramment posées, accompagné...', 0, '4.7', 'Jobs', 'Jobs', '2024-03-21 13:23:28', 2, 17),
 (3, 'logoProfile_2', 0, 'Combien gagnent les développeurs web ?', 'Je pense à faire carrière dans le développement web et je me demandais combien gagnais un développeur débutant dans le WEB.', 0, '?', 'Jobs', 'Jobs', '2024-03-21 13:25:41', 0, 18),
 (4, 'logoProfile_1', 1, 'Connaissez-vous un jeu similaire à Remnant 2 ?', 'Connaissez-vous un jeu similaire à Remnant 2, de préférence un jeu d\'action-aventure avec des éléments de tir à la troisième personne et un système de combat exigeant, dans un univers post-apocalyptique ou fantastique ? 🎮', 2, '?', 'JeuxVideo', 'JeuxVideo', '2024-03-21 13:26:30', 0, 2),
-(5, 'loutrelogo', 1, 'Crée un site dynamique rapidement ?', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `posts_inside`
---
-
-CREATE TABLE `posts_inside` (
-  `idPrimaire` int(11) NOT NULL,
-  `pseudo` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `titre` text,
-  `categorie` varchar(255) DEFAULT NULL,
-  `fichier` varchar(255) DEFAULT NULL,
-  `contenu` varchar(255) DEFAULT NULL,
-  `date_creation` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `posts_inside`
---
-
-INSERT INTO `posts_inside` (`idPrimaire`, `pseudo`, `email`, `titre`, `categorie`, `fichier`, `contenu`, `date_creation`) VALUES
-(1, '', '', '', '', '', '', '2024-03-21 07:49:32'),
-(2, '', '', '', '', '', '', '2024-03-21 07:49:38'),
-(3, '', '', '', '', '', '', '2024-03-21 07:51:22'),
-(4, '', '', '', '', '', '', '2024-03-21 07:52:27'),
-(5, '', '', '', '', '', '', '2024-03-21 07:54:12'),
-(6, '', '', '', '', '', '', '2024-03-21 07:54:52'),
-(7, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '', 'azerty', '2024-03-21 07:55:26'),
-(8, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '1695901324974.jpg', 'aze', '2024-03-21 07:56:49'),
-(9, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '1695901324974.jpg', 'aze', '2024-03-21 07:56:53'),
-(10, 'matys FREYERMUTH', 'matys@gmail.com', 'Artcile OUi', 'dfg', '', 'bn,', '2024-03-21 08:00:58'),
-(11, '', '', '', '', '', ';', '2024-03-21 08:04:48'),
-(12, '', '', '', '', '', '', '2024-03-21 08:09:19'),
-(13, '', '', '', '', '', '', '2024-03-21 08:09:34'),
-(14, '', '', '', '', '', '', '2024-03-21 08:09:39'),
-(15, 'mts', 'TheKingXiode@gmail.com', 'sa', 'sa', '', 'sa', '2024-03-21 13:00:48');
+(5, 'loutrelogo', 1, 'Crée un site dynamique rapidement ?', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(6, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(7, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(8, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(9, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(10, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17),
+(11, 'loutrelogo', 1, '-- TEMPORAIRE --', 'Ne serait-il pas merveilleux de pouvoir créer un site web dynamique en un temps record ? Malheureusement, nous ne possédons pas le don de lire dans les pensées, mais nous vous proposons la meilleure alternative : un guide exhaustif pour vous aider à accomplir cette tâche avec efficacité et rapidité. Bien que nous ne puissions pas fournir une solution...', 0, '4.2', 'HTML', 'WEB', '2024-03-21 13:29:55', 2, 17);
 
 -- --------------------------------------------------------
 
@@ -208,23 +197,31 @@ CREATE TABLE `utilisateurs` (
   `email` varchar(50) NOT NULL,
   `num` varchar(16) NOT NULL,
   `mot_de_passe` varchar(255) NOT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
   `tags` int(11) NOT NULL,
   `points_activite` int(128) NOT NULL DEFAULT '0',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `pays` varchar(255) DEFAULT NULL,
+  `ville` varchar(255) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `site_web` varchar(255) DEFAULT NULL,
+  `sexe` tinytext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `logo`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `tags`, `points_activite`, `created_at`) VALUES
-(2, 'verouiller_logo', '', 'test', 'test', 'test@gmail.com', '0', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', 0, 0, '2024-03-11 13:44:40'),
-(5, 'loutrelogo', 'KirbyFanLoutre12', 'Kirby', 'Loutre<3', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', 14, 206, '2024-03-12 12:38:19'),
-(8, 'LogoXiode', '', 'FREYERMUTH', 'matys', 'matysfreyermuth@gmail.com', '', '$2y$10$UjYcCBd1.C0fMUvbadl02uk6BSXzrHXtU9r5tThArHxKoeX8AmkGO', 12, 23406, '2024-03-14 09:37:49'),
-(9, 'IconOzu3rol', 'ozu3rol', 'CRUGNOLA', 'LORIS', 'loris067@hotmail.fr', '', '$2y$10$TSj2QoXf.PwFyUZehNMrQ.UZuJiOlMwcnAXtkTURBgsNPld5uC52u', 12, 3, '2024-03-14 09:38:51'),
-(10, 'logoAshley', '', 'Andrianarivony', 'Ashley', 'lantoharyashley@gmail.com', '', '$2y$10$Bdi3A5F81LL9K.BiOCq8eebPCqGkvah9jFa6POpDuARL6wZzdNYtK', 12, 187, '2024-03-14 09:39:52'),
-(11, 'LogoWilliam', '', 'CARTA', 'William', 'william57650@yahoo.fr', '', '$2y$10$G4BY8Y2tQAe2hPFni5.MqO2pR9UhQ3o7Lo9MhjzOWxJXI14ds0pSu', 12, 1264, '2024-03-18 12:52:34'),
-(12, '', 'TestUser', 'test', 'user', 'testuser@gmail.com', '', '$2y$10$relW9vW3KAwApPv1c4x/WOfUB.z.Qvkysp.WX2lup9kvXgk9Y8/ue', 0, 0, '2024-03-19 22:54:51');
+INSERT INTO `utilisateurs` (`id`, `logo`, `pseudo`, `nom`, `prenom`, `email`, `num`, `mot_de_passe`, `description`, `tags`, `points_activite`, `created_at`, `pays`, `ville`, `age`, `site_web`, `sexe`) VALUES
+(2, 'verouiller_logo', 'User_0012', 'User', 'test', 'test@gmail.com', '', '$2y$10$dPnsYY/NDcVR4.VCucAUfegihcP2O/d6emCFM0lex6A2r89UH5dSa', '', 99, 96, '2024-03-11 13:44:40', NULL, NULL, NULL, NULL, ''),
+(5, 'loutrelogo', 'KirbyFanLoutre12', 'Kirby', 'Loutre', 'fanloutre@gmail.com', '', '$2y$10$.8fvtLun8u5cLsE0NK2bWuAqaGD6y4lxdxgRYwkPe4iFFY4V6VaG.', 'Je m\'appelle Kirby et je suis un grand fan de loutres ! 🎮 Plonger dans les aventures colorées de Kirby est ma passion, et j\'adore explorer chaque recoin de ces mondes fantastiques avec un enthousiasme débordant. 🌟 \r\nQuand je ne suis pas occupé à sauver Dream Land, je me plonge dans tout ce qui concerne les loutres - de leurs comportements adorables à leurs habitats naturels fascinants. 🦦 \r\nJe suis toujours partant pour partager des faits amusants ou des vidéos mignonnes sur ces créatures aquatiques avec mes amis. \r\n\r\nAvec ma personnalité débordante de joie et mon amour pour Kirby et les loutres, je suis toujours prêt pour une aventure ludique et pleine de surprises ! 🌈', 14, 206, '2024-03-12 12:38:19', 'France', 'Paris', 32, NULL, 'Homme'),
+(8, 'LogoXiode', '', 'FREYERMUTH', 'Matys', 'matysfreyermuth@gmail.com', '', '$2y$10$UjYcCBd1.C0fMUvbadl02uk6BSXzrHXtU9r5tThArHxKoeX8AmkGO', '🌟 Créateur et administrateur passionné de ce site Web 🌐. Dédié à fournir une expérience utilisateur exceptionnelle, je m’engage à maintenir et à enrichir le contenu avec les dernières informations et tendances. Toujours à l’écoute des retours des utilisateurs pour améliorer le site. Ensemble, construisons une communauté florissante ! 💡🔨', 12, 1365, '2024-03-14 09:37:49', 'France', 'Strasbourg', 19, 'https://arial-games.000webhostapp.com/portfolio/portfolio_New/', 'Homme'),
+(9, 'IconOzu3rol', 'ozu3rol', 'CRUGNOLA', 'LORIS', 'loris067@hotmail.fr', '', '$2y$10$TSj2QoXf.PwFyUZehNMrQ.UZuJiOlMwcnAXtkTURBgsNPld5uC52u', 'LOUTRE !', 12, 0, '2024-03-14 09:38:51', 'France', 'Strasbourg', 20, 'https://loriscrugnola.000webhostapp.com/index.php', 'Homme'),
+(10, 'logoAshley', '', 'Andrianarivony', 'Ashley', 'lantoharyashley@gmail.com', '', '$2y$10$Bdi3A5F81LL9K.BiOCq8eebPCqGkvah9jFa6POpDuARL6wZzdNYtK', '', 12, 0, '2024-03-14 09:39:52', 'France', 'Strasbourg', 22, 'https://www.ashley.go.yj.fr/', 'Homme'),
+(11, 'LogoWilliam', '', 'CARTA', 'William', 'william57650@yahoo.fr', '', '$2y$10$G4BY8Y2tQAe2hPFni5.MqO2pR9UhQ3o7Lo9MhjzOWxJXI14ds0pSu', '', 12, 0, '2024-03-18 12:52:34', 'France', 'Strasbourg', 23, 'https://william-carta.webador.fr/', 'Homme'),
+(13, 'logoProfile_1', '', 'Meyer', 'Matthieu', '', '', '', '', 4, 0, '2024-03-25 09:21:32', 'France', 'Eckbolsheim', 29, NULL, 'Homme'),
+(15, 'logoProfile_2', '', 'Wagner', 'Ambre', 'test2@gmail.com', '', '', 'Salut, je m’appelle Ambre Wagner. Je suis une jeune débutante passionnée, inscrite depuis le 1er avril 2024. Originaire d’Allemagne, j’ai 18 ans et je me décris comme une femme. Mon site web est accessible ici. 🌟🇩🇪\r\n                        ', 4, 0, '2024-03-25 09:26:20', 'Allemagne', NULL, 18, NULL, 'Femme'),
+(16, 'logoProfile_3', '', 'Wolfmaul', 'Tarvard', 'test3@gmail.com', '', '', 'Je suis Tarvad Wolfmaul, un aventurier intrépide. Armé de mon intelligence acérée et de ma force brutale, je traque les mystères du monde avec une détermination sans faille. Mes yeux perçants scrutent l\'horizon, prêts à défendre les faibles et à poursuivre la vérité. Sous ma                        carapace de fer, mon cœur bat avec la ferveur d\'un héros, prêt à affronter tous les défis qui se dressent sur mon chemin. 🐺⚔️🌟', 13, 0, '2024-03-25 09:31:58', 'Midgard', 'Wilenskraft', 32, 'https://worldofwarcraft.blizzard.com/fr-fr/', 'Homme');
 
 --
 -- Index pour les tables exportées
@@ -237,6 +234,14 @@ ALTER TABLE `blogs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `commentaires_blog`
+--
+ALTER TABLE `commentaires_blog`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `article_id` (`blog_id`),
+  ADD KEY `fk_user_id` (`user_id`);
+
+--
 -- Index pour la table `messages`
 --
 ALTER TABLE `messages`
@@ -247,12 +252,6 @@ ALTER TABLE `messages`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `posts_inside`
---
-ALTER TABLE `posts_inside`
-  ADD PRIMARY KEY (`idPrimaire`);
 
 --
 -- Index pour la table `user_questions`
@@ -277,6 +276,11 @@ ALTER TABLE `utilisateurs`
 ALTER TABLE `blogs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
+-- AUTO_INCREMENT pour la table `commentaires_blog`
+--
+ALTER TABLE `commentaires_blog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
@@ -285,12 +289,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT pour la table `posts_inside`
---
-ALTER TABLE `posts_inside`
-  MODIFY `idPrimaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT pour la table `user_questions`
 --
@@ -300,7 +299,18 @@ ALTER TABLE `user_questions`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `commentaires_blog`
+--
+ALTER TABLE `commentaires_blog`
+  ADD CONSTRAINT `commentaires_blog_ibfk_1` FOREIGN KEY (`blog_id`) REFERENCES `blogs` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
