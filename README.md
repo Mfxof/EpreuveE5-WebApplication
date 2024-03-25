@@ -139,6 +139,7 @@ SET nb_commentaires = (
     WHERE cb.id_commentaire_blog = b.id_commentaire_blog
 );
 ```
+
 **Anti copi-coller**
 ```js
         window.dataLayer = window.dataLayer || [];
@@ -174,5 +175,13 @@ if (isset ($_SESSION['email']) && !empty ($_SESSION['email'])) {
     // Si l'email est défini et n'est pas vide, tu peux le récupérer
     $email = $_SESSION['email'];
     // Charge la page normalement ou exécute les actions nécessaires
+}
+```
+
+**Code affichage érreurs**
+```PHP
+$resultat = $conn->query($sql);
+if (!$resultat) {
+    trigger_error('Erreur SQL : ' . $conn->error);
 }
 ```
