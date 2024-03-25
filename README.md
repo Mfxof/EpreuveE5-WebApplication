@@ -28,9 +28,9 @@
 ### Contenus
 
 - [x] Création de la base de donnés
-- [ ] Pages dynamique si on est connecter ou non
+- [x] Pages dynamique si on est connecter ou non
 - Création de pages et les finir a 100%
-  - [ ] Page Accueil
+  - [x] Page Accueil
   - [ ] Page Forum
     - [ ] Sortie des Post dynamiquement
     - [ ] Commentaires / vues fonctionnelles
@@ -43,10 +43,9 @@
     - [x] Pouvoir consulter l'articles individuellement
     - [x] Changment de page dynamique
   - Pages
-    - [ ] Page A propos
+    - [x] Page A propos
       - [x] Contenu
-      - [ ] Visuelle
-    - [ ] Page Servies -- Annulé
+      - [x] Visuelle
     - [x] Page FAQ
     - [ ] Utilisateurs
       - [ ] Affichage via PHP (+tri ?)
@@ -70,9 +69,16 @@
   - [ ] Thread récents
   - [ ] Bar de recherche
   - [ ] Finir le Footer
-- [ ] Faire la documentation
+- Faire la documentation
+    - [ ] UML de la BD
+    - [ ] Documentation utilisateur
+    - [ ] Documentation développeuer
 - [ ] Faire le diagramme de grantt
-  
+
+---
+
+**Annulée**
+- [ ] Page Servies -- Annulé
 
 ---
 
