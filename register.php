@@ -8,19 +8,22 @@ if (!$conn) {
 
 // Vérifier si le formulaire d'inscription est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $pseudo = $_POST['pseudo'];
-  $nom = $_POST['nom'];
-  $prenom = $_POST['prenom'];
-  $email = $_POST['email'];
-  $num = $_POST['num'];
-  $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
-
-  // Insérer les données dans la base de données
-  $sql = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, num, mot_de_passe) VALUES ('$pseudo', '$nom','$prenom', '$email', '$num', '$mot_de_passe')";
-  if (mysqli_query($conn, $sql)) {
-    header("Location: profile.php");
+  if($_POST['mot_de_passe'] == $_POST['confirmation']){
+    $pseudo = $_POST['pseudo'];
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $num = $_POST['num'];
+    $mot_de_passe = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
+    // Insérer les données dans la base de données
+    $sql = "INSERT INTO utilisateurs (pseudo, nom, prenom, email, num, mot_de_passe) VALUES ('$pseudo', '$nom','$prenom', '$email', '$num', '$mot_de_passe')";
+    if (mysqli_query($conn, $sql)) {
+      header("Location: profile.php");
+    } else {
+      echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
+    }
   } else {
-    echo "Erreur: " . $sql . "<br>" . mysqli_error($conn);
+    echo '<script>alert("Erreur: La confirmation de mot de passe n\'est pas identique au mot de passe");</script>';
   }
 }
 
@@ -64,7 +67,7 @@ mysqli_close($conn);
           <input type="email" placeholder="E-Mail*" name="email" required />
           <input type="tel" placeholder="Téléphone" name="num" />
           <input type="password" placeholder="Password*" name="mot_de_passe" required />
-          <input type="password" placeholder="Confirm Password*" />
+          <input type="password" placeholder="Confirm Password*" name="confirmation" required/>
           <div class="col-md-4">
             <div class="row text-center sign-with">
               <div class="col-md-12">
