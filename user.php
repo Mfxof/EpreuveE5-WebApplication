@@ -65,6 +65,8 @@ include 'php/header.php'; ?>
                                 echo '<span class="badge210"><a>Vérifer</a></span>';
                             } elseif ($row["tags"] == 4) {
                                 echo '<span class="badge201"><a>Débutant</a></span>';
+                            } elseif ($row["tags"] == 99) {
+                                echo '<span class="badge099"><a>Explorateur</a></span> ';
                             } elseif ($row["tags"] == 12) {
                                 echo '<span class="badge229"><a>Admin</a></span>';
                                 echo '<span class="badge001"><a>Expert</a></span>';
