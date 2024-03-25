@@ -20,10 +20,10 @@
             <!--    body content-->
             <div class="col-md-9">
 
-                <p style="padding-top : 50px; font-size: 24px; ">Bienvenue et un grand merci de vous être aventuré sur
+                <div class="about-user2039 mt-70"><p style="font-size: 24px; ">Bienvenue <br> Un grand merci de vous être aventuré sur
                     cette page. <br> Nous sommes des étudiants de BTS Services Informatiques aux Organisations. <br> Ce
                     site est un projet de groupe réalisé en vue d'une présentation orale. <br> Vous trouverez ci-dessous
-                    nos profils respectif.</p>
+                    nos profils respectif.</p></div>
 
                 <div class="about-user2039 mt-70">
                     <div class="user-title3930">
@@ -43,8 +43,6 @@
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 9 Mars
-                                    2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 19</li>
@@ -56,7 +54,6 @@
                         </div>
                         <div class="ul-list-user-right29">
                             <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
@@ -66,28 +63,15 @@
                     <div class="user-social3903">
                         <p>
                             <span>
-                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="https://www.linkedin.com/in/matys-freyermuth/" target="_blank"><i
                                         class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                             </span>
                         </p>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
 
 
                 <div class="about-user2039 mt-70">
@@ -106,8 +90,6 @@
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 14 Mars
-                                    2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 20</li>
@@ -119,7 +101,6 @@
                         </div>
                         <div class="ul-list-user-right29">
                             <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong> </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
@@ -129,32 +110,16 @@
                     <div class="user-social3903">
                         <p>
                             <span>
-                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="https://www.linkedin.com/in/loris-crugnola/" target="_blank"><i
                                         class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="https://www.instagram.com/ozu3rol/" target="_blank"><i class="fa fa-instagram"
                                         aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                <a href="mailto:loris067@hotmail.fr" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                             </span>
                         </p>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 <div class="about-user2039 mt-70">
@@ -172,9 +137,7 @@
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 14 Mars
-                                    2024</li>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 22</li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Site Web: </strong><a
@@ -183,9 +146,7 @@
                             </ul>
                         </div>
                         <div class="ul-list-user-right29">
-                            <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
-                                </li>
+                            <ul>                           </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
@@ -195,28 +156,14 @@
                     <div class="user-social3903">
                         <p>
                             <span>
-                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                             </span>
                         </p>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
                 <div class="about-user2039 mt-70">
@@ -236,8 +183,6 @@
                     <div class="user-list10039">
                         <div class="ul-list-user-left29">
                             <ul>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i> <strong>Inscription:</strong> 25 Mars
-                                    2024</li>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Pays:</strong> France
                                 </li>
                                 <li><i class="fa fa-heart" aria-hidden="true"></i> <strong>Age:</strong> 23</li>
@@ -247,9 +192,7 @@
                             </ul>
                         </div>
                         <div class="ul-list-user-right29">
-                            <ul>
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> <strong>Téléphone:</strong>
-                                </li>
+                            <ul>                           </li>
                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <strong>Ville:</strong> Strasbourg
                                 </li>
                                 <li><i class="fa fa-user" aria-hidden="true"></i> <strong>Sexe: </strong>Homme</li>
@@ -259,11 +202,8 @@
                     <div class="user-social3903">
                         <p>
                             <span>
-                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="#" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                             </span>
