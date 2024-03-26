@@ -5,7 +5,7 @@ include 'php/db_connect.php';
 
 // Vérifiez la connexion à la base de données
 if (!$conn) {
-    die ("La connexion à la base de données a échoué: " . mysqli_connect_error());
+    die("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
 
 // Vérifiez si le formulaire de connexion est soumis
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Vérifiez si l'utilisateur est déjà connecté
-if (isset ($_SESSION['email'])) {
+if (isset($_SESSION['email'])) {
     header("Location: profile.php"); // Redirigez vers la page de profil si déjà connecté
     exit; // Toujours quitter après la redirection
 }
@@ -42,13 +42,12 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="title" content="Ask online Form">
-    <meta name="description"
-        content="The Ask is a bootstrap design help desk, support forum website template coded and designed with bootstrap Design, Bootstrap, HTML5 and CSS. Ask ideal for wiki sites, knowledge base sites, support forum sites">
+    <meta name="description" content="Page de connexion - Queri Web">
     <meta name="keywords"
         content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment">
     <meta name="robots" content="index, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
+    <meta name="language" content="Francais">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/loginstyle.css">
@@ -64,7 +63,7 @@ mysqli_close($conn);
         <div class="modal-bodies">
             <div class="modal-body modal-body-step-1 is-showing">
                 <div class="title">Connexion</div>
-                <div class="description">Bonjour, connectez vous</div>
+                <div class="description">Bonjour, connectez vous !</div>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <input type="email" placeholder="Email" name="email" required><br>
                     <input type="password" placeholder="Mot de passe" name="mot_de_passe" required><br>

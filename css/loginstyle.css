@@ -1,5 +1,5 @@
 html {
-  background: #ff7361;
+  background: #1e8449;
   /*
   background: radial-gradient(#fff176, #f57f17);
   min-height: 100%;
@@ -11,7 +11,7 @@ html {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
-  color: #ff7361;
+  color: #1e8449;
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 1px;
@@ -42,7 +42,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="con-password"]:focus,
 input[type="tel"]:focus {
-  border-color: #ff7361;
+  border-color: #1e8449;
 }
 
 input[type="radio"] {
@@ -68,7 +68,7 @@ label:first-child {
 .rerun-button {
   padding: 10px 20px;
   border-radius: 3px;
-  background: #ff7361;
+  background: #1e8449;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -77,7 +77,7 @@ label:first-child {
 }
 .button:hover,
 .rerun-button:hover {
-  background: #e66400;
+  background: #125a30;
 }
 .button.rerun-button,
 .rerun-button.rerun-button {

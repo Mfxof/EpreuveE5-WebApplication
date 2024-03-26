@@ -8,7 +8,7 @@ if (!$conn) {
 
 // Vérifier si le formulaire d'inscription est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if($_POST['mot_de_passe'] == $_POST['confirmation']){
+  if ($_POST['mot_de_passe'] == $_POST['confirmation']) {
     $pseudo = $_POST['pseudo'];
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
@@ -37,13 +37,12 @@ mysqli_close($conn);
 <head>
   <meta charset="UTF-8">
   <meta name="title" content="Ask online Form">
-  <meta name="description"
-    content="The Ask is a bootstrap design help desk, support forum website template coded and designed with bootstrap Design, Bootstrap, HTML5 and CSS. Ask ideal for wiki sites, knowledge base sites, support forum sites">
+  <meta name="description" content="Page d'inscription - Queri Web">
   <meta name="keywords"
     content="HTML, CSS, JavaScript,Bootstrap,js,Forum,webstagram ,webdesign ,website ,web ,webdesigner ,webdevelopment">
   <meta name="robots" content="index, nofollow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
+  <meta name="language" content="Francais">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/loginstyle.css">
@@ -67,7 +66,7 @@ mysqli_close($conn);
           <input type="email" placeholder="E-Mail*" name="email" required />
           <input type="tel" placeholder="Téléphone" name="num" />
           <input type="password" placeholder="Password*" name="mot_de_passe" required />
-          <input type="password" placeholder="Confirm Password*" name="confirmation" required/>
+          <input type="password" placeholder="Confirm Password*" name="confirmation" required />
           <div class="col-md-4">
             <div class="row text-center sign-with">
               <div class="col-md-12">

@@ -2495,8 +2495,6 @@ h5:hover {
   margin-right: 10px;
 }
 
-
-
 .admin-panel-button {
   background-color: #ffc107; /* Couleur de fond */
   color: #212529; /* Couleur du texte */
@@ -2515,9 +2513,6 @@ h5:hover {
   font-size: 24px;
   margin-right: 10px;
 }
-
-
-
 
 .button-container {
   display: flex;
