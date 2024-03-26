@@ -46,6 +46,7 @@ mysqli_close($conn);
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/loginstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link class="logo" rel="icon" type="image/png" href="image/Logo.png" />
   <title>Inscription</title>
@@ -61,8 +62,8 @@ mysqli_close($conn);
         <div class="description">Bonjour, formulaire d'inscription</div>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
           <input type="text" placeholder="Pseudo" name="pseudo" />
-          <input type="text" placeholder="Nom" name="nom" />
-          <input type="text" placeholder="Prenom" name="prenom" />
+          <input type="text" placeholder="Nom*" name="nom" required />
+          <input type="text" placeholder="Prenom*" name="prenom" required />
           <input type="email" placeholder="E-Mail*" name="email" required />
           <input type="tel" placeholder="Téléphone" name="num" />
           <input type="password" placeholder="Password*" name="mot_de_passe" required />
@@ -86,6 +87,16 @@ mysqli_close($conn);
             <input class="button" type="submit" value="S'inscrire">
           </div>
         </form>
+
+        <div class="vertical-center">
+          <div class="button-container">
+            <!-- Autres boutons ici si nécessaire -->
+            <a href="index.php" class="back-button">
+              <i class="fas fa-arrow-left"></i> Retour
+            </a>
+          </div>
+        </div>
+
       </div>
 
 

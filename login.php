@@ -51,6 +51,8 @@ mysqli_close($conn);
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <link class="logo" rel="icon" type="image/png" href="image/Logo.png" />
     <title>Connexion</title>
@@ -71,9 +73,14 @@ mysqli_close($conn);
                     <a href="register.php">
                         <div class="button">CREE UN COMPTE</div>
                     </a>
-                </form>
-
-
+                    <div class="vertical-center">
+                        <div class="button-container">
+                            <!-- Autres boutons ici si nécessaire -->
+                            <a href="index.php" class="back-button">
+                                <i class="fas fa-arrow-left"></i> Retour
+                            </a>
+                        </div>
+                    </div>
                 </form>
             </div>
 

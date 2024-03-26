@@ -173,3 +173,37 @@ label:first-child {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+.back-button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: #1e8449; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+/* Alignement horizontal */
+.button-container {
+  text-align: center;
+}
+
+/* Alignement vertical */
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Ajustez si nécessaire */
+}
+
+/* Ajustements supplémentaires si nécessaire */
+.back-button i {
+  margin-right: 5px; /* Marge à droite de l'icône */
+}
+
+.back-button:hover {
+  background: #125a30; /* Couleur de fond du bouton au survol */
+}
