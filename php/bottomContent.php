@@ -14,7 +14,7 @@
         $totalEntries = $rowCountEntries['totalEntries'];
 
         // Requête pour compter le nombre total de questions dans la base de données
-        $sqlCountEntriesQuestion = "SELECT COUNT(*) AS totalEntries FROM user_questions";
+        $sqlCountEntriesQuestion = "SELECT COUNT(*) AS totalEntries FROM user_messages";
         $resultCountEntriesQuestion = $conn->query($sqlCountEntriesQuestion);
         $rowCountEntriesQuestion = $resultCountEntriesQuestion->fetch_assoc();
         $totalEntriesQuestion = $rowCountEntriesQuestion['totalEntries'];
@@ -114,7 +114,7 @@
                 echo "</div>";
                 echo "</div>";
                 echo "<span class='points-details938'>";
-                $nameToDisplay = !empty ($row["pseudo"]) ? $row["pseudo"] : $row["nom"] . " " . $row["prenom"];
+                $nameToDisplay = !empty($row["pseudo"]) ? $row["pseudo"] : $row["nom"] . " " . $row["prenom"];
                 echo "<a href='#'><h5>{$nameToDisplay}</h5></a>";
 
                 // Vous pouvez ajouter des conditions pour les designations
