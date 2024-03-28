@@ -96,6 +96,7 @@
 
 
             </div>
-            <!--                fin de col-md-9 -->
+            <!-- fin de col-md-9 -->
             <?php include 'php/sideContent.php' ?>
             <?php include 'php/footer.php' ?>
+            

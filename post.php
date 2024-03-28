@@ -42,7 +42,7 @@
                     $articles_par_page = 5;
 
                     // Calculer la page actuelle
-                    $page = isset ($_GET['page']) ? $_GET['page'] : 1;
+                    $page = isset($_GET['page']) ? $_GET['page'] : 1;
 
                     // Calculer l'offset
                     $offset = ($page - 1) * $articles_par_page;
@@ -128,8 +128,16 @@
                     ?>
                 </div>
             </div>
-            <?php include 'php/sideContent.php' ?>
-            <?php include 'php/footer.php' ?>
-            <form action="send_thread.php">
+            <?php include 'php/sideContent.php';
+            include 'php/footer.php';
+            // Check if the user is logged in
+            if (isset($_SESSION['email'])) {
+                // If logged in, display "Mon compte" with a link to profile.php
+                echo '            <form action="send_thread.php">
                 <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poster un thread</button>
-            </form>
+            </form>';
+            } else {
+                // If not logged in, display "Connexion / Inscription" with a link to login.php
+                echo '';
+            }
+            ?>

@@ -25,13 +25,13 @@
                 $articles_par_page = 8;
 
                 // Calculer la page actuelle
-                $page = isset ($_GET['page']) ? $_GET['page'] : 1;
+                $page = isset($_GET['page']) ? $_GET['page'] : 1;
 
                 // Calculer l'offset
                 $offset = ($page - 1) * $articles_par_page;
 
                 // Requête pour récupérer les données des questions avec les informations de l'utilisateur
-                $sql = "SELECT u.logo, u.tags, u.nom, u.prenom, u.pseudo, q.question FROM user_questions q
+                $sql = "SELECT u.logo, u.tags, u.nom, u.prenom, u.pseudo, q.question FROM user_messages q
                         CROSS JOIN utilisateurs u ON q.utilisateur_id = u.id
 
                         ORDER BY q.created_at
@@ -96,7 +96,7 @@
                 }
 
                 // Afficher les liens de pagination
-                $sql_total = "SELECT COUNT(*) AS total FROM user_questions";
+                $sql_total = "SELECT COUNT(*) AS total FROM user_messages";
                 $result_total = mysqli_query($conn, $sql_total);
                 $row_total = mysqli_fetch_assoc($result_total);
                 $total_articles = $row_total['total'];
@@ -123,11 +123,16 @@
                 mysqli_close($conn);
                 ?>
 
-                <form action="send_user_question.php">
-                    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
-                </form>
-
-
-            </div>
-            <!--                end of col-md-9 -->
-            <?php include 'php/sideContent.php' ?>
+                <?php include 'php/sideContent.php';
+                include 'php/footer.php';
+                // Check if the user is logged in
+                if (isset($_SESSION['email'])) {
+                    // If logged in, display "Mon compte" with a link to profile.php
+                    echo '<form action="send_user_question.php">
+                <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
+            </form>';
+                } else {
+                    // If not logged in, display "Connexion / Inscription" with a link to login.php
+                    echo '';
+                }
+                ?>
