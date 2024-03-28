@@ -174,6 +174,12 @@
             <li class="bottomCtn"><a href="post.php#HTML">HTML</a></li>
             <li class="bottomCtn"><a href="post.php#CSS">CSS</a></li>
             <li class="bottomCtn"><a href="post.php#JavaScript">JavaScript</a></li>
+            <li class="bottomCtn"><a href="post.php#php">PHP</a></li>
+            <li class="bottomCtn"><a href="post.php#json">Json</a></li>
+            <li class="bottomCtn"><a href="post.php#linux">Linux</a></li>
+            <li class="bottomCtn"><a href="post.php#cybersecurite">Cybersécurité</a></li>
+            <li class="bottomCtn"><a href="post.php#code">Code</a></li>
+            
 
 
         </ul>
