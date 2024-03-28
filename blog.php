@@ -6,7 +6,7 @@
 <!--===breadcrumb=====-->
 <section class="header-descriptin329">
     <div class="container">
-        <h3>Blog</h3>
+        <h3>Blogs</h3>
         <ol class="breadcrumb breadcrumb839">
             <li><a href="index.php">Accueil</a></li>
             <li class="active" id="sous_class">Blog</li>
@@ -43,7 +43,7 @@
                         // Afficher les données du blog
                         echo '<div class="blog-part3903">';
                         // Afficher le contenu du blog
-                        echo '<img src="' . $row["image"] . '" alt="Image" class="img-responsive">';
+                        echo "<img src='image/blog-bg/{$row["image"]}.jpg' alt='ImageBlog' class='img-responsive'>";
                         echo '<div class="blog-details3902">';
                         echo '<h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> ' . $row["titre"] . '</h3>';
                         echo '<hr>';

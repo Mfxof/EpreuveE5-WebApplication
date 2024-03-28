@@ -1,11 +1,13 @@
 <?php
 include 'php/token_session.php';
 include 'php/header.php';
-include 'php/navBar.php';
+include 'php/navBar.php'; ?>
+<title>Blog</title>
+<?php
 include 'php/db_connect.php';
 
 // Vérifier si l'ID de l'article est passé en paramètre GET
-if (isset ($_GET['id'])) {
+if (isset($_GET['id'])) {
     // Récupérer l'ID de l'article depuis les paramètres GET
     $article_id = $_GET['id'];
 
@@ -44,7 +46,8 @@ if (isset ($_GET['id'])) {
                 <div class="row">
                     <div class="col-md-9 blog--top-part2892">
                         <div class="blog-part3903">
-                            <img src="<?php echo $row['image']; ?>" alt="Image" class="img-responsive">
+                            <?php
+                            echo "<img src='image/blog-bg/{$row["image"]}.jpg' alt='ImageBlog' class='img-responsive'>"; ?>
                             <div class="blog-details3902">
                                 <h3><span><i class="fa fa-picture-o" aria-hidden="true"></i></span>
                                     <?php echo $row['titre']; ?>
@@ -69,6 +72,8 @@ if (isset ($_GET['id'])) {
                                 </div>
                                 <p>
                                     <?php echo $row['description']; ?>
+                                    <hr>
+                                    <?php echo $row['corps_text']; ?>
                                 </p>
                             </div>
                         </div>

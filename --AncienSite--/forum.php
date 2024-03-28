@@ -3,7 +3,8 @@ include 'php/header.php';
 include 'php/navBar.php'; ?>
 
 <div class="postsThread">
-    <a href="postsCreation.php"><img src="images/Plus-Symbol-Vector-PNG-Cutout.png" alt="Créer un thread">Poster un thread</a>
+    <a href="postsCreation.php"><img src="images/Plus-Symbol-Vector-PNG-Cutout.png" alt="Créer un thread">Poster un
+        thread</a>
 </div>
 <br>
 <br>
@@ -13,6 +14,8 @@ $conn = mysqli_connect("localhost", "root", "root", "projetwebappe5");
 if (!$conn) {
     die("La connexion à la base de données a échoué: " . mysqli_connect_error());
 }
+
+mysqli_set_charset($conn, "utf8");
 
 $posts_par_page = 5;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -45,34 +48,20 @@ if (!$result || mysqli_num_rows($result) <= 0) {
         echo "<div class='thread'>";
         echo "<h2>" . $row['titre'] . "</h2>";
         echo "<p>" . $row['contenu'] . "</p>";
-        echo "<p>Posté par : " . $row['utilisateur'] . " | Date : " . $row['date'] . "</p>";
-        echo "<p>Likes : " . $row['likes'] . "</p>";
+        echo "<p>Posté par : | Date : " . $row['created_at'] . "</p>";
+        echo "<p>Likes : 67</p>";
 
         // Like buttons
         echo "<form method='post'>";
         echo "<input type='hidden' name='post_id' value='" . $row['id'] . "'>";
-        echo "<button type='submit' name='like_action' value='increment'>👍</button>";
-        echo "<button type='submit' name='like_action' value='decrement'>👎</button>";
+        echo "<button name='like_action' value='increment'>👍</button>";
+        echo "<button name='like_action' value='decrement'>👎</button>";
         echo "</form>";
 
         echo "</div>";
     }
 }
 
-mysqli_free_result($result);
-
-// Pagination
-$sql_total_posts = "SELECT COUNT(*) AS total FROM posts";
-$result_total_posts = mysqli_query($conn, $sql_total_posts);
-$row_total_posts = mysqli_fetch_assoc($result_total_posts);
-$total_posts = $row_total_posts['total'];
-$total_pages = ceil($total_posts / $posts_par_page);
-
-echo "<div class='pagination'>";
-for ($i = 1; $i <= $total_pages; $i++) {
-    echo "<a href='forum.php?page=$i'>$i</a> ";
-}
-echo "</div>";
 
 mysqli_close($conn);
 

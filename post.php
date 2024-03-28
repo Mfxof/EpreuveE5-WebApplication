@@ -59,7 +59,7 @@
                             echo '<div class="row">';
                             echo '<div class="col-md-1">';
                             echo '<div class="left-user12923 left-user12923-repeat">';
-                            echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='Image'></a>";
+                            echo "<a href='#'><img src='image/icones-user/{$row["logo"]}.jpg' alt='ImageThread'></a>";
                             echo '</div>';
                             echo '</div>';
                             echo '<div class="col-md-9">';
