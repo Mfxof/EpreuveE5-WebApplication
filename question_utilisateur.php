@@ -136,3 +136,9 @@
                     echo '';
                 }
                 ?>
+
+            </div>
+        </div>
+    </div>
+    <?php include 'php/sideContent.php';
+    include 'php/footer.php';?>
