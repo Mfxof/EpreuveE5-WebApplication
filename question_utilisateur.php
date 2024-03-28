@@ -123,22 +123,17 @@
                 mysqli_close($conn);
                 ?>
 
-                <?php include 'php/sideContent.php';
+            </div>
+            <?php include 'php/sideContent.php';
                 include 'php/footer.php';
                 // Check if the user is logged in
                 if (isset($_SESSION['email'])) {
                     // If logged in, display "Mon compte" with a link to profile.php
                     echo '<form action="send_user_question.php">
-                <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
-            </form>';
+                    <button type="submit" class="sticky-button"><i class="fas fa-plus"></i> Poser une question</button>
+                    </form>';
                 } else {
                     // If not logged in, display "Connexion / Inscription" with a link to login.php
                     echo '';
                 }
                 ?>
-
-            </div>
-        </div>
-    </div>
-    <?php include 'php/sideContent.php';
-    include 'php/footer.php';?>
