@@ -65,7 +65,7 @@
                             echo '<div class="col-md-9">';
                             echo '<div class="right-description893">';
                             echo '<div id="que-hedder2983">';
-                            echo '<h3><a href="temp-post-deatils.php" target="_blank">' . $row["titre"] . '</a></h3>';
+                            echo '<h3><a href="temp-post-deatils.php?id=' . $row["id"] . '">' . $row["titre"] . '</a></h3>';
                             echo '</div>';
                             echo '<div class="ques-details10018">';
                             echo '<p>' . $row["contenu"] . '</p>';
