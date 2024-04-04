@@ -5,15 +5,13 @@ include 'php/token_session.php';
 // Traitement du formulaire lors de la soumission
 // Vérifier si le formulaire est soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $pseudo = $_POST['pseudo'];
-    $email = $_POST['email'];
+    $auteur = $_POST['auteur'];
     $titre = $_POST['titre']; // Récupération du titre
-    $categorie = $_POST['categorie']; // Récupération de la catégorie
-    $fichier = $_POST['fichier']; // Cela devrait être récupéré différemment selon le type de fichier
     $contenu = $_POST['contenu'];
+    $tags = $_POST['tags']; // Récupération de la catégorie
 
     // Requête SQL pour insérer les données dans la base de données
-    $sql = "INSERT INTO posts_inside (pseudo, email, titre, categorie, fichier, contenu) VALUES ('$pseudo', '$email', '$titre', '$categorie', '$fichier', '$contenu')";
+    $sql = "INSERT INTO posts (auteur, titre, contenu, tags) VALUES ('$auteur', '$titre', '$contenu', '$tags')";
 
     if (mysqli_query($conn, $sql)) {
         // Redirection vers contact.php avec un délai de 2 secondes
@@ -63,13 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h4>Poster un thread</h4>
                     <hr>
                     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                        <div class="username-part940">
-                            <span class="form-description43">Pseudo*</span><input type="text" name="pseudo"
-                                class="username029" placeholder="Mettre son Pseudo" required>
-                        </div>
-                        <div class="email-part320">
-                            <span class="form-description442">E-Mail* </span><input type="email" name="email"
-                                class="email30" placeholder="Mettre son E-mail" required>
+                        <div class="auteur-part320">
+                            <span class="form-description442">Pseudo* </span><input type="auteur" name="auteur"
+                                class="auteur30" placeholder="Mettre son nom (temporaire)*" required>
                         </div>
                         <div class="question-title39">
                             <span class="form-description433">Titre du thread* </span><input type="text" name="titre"
@@ -77,9 +71,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
 
                         <div class="categori49">
-                            <span class="form-description43305">Categorie </span>
+                            <span class="form-description43305">Tags </span>
                             <label>
-                                <input list="browsers" name="categorie" class="list-category53" /></label>
+                                <input list="browsers" name="tags" class="list-category53" /></label>
                             <datalist id="browsers">
                                 <option value="HTML">
                                 <option value="Cybersécurité">
@@ -88,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </datalist>
                         </div>
                         <div class="button-group-addfile3239">
-                            <span class="form-description23993">Fichier*</span><input type="file" name="fichier"
+                            <span class="form-description23993">Fichier</span><input type="file" name="fichier"
                                 class="question-ttile3226">
 
                         </div>
