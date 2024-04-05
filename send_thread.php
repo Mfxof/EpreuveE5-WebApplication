@@ -40,8 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <title>Poster un thread</title>
 <?php include 'php/navBar.php'; ?>
 
-<!-- Votre code HTML pour le formulaire ici -->
-
 
 <section class="header-descriptin329">
     <div class="container">

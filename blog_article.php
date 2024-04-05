@@ -102,9 +102,51 @@ if (isset($_GET['id'])) {
                             ?>
                         </div>
 
-                    </div>
 
-                    <?php
+
+
+
+                        <?php
+                        // Your existing PHP code goes here
+                
+                        // Check if the form is submitted
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['comment'])) {
+                            // Retrieve comment content
+                            $comment_content = $_POST['comment'];
+
+                            // Assuming you have user authentication, retrieve the user ID
+                            $user_id = 2; // Replace with actual user ID
+                
+                            // Insert the comment into the database
+                            $insert_comment_sql = "INSERT INTO commentaires_blog (blog_id, user_id, contenu) VALUES ($article_id, $user_id, '$comment_content')";
+                            mysqli_query($conn, $insert_comment_sql);
+
+                            // Refresh the page to show the new comment
+                            echo "<meta http-equiv='refresh' content='0'>";
+                        }
+
+
+
+
+                        if (isset($_SESSION['email'])) {
+                            // If logged in, display "Mon compte" with a link to profile.php
+                            echo '<div class="add-comment">';
+                            echo '  <h4>Ajouter un commentaire :</h4>';
+                            echo '   <form method="post" action="blog_article.php?id=' . $article_id . '">';
+                            echo '       <textarea name="comment" rows="4" cols="100%" placeholder="Entrez votre commentaire ici" required></textarea><br>';
+                            echo '       <input type="submit" class="btn btn-primary" value="Envoyer">';
+                            echo '    </form>';
+                            echo '  </div>';
+                            echo '</div>';
+                        } else {
+                            // If not logged in, display "Connexion / Inscription" with a link to login.php
+                            echo 'Connectez-vous pour poster un commentaire';
+                        }
+
+
+                        
+
+
     } else {
         echo "Article non trouvé";
     }
