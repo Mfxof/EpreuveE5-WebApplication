@@ -171,12 +171,25 @@ if (isset ($_POST['logout'])) {
                                 echo "<button type='submit' name='save_profile' class='save-button'>";
                                 echo "<i class='fa fa-save'></i> Enregistrer";
                                 echo "</button>";
+
+
+                                if ($row['admin_id'] == 8) {
+                                    echo "<form method='post' action='admin_panel.php'>";
+                                    echo "<button type='submit' name='admin_panel' class='admin-panel-button'>";
+                                    echo "<i class='fa fa-cogs'></i> Panneau d'administration";
+                                    echo "</button>";
+                                    echo "</form>";
+
+                                }
             
                                 // Bouton pour déconnecter l'utilisateur
                                 echo "<form method='post'>";
                                 echo "<button type='submit' name='logout' class='logout-button'>";
                                 echo "<span class='icon'>&#x2716;</span> Déconnexion";
                                 echo "</button>";
+
+
+                                
                                 echo "</form>";
             
                                 echo "</div>";
